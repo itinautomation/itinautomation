@@ -13,6 +13,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Förderband bedienen" mc="Standard.Activity" uid="13bd7ef3-ba47-4396-ad85-cd9772e6709f"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="7366f180-3cc3-4d8e-bc5b-147c9aec3c0c"/>

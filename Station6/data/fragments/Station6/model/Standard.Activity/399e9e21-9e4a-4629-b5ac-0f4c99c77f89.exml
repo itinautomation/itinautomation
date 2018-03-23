@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity" version="4">
+  <OBJECT>
+    <ID name="Activity" mc="Standard.Activity" uid="399e9e21-9e4a-4629-b5ac-0f4c99c77f89"/>
+    <PID name="station6" mc="Standard.Package" uid="f018be07-c9c4-4169-bd4e-53bb2f67f0d4"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Activity]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedGroup">
+        <OBJECT>
+          <ID name="Mensch" mc="Standard.ActivityPartition" uid="44da9080-00c1-405b-828b-038dd6d0fe9e"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Mensch]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Initial Node" mc="Standard.InitialNode" uid="5dad70d5-81e9-4ae9-9624-fd8f2328c060"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Not-Aus" mc="Standard.CallBehaviorAction" uid="d3cc8836-bbf5-41f5-a5f7-d9856f97430e"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Not-Aus]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Not-Aus" mc="Standard.Activity" uid="2d6b7dd0-a126-4f29-8d6c-ff7869d74891"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Ausschalten" mc="Standard.CallBehaviorAction" uid="8bf3e46b-b750-4104-a35d-3bb0caff0d26"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Ausschalten]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Ausschalten" mc="Standard.Activity" uid="2d1b3d40-73ce-4622-92d3-8fa90b120c1d"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Station 6" mc="Standard.ActivityPartition" uid="c5c36901-c733-4a67-80dc-b35f147a620b"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[Station 6]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ContainedNode">
+              <OBJECT>
+                <ID name="Einschalten" mc="Standard.CallBehaviorAction" uid="d370fc19-2681-4486-bfbe-7ce5b987bf89"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Einschalten]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Einschalten" mc="Standard.Activity" uid="7712ccc3-b4b1-4ac2-a28a-b079bb5c8117"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Werkstück einsortieren" mc="Standard.CallBehaviorAction" uid="ded133a1-2930-4baf-b9fb-63dbf3f00dbe"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Werkstück einsortieren]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Called">
+                    <ID name="Werkstück einsortieren" mc="Standard.Activity" uid="bf944f41-1749-48a6-a9a6-fc67a03abe76"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="92ae6880-00e9-4696-95aa-da5c87acbb17"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="SPS5" mc="Standard.ActivityPartition" uid="2f675668-3fa8-40a4-b93c-8293aae28942"/>
+          <ATTRIBUTES>
+            <ATT name="IsDimension">false</ATT>
+            <ATT name="IsExternal">false</ATT>
+            <ATT name="Name"><![CDATA[SPS5]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Standard.Collaboration" uid="97dc53aa-260f-437d-b11e-1d3b669cbf6c"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="f0cd8a76-4daa-4710-85c9-499ab3e03984"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

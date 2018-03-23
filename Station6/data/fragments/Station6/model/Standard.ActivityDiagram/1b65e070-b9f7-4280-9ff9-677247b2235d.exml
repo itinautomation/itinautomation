@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="1b65e070-b9f7-4280-9ff9-677247b2235d"/>
+    <PID name="Ausschalten" mc="Standard.Activity" uid="2d1b3d40-73ce-4622-92d3-8fa90b120c1d"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">31</ATT>
+      <ATT name="UiData"><![CDATA[eJztU8FO4zAQ/RXL97ohLWQrhaLSoAoRKCrsSpzQpJ52zTp2Zbul+XsSkgAtapSV0HLZk63neTPzxm/Cs20qyQaNFVqd0iPmUXI2DKfJE84dETyHKHHZCk+pNkuWao5SaMYFLA2kDLlw2jCYO7ERLmMoMUXl7BtSB07SUYVEJUJJCk/aPL6V9ugwvDV6hcZlREGaV5SQ6bWLwEH+9gvkGqtW1FpK2h2G3ZrwiXrnMol0R4jfJMQW8ZbNtUFWclv0NwY7B468LnaxdTNctKxyk6eomAS3Lkou8x5fr8XlumSSHtvuCe2WkprEG5TgkOe97M3tuoDIpkCKEYHiYDjb+xlylJwcoxd4nWSwCDp9/4fXGSwWg85JEPj9IPH93jFvnr4E666UflYxJCj3mrhzRqglHdZlSTWdsPsa1ShMS7xUY52utBUu/5YDqVukGv8WkhssMsTCFuOsjoOMWKg/tn34+TIy8Jy3E0OGZteKvcadqneIl3zLZJEhX6GdhP9mf/6O9e3GE/yAI6IJi0cPF7PH89H4ajKb/ryJvsYkLdbx47e9G+iDHfr/7fBddrif3n61Dw4+vQAmJZTt]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

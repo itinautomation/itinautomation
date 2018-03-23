@@ -22,7 +22,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Zurücksetzen" mc="Standard.UseCase" uid="c36e52b2-6f4e-4344-bf34-5f84e7e6afed"/>
+              <ID name="Station zurücksetzen" mc="Standard.UseCase" uid="c36e52b2-6f4e-4344-bf34-5f84e7e6afed"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
@@ -89,6 +89,9 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+      </COMP>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück einsortieren" mc="Standard.Activity" uid="bf944f41-1749-48a6-a9a6-fc67a03abe76"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="d10ae12e-9149-4789-920f-7e038b38a587"/>
+    <PID name="Weiche 2 stellen" mc="Standard.Activity" uid="ca89859c-6d8f-4e48-9dd9-82d2387706cc"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">19</ATT>
+      <ATT name="UiData"><![CDATA[eJztU11v4jAQ/CuW3zHh4wRIKYiSClVNS0V7lfpULXjLuefYyDaU/PtzmqQHVESpVF1f7snWeGd3Zz0bjnaJJFs0Vmh1RlssoGQ0DGeLF1w6IriHKHHpGs+oNiuWaI5SaMYFrAwkDLlw2jBYOrEVLmUoMUHl7DtSBk6TcYFEOUJJAi/aPL2XDugwvDV6jcalREHiK0pI9cZF4MC/PYDcYNGK2khJm8OwWRI+UO9cKpEeCGlXCbFZvGVLbZDl3Br9TcAugSMvi13s3Byfa1a58SkKJsGdixaXvse3a3a5zpmkw3ZHQpu5pCrxBiU45L6Xo7ldZxDZZkg2IlAcDGdHP0N4KwBstbExaHUHjW6vP2gM2sFzo4dBp7/o9OFHv1c9fQnWXSn9qmJYoDxq4s4ZoVZ0WJYlxXTC5ltUpTAt8VJNdLLWVjj/LSdS10g1+SUkN5hliIXNxlkcJxmxUL9t/fDzVWTg1bcTQ4rm0Iqdyp0qd4jnfMtklsGv0EHCf7M/n2N9u/EEP+GIaMri8ePF/Ol8PLmazmc/b6KvMUmNddz/tr8G2rND978dvssO97Pbr/bByac/IDOU6g==]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLActivityDiagram" mc="Infrastructure.Stereotype" uid="374ff012-d57b-11e0-8ec9-0027103f347c"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="f63b8956-0e19-4ad9-8e01-e15f6cba3622"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

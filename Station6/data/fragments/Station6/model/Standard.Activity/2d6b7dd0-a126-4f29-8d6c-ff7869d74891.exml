@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Not-Aus" version="4">
+  <OBJECT>
+    <ID name="Not-Aus" mc="Standard.Activity" uid="2d6b7dd0-a126-4f29-8d6c-ff7869d74891"/>
+    <PID name="Not-Aus" mc="Standard.UseCase" uid="71698cd8-1b96-4262-b922-e4260a78b539"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Not-Aus]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Standard.Collaboration" uid="15d18b8b-aa8b-4710-b7cb-117c16213d39"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="9ac1a71b-5fba-4cb3-b481-ca42ea0017f9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

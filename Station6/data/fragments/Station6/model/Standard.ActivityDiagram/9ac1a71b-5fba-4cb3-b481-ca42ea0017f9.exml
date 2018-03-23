@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="9ac1a71b-5fba-4cb3-b481-ca42ea0017f9"/>
+    <PID name="Not-Aus" mc="Standard.Activity" uid="2d6b7dd0-a126-4f29-8d6c-ff7869d74891"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">23</ATT>
+      <ATT name="UiData"><![CDATA[eJztU8FO4zAQ/RXL97oNLWKRQlFpUIUIFJUFiROaxNOuwbEr2y3N369DEpYWNQoSgsuebD3Pm5k3fhOebjJJ1mis0OqEBqxHyekwnCZPmDoiuIcocfkST6g2C5ZpjlJoxgUsDGQMuXDaMEidWAuXM5SYoXL2DakDJ9moQqISoSSDJ20e30r36DC8MXqJxuVEQeYrSsj1ykXgwL/dg1xh1YpaSUm7w7BbEz5Qb10ukW4JOWgSYot4y1JtkJXcFv2NwabAkdfFzjduhvOWVa59iopJcOOi5ML3+HotLlclk/TZZkdot5TUJN6gBIfc97Izt6sCIusCKUYEioPhbOdnyDGkARwFSedwnkBnkCb9TjL4FXRSGBwg9HrB0fy4efoSrLtU+kXFkKDcaeLWGaEWdFiXJdV0wu5rVKMwLfFCjXW21FY4/y17UrdINf4jJDdYZIiFLcZZHXsZsVDPtn342SIy8OLbiSFHs23FfuNO1TvES75lssjgV2gr4ffsz+dYP248wfc4IpqwePRwPns8G40vJ7Pp3XX0NSZpsY7vv+2fgd7ZYfDfDj9lh9/Tm6/2wd6nv2PWmGU=]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

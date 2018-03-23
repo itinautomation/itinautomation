@@ -13,6 +13,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück engegennehmen" mc="Standard.Activity" uid="a38222da-9ab9-4dc8-84c9-013d5b8d9fd6"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="818bc649-4765-41f6-9d8d-4d0960ab5189"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="ceb1190b-36f1-403b-a928-47cf4c7cb817"/>
+    <PID name="Werkstück einsortieren" mc="Standard.Activity" uid="bf944f41-1749-48a6-a9a6-fc67a03abe76"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">22</ATT>
+      <ATT name="UiData"><![CDATA[eJztU8FO4zAQ/RXL97oNrShIoag0qEIEigq70p7QJJ4Wg2NXtluav8chCUu7apSV0HLZk63neTPzxm/C820myQaNFVqd0YD1KDkfhbPkGVNHBPcQJS5f4RnVZskyzVEKzbiApYGMIRdOGwapExvhcoYSM1TOfiB14DQbV0hUIpRk8KzN40fpHh2Fd0av0LicKMh8RQm5XrsIHPi3nyDXWLWi1lLS7ijs1oQ/qPcul0h3hBw1CbFFvGWpNshKbov+JmBT4MjrYpdbN8dFyyq3PkXFJLh1UXLle3y/Fpebkkn6bLsntFtKahJvUIJD7nvZm9tNAZFNgRQjAsXBcLb3MyTFJAhOe0mnf7wIOoNeP+nA6dFJZzBMF4N0mCYnwbB5+hKsu1b6VcWQoNxr4t4ZoZZ0VJcl1XTC7ntUozAt8UpNdLbSVjj/LQdSt0g1eRKSGywyxMIW46yOg4xYqBfbPvxiGRl49e3EkKPZtWK/cafqHeIl3zJZZPArtJPw3+zP37G+3XiCH3BENGXx+Nfl/PFiPLmezmc/bqOvMUmLdfz8bb8N9MkOg/92+C47PMzuvtoHB5/eAP/Slus=]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

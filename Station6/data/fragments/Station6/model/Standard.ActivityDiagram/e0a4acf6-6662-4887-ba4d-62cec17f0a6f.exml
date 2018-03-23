@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="e0a4acf6-6662-4887-ba4d-62cec17f0a6f"/>
+    <PID name="Förderband bedienen" mc="Standard.Activity" uid="13bd7ef3-ba47-4396-ad85-cd9772e6709f"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">18</ATT>
+      <ATT name="UiData"><![CDATA[eJztU99PwjAQ/leavlMQyfRhYpAZYpxi8EfikznWA6tdS9qC7L+3c5sKhmUmRl98avP1vrv7rt+Fx+tUkhUaK7Q6onusQ8lxPxxPnzBxRHAPUeKyBR5RbeYs1Ryl0IwLmBtIGXLhtGGQOLESLmMoMUXl7DtSBY7SQYlEBUJJCk/aPLyX7tB+eGX0Ao3LiILUV5SQ6aWLwIF/uwO5xLIVtZSStvthuyJ8oV67TCLdENKtE2LzeMsSbZAV3Ab9DcEmwJFXxU7XboKzhlUufYqSSXDtoumZ7/Html8uCibZZ+stoe1CUp14gxIcct/L1twucoisciQfESgOhrOtnyHYgR4ks6AVBEG31Ts8PGhNocdbQTfBZO9g1oFgVj99CdadK/2iYpii3Gri2hmh5rRflSXldML2W1StMC3xTA11utBWOP8tO1I3SDV8FJIbzDPEwubjLI+djFioZ9s8/GQeGXjx7cSQodm04n7tTlU7xAu+ZTLP4FdoI+Hv7M/3WH9uPMF3OCIasXhwfzp5OBkMz0eT8e1l9DMmabCOn7/tw0Cf7ND7t8Nf2eFmfPXTPtj59AqDW5gg]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
