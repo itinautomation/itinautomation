@@ -20,6 +20,7 @@
         <COMPID name="Rote Lampe einschalten" mc="Standard.Activity" uid="2fa5372e-68e3-421d-a77a-03c84ceef63c"/>
         <COMPID name="Rote Lampe ausschalten" mc="Standard.Activity" uid="f2cb911b-3f40-4288-ac28-aa586c03a0e5"/>
         <COMPID name="SPS6 ausschalten" mc="Standard.Activity" uid="18893090-cca8-4a5c-904e-cfebd798b7a7"/>
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="06469e0f-30a0-4f17-83d1-d4f1ea24d9aa"/>
       </COMP>
       <COMP relation="OwnedInformationFlow">
         <OBJECT>

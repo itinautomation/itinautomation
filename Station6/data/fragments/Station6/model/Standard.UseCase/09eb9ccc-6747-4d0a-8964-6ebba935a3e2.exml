@@ -102,6 +102,20 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="1c6e7218-affe-44cc-88a3-64c76901ce0d"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[WEICHE 2 STELLEN: Je nach aktueller Anforderung wird die 2. Weiche geöffnet oder geschlossen.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

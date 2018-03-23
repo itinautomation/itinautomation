@@ -14,7 +14,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Werkstück engegennehmen" mc="Standard.Activity" uid="a38222da-9ab9-4dc8-84c9-013d5b8d9fd6"/>
+        <COMPID name="Werkstück entgegennehmen" mc="Standard.Activity" uid="a38222da-9ab9-4dc8-84c9-013d5b8d9fd6"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
@@ -98,6 +98,20 @@
           <DEPENDENCIES>
             <LINK relation="Model">
               <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="91e6a9c9-2998-4094-9dc6-fc1f9b03c156"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[WERKSTÜCK ENTEGEGENNEHMEN: Nach der Meldung von SPS5, dass ein Werkstück übergeben wurde und nachdem die Weichen entsprechend dem Typ gestellt wurden, wird geprüft, ob das Werkstück auch tatsächlich angekommen ist. Wenn nicht, blinkt die gelbe Lampe und die Station ist blockiert.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

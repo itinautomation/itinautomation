@@ -102,6 +102,20 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="72ffa64d-8416-4c33-9f0b-9d5b49af8643"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[NOT-AUS: Mensch drückt den roten Button. Rote Lampe leuchtet auf und alle Aktionen werden sofort gestoppt (nicht zurückgesetzt!). Not-Aus wird an SPS5 weitergegeben.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

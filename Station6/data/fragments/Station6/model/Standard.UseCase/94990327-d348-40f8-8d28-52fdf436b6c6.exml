@@ -22,7 +22,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Zurücksetzen" mc="Standard.UseCase" uid="c36e52b2-6f4e-4344-bf34-5f84e7e6afed"/>
+              <ID name="Station zurücksetzen" mc="Standard.UseCase" uid="c36e52b2-6f4e-4344-bf34-5f84e7e6afed"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
@@ -115,6 +115,20 @@
           <DEPENDENCIES>
             <LINK relation="Model">
               <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Einschalten" mc="Infrastructure.Note" uid="f1c965ed-fe00-4f92-a3b9-e6f0839766a4"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[EINSCHALTEN: Mensch drückt den gelben Button. Gelbe Lampe leuchtet auf. "Station zurücksetzen" und "Lagerstand prüfen" wird ebenfalls ausgeführt.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Einschalten]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

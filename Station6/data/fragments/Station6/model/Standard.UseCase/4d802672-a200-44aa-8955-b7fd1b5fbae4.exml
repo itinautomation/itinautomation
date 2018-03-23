@@ -193,6 +193,20 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="538408c2-76f1-4e4b-b80c-4203d953ff66"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[WERKSTÜCK EINSORTIEREN: Wenn der Lagerstand okay ist, die Station sich im wartenden Zustand befindet und SPS 5 meldet, dass ein Werkstück verfügbar ist, kann mit der Aktion begonnen werden. Je nach Werkstücktyp wird Weiche 1 oder Weiche 2 oder keine Weiche gestellt und danach das Förderband gestartet.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

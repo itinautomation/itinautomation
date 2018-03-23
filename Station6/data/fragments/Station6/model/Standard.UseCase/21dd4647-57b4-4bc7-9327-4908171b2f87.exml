@@ -118,6 +118,20 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="0aa565bf-9590-4656-b5e1-3e70b355b099"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[AUSSCHALTEN: Mensch drückt den gelben Button. Gelbe Lampe leuchtet nicht mehr. Der aktuelle Sortiervorgang wird noch zu Ende geführt, "Station zurücksetzen" wird ausgeführt und die SPS6 schaltet sich aus.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
