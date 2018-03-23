@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Not-Aus" mc="Standard.Activity" uid="2d6b7dd0-a126-4f29-8d6c-ff7869d74891"/>
+        <COMPID name="Not-Aus weitergeben" mc="Standard.Activity" uid="db4e01bd-2aae-4f45-9c16-13b7c3690542"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

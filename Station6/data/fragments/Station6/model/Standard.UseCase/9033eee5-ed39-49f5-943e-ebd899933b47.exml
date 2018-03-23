@@ -14,7 +14,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Förderband bedienen" mc="Standard.Activity" uid="13bd7ef3-ba47-4396-ad85-cd9772e6709f"/>
+        <COMPID name="Förderband starten" mc="Standard.Activity" uid="13bd7ef3-ba47-4396-ad85-cd9772e6709f"/>
+        <COMPID name="Förderband stoppen" mc="Standard.Activity" uid="dbe0917d-126c-4528-ba13-177ff67e522b"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

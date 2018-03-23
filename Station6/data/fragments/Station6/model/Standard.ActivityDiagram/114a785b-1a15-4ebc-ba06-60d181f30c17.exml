@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="114a785b-1a15-4ebc-ba06-60d181f30c17"/>
+    <PID name="Rote Lampe einschalten" mc="Standard.Activity" uid="2fa5372e-68e3-421d-a77a-03c84ceef63c"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">3</ATT>
+      <ATT name="UiData"><![CDATA[eJztU01P4zAQ/SuW73WTbfk4hKLSoAoRKCqw0p7QJB66BseubLc0/x6HJEC7apSV0HLZk63neTPzxm+i000uyRqNFVqd0JAFlJyOoln6hJkjgnuIElcs8YRqs2C55iiFZlzAwkDOkAunDYPMibVwBUOJOSpn35EmcJqPaySuEEpyeNLm4b10QEfRjdFLNK4gCnJfUUKhVy4GB/7tJ8gV1q2olZS0P4r6DeEP6q0rJNItIT/ahNgy3rJMG2QVt0N/E7AZcORNsfONm+NjxyrXPkXNJLhxcXrhe3y7lperikkGbLMjtF9JahNvUIJD7nvZmdtVCZF1iZQjAsXBcLbzMyQMh3B0fJD2QggPekNMs14KwWHvMODhcfg4CLLwqH36Eqy7VPpFJZCi3Gni1hmhFnTUlCX1dKL+W1SrMC3xQk10vtRWOP8te1J3SDX5LSQ3WGZIhC3HWR97GYlQz7Z7+NkiNvDi20mgQLNtxUHrTjU7xCu+ZbLM4FdoK+G/2Z+/Y3278QTf44h4ypLxr/P5w9l4cjmdz+6v468xSYd1/PxtHwb6ZIfhfzt8lx3uZjdf7YO9T6+JYZYW]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLActivityDiagram" mc="Infrastructure.Stereotype" uid="374ff012-d57b-11e0-8ec9-0027103f347c"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="cb7086ac-6358-4007-8590-f32645b4f7eb"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

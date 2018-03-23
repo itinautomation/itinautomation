@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Weiche 2 stellen" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Weiche 1 zurück stellen" version="4">
   <OBJECT>
-    <ID name="Weiche 2 stellen" mc="Standard.Activity" uid="ca89859c-6d8f-4e48-9dd9-82d2387706cc"/>
-    <PID name="Weiche 2 stellen" mc="Standard.UseCase" uid="09eb9ccc-6747-4d0a-8964-6ebba935a3e2"/>
+    <ID name="Weiche 1 zurück stellen" mc="Standard.Activity" uid="ecb396fe-7d2f-4432-ab97-7d2564219a7f"/>
+    <PID name="Weiche 1 stellen" mc="Standard.UseCase" uid="5d4a3312-4cf5-48fd-9f87-340e31d1a14a"/>
     <ATTRIBUTES>
       <ATT name="IsSingleExecution">false</ATT>
       <ATT name="IsReadOnly">false</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Weiche 2 stellen]]></ATT>
+      <ATT name="Name"><![CDATA[Weiche 1 zurück stellen]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedNode">
         <OBJECT>
-          <ID name="Initial Node" mc="Standard.InitialNode" uid="b2cbcba9-8291-4596-8e7b-f86626b1e663"/>
+          <ID name="Initial Node" mc="Standard.InitialNode" uid="a07883b9-653c-4b5d-89b8-e58e8fc6a322"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[Initial Node]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -21,7 +21,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="a046ff2b-6da2-40e0-9d8d-5d4cb70cbd08"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="915734a4-5f8c-4ac8-a09c-f001986bcdd2"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -31,7 +31,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Weiche 2 stellen" mc="Standard.CallBehaviorAction" uid="e334c4ae-fb80-49bb-a31d-eba645653fdc"/>
+                      <ID name="Weiche 1 zurück stellen" mc="Standard.CallBehaviorAction" uid="68036cca-aa81-4a79-855e-5f0c0c3c0000"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -40,7 +40,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="736c670d-adbb-4eed-9b79-9acdc70655cf"/>
+          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="4489a1fd-4c1d-45e7-a09d-ab4a895eddd7"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -48,21 +48,21 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Weiche 2 stellen" mc="Standard.CallBehaviorAction" uid="e334c4ae-fb80-49bb-a31d-eba645653fdc"/>
+          <ID name="Weiche 1 zurück stellen" mc="Standard.CallBehaviorAction" uid="68036cca-aa81-4a79-855e-5f0c0c3c0000"/>
           <ATTRIBUTES>
             <ATT name="IsSynchronous">true</ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Weiche 2 stellen]]></ATT>
+            <ATT name="Name"><![CDATA[Weiche 1 zurück stellen]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Called">
-              <ID name="Weiche 2 stellen" mc="Standard.Activity" uid="ca89859c-6d8f-4e48-9dd9-82d2387706cc"/>
+              <ID name="Weiche 1 zurück stellen" mc="Standard.Activity" uid="ecb396fe-7d2f-4432-ab97-7d2564219a7f"/>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="36304480-71d1-4311-a2da-9e6c0475172c"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="05bc6c8f-9332-47ca-afb5-dd64e9219f6e"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -72,13 +72,13 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="736c670d-adbb-4eed-9b79-9acdc70655cf"/>
+                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="4489a1fd-4c1d-45e7-a09d-ab4a895eddd7"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="f316e4c2-ebeb-4bc7-9ec6-cbe184a4a338"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="8eb69776-6e8e-4004-93fd-a9063f0abfca"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -93,7 +93,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="ee0452dc-505a-4d54-bd20-893d3bc468bf"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="8fe5645a-dbce-4de8-abd1-6394bc490175"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -102,7 +102,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="ee0452dc-505a-4d54-bd20-893d3bc468bf"/>
+          <ID name="" mc="Standard.InstanceNode" uid="8fe5645a-dbce-4de8-abd1-6394bc490175"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -114,7 +114,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.9" mc="Standard.Port" uid="1e50f45a-6b78-4ed8-a740-bfafa282afc5"/>
+                <ID name="port6.8" mc="Standard.Port" uid="2341c7de-e709-4762-84dd-45531b9dbd74"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -122,7 +122,7 @@
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
-          <ID name="locals" mc="Standard.Collaboration" uid="e5a87004-6155-4e64-91ed-2b23ad1f23a7"/>
+          <ID name="locals" mc="Standard.Collaboration" uid="baf4d9ac-7837-4a9e-9c34-62c3e1ab8042"/>
           <ATTRIBUTES>
             <ATT name="IsConcurrent">false</ATT>
             <ATT name="IsAbstract">false</ATT>
@@ -136,7 +136,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="d10ae12e-9149-4789-920f-7e038b38a587"/>
+        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="5a1db03a-3958-41d1-bfdb-aa2b8b8b7312"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ausschalten" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lagerkapazität prüfen" version="4">
   <OBJECT>
-    <ID name="Ausschalten" mc="Standard.UseCase" uid="21dd4647-57b4-4bc7-9327-4908171b2f87"/>
+    <ID name="Lagerkapazität prüfen" mc="Standard.UseCase" uid="33280159-260d-4eb0-8947-3e5e8f0f9736"/>
     <PID name="station6" mc="Standard.Package" uid="f018be07-c9c4-4169-bd4e-53bb2f67f0d4"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,33 +9,16 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Ausschalten]]></ATT>
+      <ATT name="Name"><![CDATA[Lagerkapazität prüfen]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="Used">
-        <OBJECT>
-          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="984f431b-13f5-4920-9ef6-42587546c24b"/>
-          <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="Station zurücksetzen" mc="Standard.UseCase" uid="c36e52b2-6f4e-4344-bf34-5f84e7e6afed"/>
-            </LINK>
-            <LINK relation="Extension">
-              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Ausschalten" mc="Standard.Activity" uid="2d1b3d40-73ce-4622-92d3-8fa90b120c1d"/>
+        <COMPID name="Lagerkapazität prüfen" mc="Standard.Activity" uid="3a6c45e3-ff5d-43e6-8e65-be38e858369b"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="159c3dda-ef49-4402-80af-d5275d5f4bf3"/>
+          <ID name="" mc="Infrastructure.Note" uid="849ee6c7-5bb5-4876-8341-cf75be001a8d"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -49,7 +32,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="c45e358d-a267-4dd4-8657-e6aa34466cd7"/>
+          <ID name="" mc="Infrastructure.Note" uid="17e5015e-c3b0-4dfd-ba1c-015a019fcaf0"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -63,7 +46,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="fff9fbbe-42ef-441b-8dd3-2e065df71dee"/>
+          <ID name="" mc="Infrastructure.Note" uid="179d2faa-1019-4b0f-b751-14b195c3bbed"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -77,7 +60,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="f3d00184-b937-41ec-8366-b374bf977996"/>
+          <ID name="" mc="Infrastructure.Note" uid="e05ea074-f727-4532-a394-64cd15e16926"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -91,7 +74,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="f7fbc2b9-0484-4813-8c3b-a05100c91323"/>
+          <ID name="" mc="Infrastructure.Note" uid="9057957c-233e-4718-9ce9-071ff096f13d"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -105,7 +88,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="ca4d7a54-4ffb-4999-873f-d19e52d21f63"/>
+          <ID name="" mc="Infrastructure.Note" uid="4da6c02c-f88d-49de-a371-df3a41c5183b"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity1 diagram" version="4">
+  <OBJECT>
+    <ID name="Activity1 diagram" mc="Standard.ActivityDiagram" uid="3d3ebd2f-431a-4289-b279-a3cd1e033040"/>
+    <PID name="SPS6 ausschalten" mc="Standard.Activity" uid="18893090-cca8-4a5c-904e-cfebd798b7a7"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">15</ATT>
+      <ATT name="UiData"><![CDATA[eJztU8FO4zAQ/RXL97ppU4lFCkWlQRUiUFR2kTihSTx0DY5d2W5p/n4dkgAtapSV0HLZk63neTPzxm+i020uyQaNFVqd0AELKDkdR/P0CTNHBPcQJa5Y4QnVZslyzVEKzbiApYGcIRdOGwaZExvhCoYSc1TOviFN4Cyf1EhcIZTk8KTNw1vpgI6jG6NXaFxBFOS+ooRCr10MDvzbHcg11q2otZS0P476DeET9dYVEumOkGGbEFvGW5Zpg6ziduhvCjYDjrwpdr51C3zsWOXap6iZBLcuTi98j6/X8nJVMUnItntC+5WkNvEGJTjkvpe9uV2VENmUSDkiUBwMZ3s/Q0IeYsqHj71ROIDeaPjjuJcOj457EGZ8gEEYBqOgffoSrLtU+kUlkKLca+LWGaGWdNyUHZB6PFH/NaxVmZZ4oaY6X2krnP+XA7k7pJr+FpIbLDMkwpbzrI+DjESoZ9s9/GwZG3jx7SRQoNn1Yti6VM0S8YpvmSwz+B3aSfhvFujvWN/uPMEPOCKesWRyf754OJtML2eL+a/r+GtM0mEfP37bu4E+2GH03w7fZYef85uv9sHBpz+5tpZf]]></ATT>
+      <ATT name="Name"><![CDATA[Activity1 diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

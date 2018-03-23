@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Weiche 2 stellen" mc="Standard.Activity" uid="ca89859c-6d8f-4e48-9dd9-82d2387706cc"/>
+        <COMPID name="Weiche 2 zurück stellen" mc="Standard.Activity" uid="6175f882-d83c-4fe9-92eb-1d139b486017"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

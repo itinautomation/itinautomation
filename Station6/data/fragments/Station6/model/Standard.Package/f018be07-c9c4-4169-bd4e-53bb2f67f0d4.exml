@@ -15,6 +15,11 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Activity" mc="Standard.Activity" uid="399e9e21-9e4a-4629-b5ac-0f4c99c77f89"/>
+        <COMPID name="Gelbe Lampe einschalten" mc="Standard.Activity" uid="2684d113-c9c0-44b6-922a-e333aee3057f"/>
+        <COMPID name="Gelbe Lampe ausschalten" mc="Standard.Activity" uid="f598059a-e1b1-424f-aae2-8cf8fb9f91e8"/>
+        <COMPID name="Rote Lampe einschalten" mc="Standard.Activity" uid="2fa5372e-68e3-421d-a77a-03c84ceef63c"/>
+        <COMPID name="Rote Lampe ausschalten" mc="Standard.Activity" uid="f2cb911b-3f40-4288-ac28-aa586c03a0e5"/>
+        <COMPID name="SPS6 ausschalten" mc="Standard.Activity" uid="18893090-cca8-4a5c-904e-cfebd798b7a7"/>
       </COMP>
       <COMP relation="OwnedInformationFlow">
         <OBJECT>
@@ -1448,6 +1453,7 @@
         <COMPID name="Förderband" mc="Standard.Class" uid="af945381-e0c1-4b91-9aab-226b9b04cba0"/>
         <COMPID name="SPS" mc="Standard.Class" uid="6951e49a-da97-483e-a045-ead28c45ad34"/>
         <COMPID name="Weiche" mc="Standard.Class" uid="b5fab213-9747-4edd-92a5-0510bfcfe180"/>
+        <COMPID name="Lagerkapazität prüfen" mc="Standard.UseCase" uid="33280159-260d-4eb0-8947-3e5e8f0f9736"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Use Case diagram" mc="Standard.UseCaseDiagram" uid="81d79a5d-edea-436a-bed4-a3eb292a073e"/>
