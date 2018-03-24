@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SIDefinitions" version="4">
+  <OBJECT>
+    <ID name="SIDefinitions" mc="Standard.Package" uid="8bc1d9de-0c59-47e6-8050-d0959f06a9fc"/>
+    <PID name="SIDefinitions" mc="Standard.Project" uid="256e1bc8-25d9-47da-8dc9-1d1a014a9bcf"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SIDefinitions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SI Base Units" mc="Standard.Package" uid="52ef1d21-df89-11e0-bddc-8000600fe800"/>
+        <COMPID name="SI Derived Units Expressed In Base Units" mc="Standard.Package" uid="078eba91-df8c-11e0-bddc-8000600fe800"/>
+        <COMPID name="SI Derived Units With Special Names" mc="Standard.Package" uid="b233b9f1-df8c-11e0-bddc-8000600fe800"/>
+        <COMPID name="SIDefinitions" mc="Standard.Artifact" uid="2dcd95a1-df91-11e0-bddc-8000600fe800"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

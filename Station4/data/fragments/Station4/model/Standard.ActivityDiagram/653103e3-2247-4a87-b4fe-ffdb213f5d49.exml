@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity diagram" version="4">
+  <OBJECT>
+    <ID name="Activity diagram" mc="Standard.ActivityDiagram" uid="653103e3-2247-4a87-b4fe-ffdb213f5d49"/>
+    <PID name="Ausschalten" mc="Standard.Activity" uid="deff305d-d382-466c-8c1b-8b91a321b2e0"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">237</ATT>
+      <ATT name="UiData"><![CDATA[eJztmG9vojAcx98K4TlIAeXMnMumu8XM/Ym7u+QemUKL61bapdQp7/6KiDfZZGyyzbtojMHSfn9/+in9lc7RPKLaIxYx4exQB6ala0fdzpV/hwOpEaSadE0mD/hQ52JiRhxhSriJCJwIGJkYEcmFCQNJHolMTExxhJmMVy15x7PoeNnSz1p0LYJ3XIxXpi2927kW/AELmWgMRsoihQmfyj6UUN37BekUL11hU0r1RrfTyAc8G3ojE4r1tUDsskDitH9sBlxgMxtbwb8ejAOIMMqNnc7lCIcVrVwqieVIDc9l3x8oHxeX6cVFNlJzzHkh0EYWUlnwAlMoMVK+FPJ2kTZpj2lLmiLIEBTILMyM1mo6wHKwY9i26xku/OYZvhtiIwyRbwMnbCK3XZ59CmN5zviMDaGPacGJGykIm+jd3Ky2zE6nsehVGhineMB6PHrgMZFqWjZIV5Dq3RKKBE4VhiSWa6Q470KeMOUSpAr1QXa1FeIj5Qxkk5SO5XzZrQPgegeOrb5vht/9cPhT8rNl9tG8LtN7qaLQoN9uAcu2DMv2XcNtq5+249lGEwIIbc/yPIhrYHVpUktt7g6nzXo4vRYkgiJJY6sZWevAeievraq8Kql5sjW07h7aytBeQMI2Sa7y9mQqvVJKcyoDHkWcmTSNx0wdUnymW2QW4DZYDpjEEyxWUwJab6bx257GXaXxRoVNKZFVNONbPhuT4JnWCVfGIFulKYQ0fiXkhdQ9TmZcoBrUJAzux7HEAvOafKMvTEVRS4ppUeovatlu88rabm91OAgJW+xDeSX4Pf1f8xbktqwtyiZg/Ud101qaF0sfWBgAFLqG4zktVel7geEHgW/47QC4qK0+Lqyz0l9Y3rEiCmx3wH2R4V2sqEDl8289m5haOnugP6XAAuXn1X+iwgKVD6h7Or+Wzn3B9ekF1/NbBQeGhN3Hq83t1e4nk76AMzWbQ5ioZbu+EMtfKuQPE5QJxOpxoiTUk2RN8XPe7b5t1Je/FCVFbvMV1T8zh8e/T0fjk+Pe+dno6udl/z01TRlAG1WeTlv8YnlU+iZmz8NH8vDj6rpuEDbe+gOZERaX]]></ATT>
+      <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Initial Node" mc="Standard.InitialNode" uid="ab961020-02b4-49b4-9372-5a1aa27077ae"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="10e11df4-3736-4a7c-bccb-b9c14d99994a"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLActivityDiagram" mc="Infrastructure.Stereotype" uid="374ff012-d57b-11e0-8ec9-0027103f347c"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
