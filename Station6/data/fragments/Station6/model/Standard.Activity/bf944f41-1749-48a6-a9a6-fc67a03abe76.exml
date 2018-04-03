@@ -62,7 +62,7 @@
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8f8c1a81-37e1-4b02-bfee-6466eb295981"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="7bccfc36-cd7c-4b28-bcc8-94709647d4bd"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -72,7 +72,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Station zurücksetzen" mc="Standard.CallBehaviorAction" uid="62d1c827-6e44-442b-9816-7c5849be4ca1"/>
+                      <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="2963e578-8fe8-4cd6-9c40-de7cf1737122"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -218,7 +218,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8836b5a1-e834-44a4-802d-3c55be91a7e2"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e5fa09ac-9933-4c55-8961-f459fcef36b9"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -228,7 +228,23 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Förderband starten" mc="Standard.CallBehaviorAction" uid="900f29d1-59a5-4c5c-a38c-4dfe74cbcaf4"/>
+                      <ID name="Werkstück anfordern (an Station 5)" mc="Standard.SendSignalAction" uid="20f58aed-8e04-4cc6-9fec-3756c47543f8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="fd0657ea-ebef-40ad-bc87-e210b49c6281"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="7d9068a4-ffa6-4667-b90c-62711922a9be"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -361,6 +377,322 @@
                   <LINK relation="Target">
                     <REFOBJ>
                       <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="043cd298-48bd-4b47-bcdb-935c24c66374"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Werkstück anfordern (an Station 5)" mc="Standard.SendSignalAction" uid="20f58aed-8e04-4cc6-9fec-3756c47543f8"/>
+          <ATTRIBUTES>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Werkstück anfordern (an Station 5)]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="f130bedc-b8b1-4f32-81b3-c40bfc28bfc3"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="9c6dfc95-b540-42ed-bbf3-d03f227221a9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Werkstück übergeben (von Station 5)" mc="Standard.AcceptSignalAction" uid="ba8680e5-d477-49e4-83fa-c3a55c4b3f60"/>
+          <ATTRIBUTES>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Werkstück übergeben (von Station 5)]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="9b6ec839-bd64-43d2-9992-a9b6dd6e138e"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="7d9068a4-ffa6-4667-b90c-62711922a9be"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="7d9068a4-ffa6-4667-b90c-62711922a9be"/>
+          <ATTRIBUTES>
+            <ATT name="IsCombineDuplicate">true</ATT>
+            <ATT name="JoinSpec"><![CDATA[and]]></ATT>
+            <ATT name="Name"><![CDATA[Fork/Join1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e6ba12da-9820-4f8c-848a-dd6b65f2e946"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Förderband starten" mc="Standard.CallBehaviorAction" uid="900f29d1-59a5-4c5c-a38c-4dfe74cbcaf4"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b60247d2-322f-4bf1-854b-d3d826325150"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Werkstück wird gerade einsortiert" mc="Standard.SendSignalAction" uid="dd78e36e-4760-47ff-ab8c-39d80c040c4f"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Werkstück wird gerade einsortiert" mc="Standard.SendSignalAction" uid="dd78e36e-4760-47ff-ab8c-39d80c040c4f"/>
+          <ATTRIBUTES>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Werkstück wird gerade einsortiert]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="07d1272c-3df8-4219-b085-06ea457d0337"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="84476e70-98f2-44f1-b893-c3cca2ee7c30"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Werkstück wurde einsortiert" mc="Standard.SendSignalAction" uid="47b3289d-ceeb-4ccc-ae4e-e4705de8d254"/>
+          <ATTRIBUTES>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Werkstück wurde einsortiert]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="b7b1173e-90c5-44af-9449-b330400d60a8"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="bb7cb0bf-e87d-449a-a460-a496911a99bc"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="2963e578-8fe8-4cd6-9c40-de7cf1737122"/>
+          <ATTRIBUTES>
+            <ATT name="IsCombineDuplicate">true</ATT>
+            <ATT name="JoinSpec"><![CDATA[and]]></ATT>
+            <ATT name="Name"><![CDATA[Fork/Join2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8f8c1a81-37e1-4b02-bfee-6466eb295981"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Station zurücksetzen" mc="Standard.CallBehaviorAction" uid="62d1c827-6e44-442b-9816-7c5849be4ca1"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="0b7877da-a588-4d9f-82b7-f4deb2adfa1b"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Werkstück wurde einsortiert" mc="Standard.SendSignalAction" uid="47b3289d-ceeb-4ccc-ae4e-e4705de8d254"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="9c6dfc95-b540-42ed-bbf3-d03f227221a9"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="84476e70-98f2-44f1-b893-c3cca2ee7c30"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="bb7cb0bf-e87d-449a-a460-a496911a99bc"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="f4fb4fcc-1056-469d-805a-aa34b69d5eca"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="port_sps5.2" mc="Standard.Port" uid="69e83d8e-e548-4519-abd3-bf735b1b147c"/>
+              </REFOBJ>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="57d749b3-3682-4797-bfda-701fb2a53e8b"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Werkstück übergeben (von Station 5)" mc="Standard.AcceptSignalAction" uid="ba8680e5-d477-49e4-83fa-c3a55c4b3f60"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

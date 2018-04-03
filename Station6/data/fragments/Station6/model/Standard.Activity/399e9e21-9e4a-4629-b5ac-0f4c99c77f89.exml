@@ -376,11 +376,11 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Werkstück bereit in Station 5" mc="Standard.AcceptSignalAction" uid="f71d1ddc-77d7-4d57-872d-2177c930bf2c"/>
+                <ID name="Werkstück übergeben" mc="Standard.AcceptSignalAction" uid="f71d1ddc-77d7-4d57-872d-2177c930bf2c"/>
                 <ATTRIBUTES>
                   <ATT name="IsMultipleInstance">false</ATT>
                   <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Werkstück bereit in Station 5]]></ATT>
+                  <ATT name="Name"><![CDATA[Werkstück übergeben]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -599,11 +599,11 @@
           <DEPENDENCIES>
             <COMP relation="ContainedNode">
               <OBJECT>
-                <ID name="Werkstück bereit in Station 5" mc="Standard.SendSignalAction" uid="06dc42d7-20b1-41e1-9f3e-afa1ae69a47c"/>
+                <ID name="Werkstück übergeben" mc="Standard.SendSignalAction" uid="06dc42d7-20b1-41e1-9f3e-afa1ae69a47c"/>
                 <ATTRIBUTES>
                   <ATT name="IsMultipleInstance">false</ATT>
                   <ATT name="IsCompensation">false</ATT>
-                  <ATT name="Name"><![CDATA[Werkstück bereit in Station 5]]></ATT>
+                  <ATT name="Name"><![CDATA[Werkstück übergeben]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -619,7 +619,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Werkstück bereit in Station 5" mc="Standard.AcceptSignalAction" uid="f71d1ddc-77d7-4d57-872d-2177c930bf2c"/>
+                            <ID name="Werkstück übergeben" mc="Standard.AcceptSignalAction" uid="f71d1ddc-77d7-4d57-872d-2177c930bf2c"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -646,6 +646,29 @@
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="c6b236d8-bb48-4f5d-bf8e-0548b299dada"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Interface Station5 <-> Station6:
+
+*Station6->5*: "Bereit" //Station 6 ist bereit und wartet auf das nächste Werkstück
+*Station5->6*: "Werkstück verfügbar, Typ X" // Typ des vordersten Werkstückes
+*Station6->5*: "Werkstück anfordern" //Meldung, dass Station 6 bereit fürs Sortieren ist (Weiche bereits gestellt)
+*Station5->6*: "Werkstück wurde übergeben" // Station 5 hat das Förderband betätigt, Werkstück liegt auf der Rutsche, Förderband ist wieder aus
+*Station6->5*: "Werkstück wird gerade einsortiert" // Förderband bei Station 6 läuft also gerade --> Station 5 muss Förderband gestoppt halten
+*Station6->5*: "Werkstück wurde einsortiert" // Förderband bei Station 6 ist gestoppt]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
