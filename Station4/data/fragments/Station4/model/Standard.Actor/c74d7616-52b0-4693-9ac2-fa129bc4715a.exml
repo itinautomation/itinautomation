@@ -89,7 +89,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
-              <ID name="SPS" mc="Standard.Class" uid="85536afd-e17a-43b2-8c65-e4bc995cbed2"/>
+              <ID name="SPS" mc="Standard.Class" uid="3da2f66e-39cc-47a0-927c-7d4c5b92a525"/>
             </LINK>
             <COMP relation="Part">
               <OBJECT>

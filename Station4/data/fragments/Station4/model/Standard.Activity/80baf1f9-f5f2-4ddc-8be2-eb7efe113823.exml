@@ -283,7 +283,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="Druckdifferenzsensor" mc="Standard.Instance" uid="029cd058-19b1-442c-a35f-027c2b7db645"/>
+                <ID name="Druckdifferenz" mc="Standard.Instance" uid="029cd058-19b1-442c-a35f-027c2b7db645"/>
               </REFOBJ>
             </LINK>
             <COMP relation="Outgoing">
