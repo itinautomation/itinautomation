@@ -15,256 +15,13 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Übernahmeposition einnehmen" mc="Standard.Activity" uid="d9f0314f-b1eb-4f14-b5d0-a484b5ccbd46"/>
-        <COMPID name="Aussortieren" mc="Standard.Activity" uid="c7a927fb-adeb-413c-bdb3-c916a8e6a6d4"/>
         <COMPID name="Übergabeposition einnehmen" mc="Standard.Activity" uid="1c6599db-abbd-4fb2-bb60-75bae844f71e"/>
         <COMPID name="Werkstück aufnehmen" mc="Standard.Activity" uid="80baf1f9-f5f2-4ddc-8be2-eb7efe113823"/>
-      </COMP>
-      <COMP relation="OwnedInformationFlow">
-        <OBJECT>
-          <ID name="Werkstück verfügbar" mc="Standard.InformationFlow" uid="358f11ed-2f22-4622-8190-9ea78fbf3c12"/>
-          <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[Werkstück verfügbar]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="dfa25675-7ce0-46f7-b9bd-d48cfff46b57"/>
-          <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="c1623228-5d0f-4cd3-b8a9-459ae595e622"/>
-          <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-      </COMP>
-      <COMP relation="Declared">
-        <OBJECT>
-          <ID name="Button_Red" mc="Standard.Instance" uid="8fde7b88-4192-40c6-bfa7-bf348f5fa84f"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Button_Red]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Base">
-              <ID name="Button" mc="Standard.Class" uid="7f9de394-429b-4aae-b17a-b64afbff4d38"/>
-            </LINK>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="Status" mc="Standard.Port" uid="3578b851-21b9-4fea-b60e-6f5b83c9d5cc"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"><![CDATA[1111]]></ATT>
-                  <ATT name="Name"><![CDATA[Status]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="RepresentedFeature">
-                    <REFOBJ>
-                      <ID name="Status" mc="Standard.Port" uid="12d8dae7-04ee-479b-84fe-72442283af2e"/>
-                    </REFOBJ>
-                  </LINK>
-                  <COMP relation="Part">
-                    <OBJECT>
-                      <ID name="p1" mc="Standard.Port" uid="249a32fd-8c83-4e11-ba45-05c2de44ddbc"/>
-                      <ATTRIBUTES>
-                        <ATT name="IsBehavior">false</ATT>
-                        <ATT name="IsService">true</ATT>
-                        <ATT name="IsConjugated">false</ATT>
-                        <ATT name="Direction">None</ATT>
-                        <ATT name="IsConstant">false</ATT>
-                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                        <ATT name="Value"></ATT>
-                        <ATT name="Name"><![CDATA[p1]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES></DEPENDENCIES>
-                    </OBJECT>
-                    <OBJECT>
-                      <ID name="p2" mc="Standard.Port" uid="9db801e4-6717-416b-9cef-078961a81b8c"/>
-                      <ATTRIBUTES>
-                        <ATT name="IsBehavior">false</ATT>
-                        <ATT name="IsService">true</ATT>
-                        <ATT name="IsConjugated">false</ATT>
-                        <ATT name="Direction">None</ATT>
-                        <ATT name="IsConstant">false</ATT>
-                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                        <ATT name="Value"></ATT>
-                        <ATT name="Name"><![CDATA[p2]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES></DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                  <COMP relation="Descriptor">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="5e654a2f-6336-4666-b8bb-a888f0669a71"/>
-                      <ATTRIBUTES>
-                        <ATT name="Content"><![CDATA[
-]]></ATT>
-                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Model">
-                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Licht" mc="Standard.Port" uid="9ce5bc14-1273-4f31-a775-b072fa2a3f2f"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[Licht]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="RepresentedFeature">
-                    <REFOBJ>
-                      <ID name="Licht" mc="Standard.Port" uid="b0066c5d-96d0-48f6-ac14-35bf3a660ffd"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Button_Green" mc="Standard.Instance" uid="a485f7e7-2a7f-47d8-8083-36de935b7312"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Button_Green]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Button_White" mc="Standard.Instance" uid="3da0bce4-e9d4-40eb-a6a1-ab8e0415747a"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Button_White]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="Status" mc="Standard.Port" uid="7db06444-93c5-4792-8be8-e5fbb2cf9e27"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[Status]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Light" mc="Standard.Port" uid="bad7c722-badd-4d78-aa4e-51d69d06ccb6"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[Light]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Button_Yellow" mc="Standard.Instance" uid="233fd52a-e52a-43a9-9d4c-d6a8b11d6e55"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Button_Yellow]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="Status" mc="Standard.Port" uid="67663bdb-f3b9-4cba-a213-e906bedec11f"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[Status]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Light" mc="Standard.Port" uid="1591ceb7-f4f9-4d10-ba5d-4c75052bf5a4"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">None</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[Light]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
+        <COMPID name="Werkstück ablegen" mc="Standard.Activity" uid="40cb2b16-ae8e-454a-b770-011d5ecc79b8"/>
+        <COMPID name="Hebezylinder einfahren" mc="Standard.Activity" uid="6a9516ec-97d0-47b7-a4fa-e9aee6f479b6"/>
+        <COMPID name="Hebezylinder ausfahren" mc="Standard.Activity" uid="cac460f9-375c-42dc-80a4-47737d9a61ed"/>
+        <COMPID name="Übernahme / Übergabe" mc="Standard.Interaction" uid="acbb8642-e801-4638-8f84-3cdc2b7f77f5"/>
+        <COMPID name="Station4" mc="Standard.Activity" uid="adb09793-ad44-4271-9479-5872de9a38ee"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Human Operator" mc="Standard.Actor" uid="f9dca37e-83dc-4eeb-9e97-01ecbfa828a3"/>
@@ -274,15 +31,18 @@
         <COMPID name="Übernahme" mc="Standard.UseCase" uid="f309e127-d142-4d37-b44d-7b0d0050c44e"/>
         <COMPID name="Übergabe" mc="Standard.UseCase" uid="edeb30e7-a95a-4e7d-97b4-4c049fc976fe"/>
         <COMPID name="Station3" mc="Standard.Actor" uid="c74d7616-52b0-4693-9ac2-fa129bc4715a"/>
-        <COMPID name="Aufräumen" mc="Standard.UseCase" uid="9d30f7ac-6b6c-47f0-9768-c430fdcdff9c"/>
         <COMPID name="Station5" mc="Standard.Actor" uid="156b6e85-547d-400e-86cf-bac3d961a5b0"/>
         <COMPID name="Einschalten" mc="Standard.UseCase" uid="81dfdd45-327b-4c72-9f24-28b6d41f254d"/>
-        <COMPID name="Button" mc="Standard.Class" uid="7f9de394-429b-4aae-b17a-b64afbff4d38"/>
+        <COMPID name="Taster" mc="Standard.Class" uid="7f9de394-429b-4aae-b17a-b64afbff4d38"/>
         <COMPID name="SPS" mc="Standard.Class" uid="85536afd-e17a-43b2-8c65-e4bc995cbed2"/>
+        <COMPID name="Aussortieren" mc="Standard.UseCase" uid="78010bc2-f74e-4893-ab02-a55966788b3c"/>
+        <COMPID name="Sensor" mc="Standard.Class" uid="d867da1a-01d0-4aca-b6c2-867dc418a5de"/>
+        <COMPID name="Aktuator" mc="Standard.Class" uid="aafb6587-b64f-4469-9198-3f21a5798b74"/>
+        <COMPID name="Station4" mc="Standard.Class" uid="50f58008-a452-41dd-a83b-02cbaa49edcf"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="ca401254-3f15-4277-8dda-11aa91e5f188"/>
-        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="cda48e50-8509-4bd7-924d-2112a4f4662a"/>
+        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="4bf706ca-f770-4571-bb34-ca4359e40681"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

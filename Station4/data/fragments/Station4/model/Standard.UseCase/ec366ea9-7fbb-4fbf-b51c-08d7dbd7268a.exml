@@ -13,6 +13,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Not-Aus" mc="Standard.Activity" uid="e1be61a6-6c9c-4622-b7af-da41ab58ba0a"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="fe5592f9-3ede-42e9-96c3-5918c798975f"/>

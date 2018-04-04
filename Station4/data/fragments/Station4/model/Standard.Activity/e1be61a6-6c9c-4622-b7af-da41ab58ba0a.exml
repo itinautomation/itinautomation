@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Aussortieren" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Not-Aus" version="4">
   <OBJECT>
-    <ID name="Aussortieren" mc="Standard.Activity" uid="c7a927fb-adeb-413c-bdb3-c916a8e6a6d4"/>
-    <PID name="Aussortieren" mc="Standard.UseCase" uid="78010bc2-f74e-4893-ab02-a55966788b3c"/>
+    <ID name="Not-Aus" mc="Standard.Activity" uid="e1be61a6-6c9c-4622-b7af-da41ab58ba0a"/>
+    <PID name="Not-Aus" mc="Standard.UseCase" uid="ec366ea9-7fbb-4fbf-b51c-08d7dbd7268a"/>
     <ATTRIBUTES>
       <ATT name="IsSingleExecution">false</ATT>
       <ATT name="IsReadOnly">false</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Aussortieren]]></ATT>
+      <ATT name="Name"><![CDATA[Not-Aus]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedNode">
         <OBJECT>
-          <ID name="Initial Node" mc="Standard.InitialNode" uid="9d07affd-fff2-4e6e-8e20-329ff8974962"/>
+          <ID name="Initial Node" mc="Standard.InitialNode" uid="d484343b-dc38-4c0f-bf6a-a8a969b86f1d"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[Initial Node]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -21,7 +21,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="497b2938-5e0a-403b-a651-783c13f5b3b2"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="995befd5-a7f7-4878-9246-5f11be0b6969"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -31,7 +31,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Übergabeposition einnehmen" mc="Standard.CallBehaviorAction" uid="f083203e-3fd8-4b7b-8650-b455eefe96c3"/>
+                      <ID name="Button Status überprüfen" mc="Standard.OpaqueAction" uid="5228f55d-317a-4751-b159-401459ea56f0"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -40,109 +40,138 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="41c2c13b-49ee-414a-bd32-52ef8c25e806"/>
+          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="439680a3-dc2f-4322-bb0a-bd556f376736"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="b52e1e07-abb3-4be0-9bc4-6a1579738d27"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Übergabeposition einnehmen" mc="Standard.CallBehaviorAction" uid="f083203e-3fd8-4b7b-8650-b455eefe96c3"/>
+          <ID name="Initial Node1" mc="Standard.InitialNode" uid="76e9c287-47e5-4d5a-a492-57455d40f4c4"/>
           <ATTRIBUTES>
-            <ATT name="IsSynchronous">true</ATT>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Übergabeposition einnehmen]]></ATT>
+            <ATT name="Name"><![CDATA[Initial Node1]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Called">
-              <ID name="Übergabeposition einnehmen" mc="Standard.Activity" uid="1c6599db-abbd-4fb2-bb60-75bae844f71e"/>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="f3ec7fd6-7983-4c77-a6b3-740cd1568d35"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Station3 Status überprüfen" mc="Standard.OpaqueAction" uid="3548dc9c-5172-4746-8a2a-fdd90fd59500"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Button Status überprüfen" mc="Standard.OpaqueAction" uid="5228f55d-317a-4751-b159-401459ea56f0"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Button Status überprüfen]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Input">
+              <OBJECT>
+                <ID name="Status" mc="Standard.InputPin" uid="9debe34d-c748-41f5-b7a2-0d8bee71c84e"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSelf">false</ATT>
+                  <ATT name="IsControl">false</ATT>
+                  <ATT name="IsExpansion">false</ATT>
+                  <ATT name="IsControlType">false</ATT>
+                  <ATT name="Ordering">FIFO</ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[Status]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b81d3a45-bbab-4237-a3dd-ab68f073874c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="04123110-36e8-428d-9d6d-c7910eda1303"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="548e07a8-cb49-4ea3-a967-13ea20c8d9d8"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Taster_Rot" mc="Standard.Instance" uid="8fde7b88-4192-40c6-bfa7-bf348f5fa84f"/>
+              </REFOBJ>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="ca3e0a15-3bc5-497f-aecc-f294864ef13d"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="fe49f2dc-58ce-42a7-bfc7-a5a4dd4107fe"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Arm einziehen" mc="Standard.OpaqueAction" uid="5015d77e-3d75-4b3f-aacf-20d17bb75c7a"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Arm einziehen" mc="Standard.OpaqueAction" uid="5015d77e-3d75-4b3f-aacf-20d17bb75c7a"/>
-          <ATTRIBUTES>
-            <ATT name="Body"></ATT>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Arm einziehen]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Output">
-              <OBJECT>
-                <ID name="X-Achse" mc="Standard.OutputPin" uid="2cf76ecf-e1b7-4094-a9a4-a0f8fb02db10"/>
-                <ATTRIBUTES>
-                  <ATT name="IsControl">false</ATT>
-                  <ATT name="IsExpansion">false</ATT>
-                  <ATT name="IsControlType">false</ATT>
-                  <ATT name="Ordering">FIFO</ATT>
+                  <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[X-Achse]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Outgoing">
-                    <OBJECT>
-                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="b01b03ea-8e41-4ffa-9e55-81574c08f886"/>
-                      <ATTRIBUTES>
-                        <ATT name="TransformationBehavior"></ATT>
-                        <ATT name="SelectionBehavior"></ATT>
-                        <ATT name="IsMultiCast">false</ATT>
-                        <ATT name="IsMultiReceive">false</ATT>
-                        <ATT name="Effect">ReadFlow</ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="" mc="Standard.InstanceNode" uid="ad2ea262-05d3-4043-9300-f236bccb89c0"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="824eb7f6-bec4-438f-94b8-f0ae39e63942"/>
-                <ATTRIBUTES>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm eingezogen?" mc="Standard.OpaqueAction" uid="eb1508a4-e238-4254-b239-893b43d2cd5d"/>
+                      <ID name="Status" mc="Standard.InputPin" uid="9debe34d-c748-41f5-b7a2-0d8bee71c84e"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -151,18 +180,18 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Arm eingezogen?" mc="Standard.OpaqueAction" uid="eb1508a4-e238-4254-b239-893b43d2cd5d"/>
+          <ID name="Station3 Status überprüfen" mc="Standard.OpaqueAction" uid="3548dc9c-5172-4746-8a2a-fdd90fd59500"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Arm eingezogen?]]></ATT>
+            <ATT name="Name"><![CDATA[Station3 Status überprüfen]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="Input">
               <OBJECT>
-                <ID name="X-Achse Sensor" mc="Standard.InputPin" uid="a37da32d-8d32-406a-8cc2-0b8e20f70403"/>
+                <ID name="Status" mc="Standard.InputPin" uid="b06edd0d-7f6f-4ab3-a323-9edc6d4d0a13"/>
                 <ATTRIBUTES>
                   <ATT name="IsSelf">false</ATT>
                   <ATT name="IsControl">false</ATT>
@@ -171,7 +200,7 @@
                   <ATT name="Ordering">FIFO</ATT>
                   <ATT name="SelectionBehavior"></ATT>
                   <ATT name="UpperBound"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[X-Achse Sensor]]></ATT>
+                  <ATT name="Name"><![CDATA[Status]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -179,7 +208,7 @@
             </COMP>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="7d78dbca-e433-4d8c-8d78-8e9b8ab1ea0d"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="af6fa9b8-303f-4866-98f9-fe950e6fe5dd"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -189,7 +218,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="3f56fae1-d34f-40b3-a7df-ec794ad04f31"/>
+                      <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="157125bf-7a43-48df-a0c0-d4d33c62c7fe"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -198,58 +227,15 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Arm ausfahren" mc="Standard.OpaqueAction" uid="ffa2313a-9620-4f98-a220-309da98da41f"/>
+          <ID name="Initial Node2" mc="Standard.InitialNode" uid="00be78a8-6aa0-4ae1-941b-7ac07cd2b303"/>
           <ATTRIBUTES>
-            <ATT name="Body"></ATT>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Arm ausfahren]]></ATT>
+            <ATT name="Name"><![CDATA[Initial Node2]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="Output">
-              <OBJECT>
-                <ID name="X-Achse" mc="Standard.OutputPin" uid="cb44f0f4-3bdf-4bcf-8593-30244aff54fd"/>
-                <ATTRIBUTES>
-                  <ATT name="IsControl">false</ATT>
-                  <ATT name="IsExpansion">false</ATT>
-                  <ATT name="IsControlType">false</ATT>
-                  <ATT name="Ordering">FIFO</ATT>
-                  <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[X-Achse]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Outgoing">
-                    <OBJECT>
-                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="bad010ca-bcb4-45f1-b6bc-a9a74bd43e6c"/>
-                      <ATTRIBUTES>
-                        <ATT name="TransformationBehavior"></ATT>
-                        <ATT name="SelectionBehavior"></ATT>
-                        <ATT name="IsMultiCast">false</ATT>
-                        <ATT name="IsMultiReceive">false</ATT>
-                        <ATT name="Effect">ReadFlow</ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="Weight"><![CDATA[1]]></ATT>
-                        <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="" mc="Standard.InstanceNode" uid="03e7a8c1-dac9-4d16-a65e-866338a77071"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="2e317e69-a62c-449a-b24e-4a659aed4a8e"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="79a58fa9-0f64-44d5-9cab-7a401d0e48be"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -259,7 +245,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm ausgefahren?" mc="Standard.OpaqueAction" uid="06cbe504-b89b-4af5-8f57-849af5ae5d22"/>
+                      <ID name="Station5 Status überprüfen" mc="Standard.OpaqueAction" uid="ccda7f6d-ee57-4433-a192-b8f6a438b818"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -268,18 +254,18 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Arm ausgefahren?" mc="Standard.OpaqueAction" uid="06cbe504-b89b-4af5-8f57-849af5ae5d22"/>
+          <ID name="Station5 Status überprüfen" mc="Standard.OpaqueAction" uid="ccda7f6d-ee57-4433-a192-b8f6a438b818"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Arm ausgefahren?]]></ATT>
+            <ATT name="Name"><![CDATA[Station5 Status überprüfen]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="Input">
               <OBJECT>
-                <ID name="X-Achse Sensor" mc="Standard.InputPin" uid="34b5810f-a0f1-4f49-94b0-f818d17cbdf0"/>
+                <ID name="Status" mc="Standard.InputPin" uid="4aa81e4d-acf7-4373-a5fd-2e1c1f56b7f3"/>
                 <ATTRIBUTES>
                   <ATT name="IsSelf">false</ATT>
                   <ATT name="IsControl">false</ATT>
@@ -288,7 +274,7 @@
                   <ATT name="Ordering">FIFO</ATT>
                   <ATT name="SelectionBehavior"></ATT>
                   <ATT name="UpperBound"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[X-Achse Sensor]]></ATT>
+                  <ATT name="Name"><![CDATA[Status]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -296,7 +282,7 @@
             </COMP>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="54cac894-c14e-49cb-ba60-070f42e5a657"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="76b9cf43-2715-4864-b35d-65e3fa014620"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -306,7 +292,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="b4d358a5-a28e-45d7-95db-9d1a8218741a"/>
+                      <ID name="Decision-Merge2" mc="Standard.DecisionMergeNode" uid="fd2bbb5a-027b-4950-a42e-6316cee5d494"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -315,18 +301,18 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Werkstück loslassen" mc="Standard.OpaqueAction" uid="57574ace-82a8-4132-9760-15bca8b3717c"/>
+          <ID name="Button Licht einschalten" mc="Standard.OpaqueAction" uid="8044c8c8-b162-4f6a-a2f8-3e2c999ca784"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Werkstück loslassen]]></ATT>
+            <ATT name="Name"><![CDATA[Button Licht einschalten]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="Output">
               <OBJECT>
-                <ID name="Vakuum" mc="Standard.OutputPin" uid="d10e7cbf-803a-4ce2-88cd-43e87f14768f"/>
+                <ID name="Licht" mc="Standard.OutputPin" uid="32586723-a0c4-4a89-bc5d-393fe2e71977"/>
                 <ATTRIBUTES>
                   <ATT name="IsControl">false</ATT>
                   <ATT name="IsExpansion">false</ATT>
@@ -334,13 +320,13 @@
                   <ATT name="Ordering">FIFO</ATT>
                   <ATT name="SelectionBehavior"></ATT>
                   <ATT name="UpperBound"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[Vakuum]]></ATT>
+                  <ATT name="Name"><![CDATA[Licht]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Outgoing">
                     <OBJECT>
-                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="1364a2aa-8f3e-4d30-8381-6914f4bafe73"/>
+                      <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="32dc3ba4-e4f4-4070-b092-36651b358b00"/>
                       <ATTRIBUTES>
                         <ATT name="TransformationBehavior"></ATT>
                         <ATT name="SelectionBehavior"></ATT>
@@ -355,7 +341,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="" mc="Standard.InstanceNode" uid="b5466de6-f125-4277-8a50-f35d9e8f417e"/>
+                            <ID name="" mc="Standard.InstanceNode" uid="866888a0-32d9-4626-bd3b-6a099f2d0533"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -366,7 +352,7 @@
             </COMP>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="76d52eb6-b2e9-434d-acc4-49e1fc0fa384"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="89e775af-d545-44d4-ad06-c2495b91de30"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -376,7 +362,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm ausfahren" mc="Standard.OpaqueAction" uid="ffa2313a-9620-4f98-a220-309da98da41f"/>
+                      <ID name="Alle Aktivitäten einstellen" mc="Standard.OpaqueAction" uid="2a4b7f81-d743-43de-b594-7de69495fbfd"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -385,7 +371,55 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="3f56fae1-d34f-40b3-a7df-ec794ad04f31"/>
+          <ID name="" mc="Standard.InstanceNode" uid="866888a0-32d9-4626-bd3b-6a099f2d0533"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Taster_Rot" mc="Standard.Instance" uid="8fde7b88-4192-40c6-bfa7-bf348f5fa84f"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Alle Aktivitäten einstellen" mc="Standard.OpaqueAction" uid="2a4b7f81-d743-43de-b594-7de69495fbfd"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Alle Aktivitäten einstellen]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="faa6be07-4f58-4a5c-b4c9-a47dbf5e1014"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="439680a3-dc2f-4322-bb0a-bd556f376736"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="04123110-36e8-428d-9d6d-c7910eda1303"/>
           <ATTRIBUTES>
             <ATT name="DecisionKind">ExclusiveDecision</ATT>
             <ATT name="DecisionInputBehavior"></ATT>
@@ -395,9 +429,9 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b6073734-70ab-4be4-be4e-c51b9113dac1"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="8e822d1a-3b5b-4cd0-95ff-6b38f9ffecb4"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"><![CDATA[Ja]]></ATT>
+                  <ATT name="Guard"><![CDATA[Status "KEIN NOT AUS"]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -405,15 +439,15 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Werkstück loslassen" mc="Standard.OpaqueAction" uid="57574ace-82a8-4132-9760-15bca8b3717c"/>
+                      <ID name="Button Status überprüfen" mc="Standard.OpaqueAction" uid="5228f55d-317a-4751-b159-401459ea56f0"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="56f52514-3fb0-4ac8-a419-2cc47f14d263"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b4076fb5-024b-4c4b-9032-8619b94c04a3"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"><![CDATA[Nein]]></ATT>
+                  <ATT name="Guard"><![CDATA[Status "NOT AUS"]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -421,7 +455,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm eingezogen?" mc="Standard.OpaqueAction" uid="eb1508a4-e238-4254-b239-893b43d2cd5d"/>
+                      <ID name="Button Licht einschalten" mc="Standard.OpaqueAction" uid="8044c8c8-b162-4f6a-a2f8-3e2c999ca784"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -430,84 +464,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="b5466de6-f125-4277-8a50-f35d9e8f417e"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Vakuumsauger" mc="Standard.Instance" uid="a6f2000d-bdd8-407a-889c-85c6499ec06f"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="ad2ea262-05d3-4043-9300-f236bccb89c0"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="X-Achse Linearzylinder" mc="Standard.Instance" uid="e071ec1a-204d-438c-82ff-d3348aca58e8"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="37c72a0f-a0db-4ee3-bf91-33eb807a513f"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="X-Achse" mc="Standard.Instance" uid="e524a529-d7cf-42ac-b620-18d38b5dc6bc"/>
-              </REFOBJ>
-            </LINK>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="a9785967-edb9-4a3b-91d9-c578a5d85a55"/>
-                <ATTRIBUTES>
-                  <ATT name="TransformationBehavior"></ATT>
-                  <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="IsMultiCast">false</ATT>
-                  <ATT name="IsMultiReceive">false</ATT>
-                  <ATT name="Effect">ReadFlow</ATT>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="X-Achse Sensor" mc="Standard.InputPin" uid="a37da32d-8d32-406a-8cc2-0b8e20f70403"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="b4d358a5-a28e-45d7-95db-9d1a8218741a"/>
+          <ID name="Decision-Merge1" mc="Standard.DecisionMergeNode" uid="157125bf-7a43-48df-a0c0-d4d33c62c7fe"/>
           <ATTRIBUTES>
             <ATT name="DecisionKind">ExclusiveDecision</ATT>
             <ATT name="DecisionInputBehavior"></ATT>
@@ -517,9 +474,9 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b63e1b4d-2772-4be1-b837-a491509ed9a7"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="d5f0a78f-6543-407a-8f0c-a36697f27af3"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"><![CDATA[Ja]]></ATT>
+                  <ATT name="Guard"><![CDATA[Status "KEIN NOT AUS"]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -527,15 +484,15 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="41c2c13b-49ee-414a-bd32-52ef8c25e806"/>
+                      <ID name="Station3 Status überprüfen" mc="Standard.OpaqueAction" uid="3548dc9c-5172-4746-8a2a-fdd90fd59500"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="30ee6316-520e-4012-b743-d4b8e3d2f5e7"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="7c529ecb-ee8e-4887-b1ea-ca7b7a112f54"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"><![CDATA[Nein]]></ATT>
+                  <ATT name="Guard"><![CDATA[Status "NOT AUS"]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -543,7 +500,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm ausgefahren?" mc="Standard.OpaqueAction" uid="06cbe504-b89b-4af5-8f57-849af5ae5d22"/>
+                      <ID name="Button Licht einschalten" mc="Standard.OpaqueAction" uid="8044c8c8-b162-4f6a-a2f8-3e2c999ca784"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -552,25 +509,52 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="03e7a8c1-dac9-4d16-a65e-866338a77071"/>
+          <ID name="Decision-Merge2" mc="Standard.DecisionMergeNode" uid="fd2bbb5a-027b-4950-a42e-6316cee5d494"/>
           <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[Decision-Merge2]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="X-Achse Linearzylinder" mc="Standard.Instance" uid="e071ec1a-204d-438c-82ff-d3348aca58e8"/>
-              </REFOBJ>
-            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="0bc64ede-9a6d-42f1-91ce-7d45d79d7162"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[Status "KEIN NOT AUS"]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Station5 Status überprüfen" mc="Standard.OpaqueAction" uid="ccda7f6d-ee57-4433-a192-b8f6a438b818"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="26b38dfd-3a0d-4059-bd2f-003e148f0917"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[Status "NOT AUS"]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Button Licht einschalten" mc="Standard.OpaqueAction" uid="8044c8c8-b162-4f6a-a2f8-3e2c999ca784"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="e6ac721d-742d-484e-9e8c-4e80a6f43c02"/>
+          <ID name="" mc="Standard.InstanceNode" uid="c34bf8e7-1f54-49a2-946d-eeaffdb74c64"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -582,12 +566,12 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="X-Achse" mc="Standard.Instance" uid="e524a529-d7cf-42ac-b620-18d38b5dc6bc"/>
+                <ID name="SPS_Station_3" mc="Standard.BindableInstance" uid="aa4355a2-382e-4474-a0d5-b43159e21d1b"/>
               </REFOBJ>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="a1ecc928-0388-4a13-98a4-f44e0a51fea4"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="d0ba47d9-5207-4ec8-a796-3516d00b2322"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -602,7 +586,48 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="X-Achse Sensor" mc="Standard.InputPin" uid="34b5810f-a0f1-4f49-94b0-f818d17cbdf0"/>
+                      <ID name="Status" mc="Standard.InputPin" uid="b06edd0d-7f6f-4ab3-a323-9edc6d4d0a13"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="20a202c9-cd27-418d-aa1c-08b2c830030d"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="SPS_Station_5" mc="Standard.BindableInstance" uid="4a104b21-bd3e-4177-9a2c-4bee0a1e3e1c"/>
+              </REFOBJ>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="b8ba59ad-7b3c-40d4-bdc6-76e6e26c2dd4"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Status" mc="Standard.InputPin" uid="4aa81e4d-acf7-4373-a5fd-2e1c1f56b7f3"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -613,7 +638,7 @@
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
-          <ID name="locals" mc="Standard.Collaboration" uid="643e8f56-3575-444a-8172-1f66a93b0e6f"/>
+          <ID name="locals" mc="Standard.Collaboration" uid="f7d51d7c-9d9c-4902-b80f-2b3472856e15"/>
           <ATTRIBUTES>
             <ATT name="IsConcurrent">false</ATT>
             <ATT name="IsAbstract">false</ATT>
@@ -627,7 +652,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Aussortieren" mc="Standard.ActivityDiagram" uid="6a79d018-2384-4d4a-b9dc-e51f358ce18e"/>
+        <COMPID name="Not-Aus" mc="Standard.ActivityDiagram" uid="9d6987ed-955a-456d-a7a0-6460b450e030"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

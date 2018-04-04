@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Aufräumen" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Aussortieren" version="4">
   <OBJECT>
-    <ID name="Aufräumen" mc="Standard.UseCase" uid="9d30f7ac-6b6c-47f0-9768-c430fdcdff9c"/>
+    <ID name="Aussortieren" mc="Standard.UseCase" uid="78010bc2-f74e-4893-ab02-a55966788b3c"/>
     <PID name="station4" mc="Standard.Package" uid="4341dced-0c2b-4e8c-aa73-b4d8b2d9c054"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,18 +9,18 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Aufräumen]]></ATT>
+      <ATT name="Name"><![CDATA[Aussortieren]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Aufräumen" mc="Standard.Activity" uid="ca1a7f87-6c53-4f1e-8bca-fd823e698a3c"/>
+        <COMPID name="Aussortieren" mc="Standard.Activity" uid="c7a927fb-adeb-413c-bdb3-c916a8e6a6d4"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="5b9cc8ea-06a6-44c8-b69c-913be3299999"/>
+          <ID name="" mc="Infrastructure.Note" uid="36373ff1-9717-46a8-8e4b-5e27f56317f8"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[Aufräumen nach Not-Aus, in einen definierten Zustand bringen. Station4 muss Station3 leeren.]]></ATT>
+            <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -32,7 +32,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="5c407a37-409b-4bb9-915b-a91efca521b4"/>
+          <ID name="" mc="Infrastructure.Note" uid="487ff3ee-485a-440d-b3e9-1d1462d5757d"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -46,7 +46,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="37b22711-4007-4775-ab97-3c788364f1ee"/>
+          <ID name="" mc="Infrastructure.Note" uid="3138d497-efb5-474e-b1b9-89bb8e5117c6"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -60,7 +60,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="164833d2-53ff-4633-8fde-d17f78be309a"/>
+          <ID name="" mc="Infrastructure.Note" uid="7333c405-1dc4-4bdb-b73d-7a54e64b0e31"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -74,7 +74,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="c0cea3f0-1369-44ed-86cc-486718c93722"/>
+          <ID name="" mc="Infrastructure.Note" uid="a323f8b6-a580-4269-a00a-0687c7475861"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -88,7 +88,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="51c52336-57b0-4eab-9da3-d8b29794e344"/>
+          <ID name="" mc="Infrastructure.Note" uid="c1d9d622-de6c-457d-8508-8599ca242964"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
