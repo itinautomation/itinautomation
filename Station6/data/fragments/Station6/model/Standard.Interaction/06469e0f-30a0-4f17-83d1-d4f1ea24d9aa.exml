@@ -236,7 +236,7 @@
                 <ID name="" mc="Standard.InteractionOperand" uid="9e55e35a-2dcd-49f2-8681-c4259d4e53c2"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"><![CDATA[Ausschalten nicht gedrückt]]></ATT>
-                  <ATT name="EndLineNumber">280</ATT>
+                  <ATT name="EndLineNumber">540</ATT>
                   <ATT name="LineNumber">128</ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -2600,55 +2600,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="362c2617-3f07-46e8-b149-1c7615dfdffe"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">457</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="SentMessage">
-              <OBJECT>
-                <ID name="Werkstück wird gerade einsortiert" mc="Standard.Message" uid="ccb238bc-b2bc-400a-9f76-b0e09a7ada13"/>
-                <ATTRIBUTES>
-                  <ATT name="Argument"></ATT>
-                  <ATT name="KindOfMessage">CompleteKind</ATT>
-                  <ATT name="SortOfMessage">ASyncCall</ATT>
-                  <ATT name="Name"><![CDATA[Werkstück wird gerade einsortiert]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="ReceiveEvent">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4c6d18e6-1cb7-4c0a-ae05-d0e025739015"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="SPS6" mc="Standard.Lifeline" uid="d1b1fffe-61a2-4621-b9df-ecd57e7fada2"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4c6d18e6-1cb7-4c0a-ae05-d0e025739015"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">457</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="SPS5" mc="Standard.Lifeline" uid="c0cbec11-eb63-4678-88e4-69b2532c8918"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="21e26d1c-15fa-4b15-b022-15d673c1468a"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">494</ATT>
@@ -2721,13 +2672,7 @@
             <ATT name="Name"><![CDATA[SPS5]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="SPS5" mc="Standard.Instance" uid="c552a99c-f3b2-4046-b8ee-5a6f20395b75"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="SPS6" mc="Standard.Lifeline" uid="d1b1fffe-61a2-4621-b9df-ecd57e7fada2"/>
@@ -2736,13 +2681,7 @@
             <ATT name="Name"><![CDATA[SPS6]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="SPS6" mc="Standard.Instance" uid="f85b8912-07f0-4b99-b942-af2660da41b8"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Button rot" mc="Standard.Lifeline" uid="8597c9ae-56b5-4e15-9f5d-05d2ce123054"/>
@@ -2751,13 +2690,7 @@
             <ATT name="Name"><![CDATA[Button rot]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Button rot" mc="Standard.Instance" uid="8475215a-3ba4-48eb-86aa-a6380819e46e"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Button gelb" mc="Standard.Lifeline" uid="0297a3d3-dd63-4f26-9355-9d4d96eb2884"/>
@@ -2766,13 +2699,7 @@
             <ATT name="Name"><![CDATA[Button gelb]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Button gelb" mc="Standard.Instance" uid="352dc319-672c-47a6-9b39-997f48de9128"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Lampe gelb" mc="Standard.Lifeline" uid="785dfcb9-d85a-441c-8731-6c350207df39"/>
@@ -2781,13 +2708,7 @@
             <ATT name="Name"><![CDATA[Lampe gelb]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Lampe gelb" mc="Standard.Instance" uid="da85da42-4d48-42b5-acf4-559dfe307d68"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Lampe rot" mc="Standard.Lifeline" uid="10c6aab3-b504-4a45-8947-4e3123314afb"/>
@@ -2796,13 +2717,7 @@
             <ATT name="Name"><![CDATA[Lampe rot]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Lampe rot" mc="Standard.Instance" uid="b34a5bf8-7c52-40c8-a3b5-302cff90b02d"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Lichtschranke Lager" mc="Standard.Lifeline" uid="fab5ea82-3312-4957-9c42-9d99ee36315c"/>
@@ -2811,13 +2726,7 @@
             <ATT name="Name"><![CDATA[Lichtschranke Lager]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Lichtschranke Lager" mc="Standard.Instance" uid="5ab64f62-e075-48b0-866d-910531ec2d46"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Lichtschranke Förderband" mc="Standard.Lifeline" uid="4670a0a0-0c81-40c3-8a0b-05ee343b8a4a"/>
@@ -2826,13 +2735,7 @@
             <ATT name="Name"><![CDATA[Lichtschranke Förderband]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Lichtschranke Förderband" mc="Standard.Instance" uid="689ff46e-24f2-40a6-85d4-e9baac50ded6"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Förderband" mc="Standard.Lifeline" uid="0e623506-3837-48ba-9f79-aaa301636f6a"/>
@@ -2841,13 +2744,7 @@
             <ATT name="Name"><![CDATA[Förderband]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Förderband" mc="Standard.Instance" uid="b766cbca-1d67-4f18-af51-c80b5053863a"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Weiche 1" mc="Standard.Lifeline" uid="daa56601-3837-4032-8bc3-e93f0fae7643"/>
@@ -2856,13 +2753,7 @@
             <ATT name="Name"><![CDATA[Weiche 1]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Weiche 1" mc="Standard.Instance" uid="bf464ac1-e407-41a0-9a81-f1171a0960eb"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="Weiche 2" mc="Standard.Lifeline" uid="7cd9141a-3055-4da4-95e8-61ba9fa15710"/>
@@ -2871,13 +2762,7 @@
             <ATT name="Name"><![CDATA[Weiche 2]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Weiche 2" mc="Standard.Instance" uid="ce817905-c8ef-4db9-a270-9b0a55d90eb7"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedCollaboration">
@@ -2922,7 +2807,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="SPS5" mc="Standard.Actor" uid="8682cd0e-a625-4bb7-ae49-c4dee49cbd4e"/>
+                    <ID name="Station5" mc="Standard.Actor" uid="8682cd0e-a625-4bb7-ae49-c4dee49cbd4e"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

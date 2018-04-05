@@ -126,83 +126,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="44931c48-9d8d-4f7f-b8b2-50a4898ee57b"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port6.6" mc="Standard.Port" uid="da070fdb-2674-44d1-99aa-6d606c0e06bd"/>
-              </REFOBJ>
-            </LINK>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="ef3bb30e-06a1-4d1b-b707-51e6d81992c1"/>
-                <ATTRIBUTES>
-                  <ATT name="TransformationBehavior"></ATT>
-                  <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="IsMultiCast">false</ATT>
-                  <ATT name="IsMultiReceive">false</ATT>
-                  <ATT name="Effect">ReadFlow</ATT>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Lagerkapazität prüfen" mc="Standard.CallBehaviorAction" uid="a5e2e7ad-21bf-499e-9b9c-8d1a2e5c96d6"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="ca229f97-c9a1-4047-98de-139b5ff1764a"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port6.1.2" mc="Standard.Port" uid="b606d025-64ce-490b-baec-bff6a9938bd0"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="7bea20f3-a9fc-4b7c-8b7c-249dcad7c5cd"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port6.1.2" mc="Standard.Port" uid="b606d025-64ce-490b-baec-bff6a9938bd0"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Gelbe Lampe ausschalten" mc="Standard.CallBehaviorAction" uid="d8da2c0a-a8c5-4544-bea0-e5710735b1f5"/>
           <ATTRIBUTES>
             <ATT name="IsSynchronous">true</ATT>
@@ -217,7 +140,23 @@
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="d11d5bd0-000e-49db-8297-00b982edbd15"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="9ab5b446-5ffe-4588-981e-11c2dabbfaa5"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="1sec" mc="Standard.AcceptTimeEventAction" uid="e1307c19-8feb-4dff-b242-6b9f482a1691"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="49c43e63-d3dd-4ad7-8146-c86c1f774099"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -232,23 +171,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="7bea20f3-a9fc-4b7c-8b7c-249dcad7c5cd"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="9ab5b446-5ffe-4588-981e-11c2dabbfaa5"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="1sec" mc="Standard.AcceptTimeEventAction" uid="e1307c19-8feb-4dff-b242-6b9f482a1691"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="6384a0ff-5d60-4ae1-b7cb-181e5021696b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -271,7 +194,23 @@
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="3da69367-5cb3-404c-95d2-4d456afd093b"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="672aa7a7-f500-40cd-ba36-f77151804f51"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="1sec" mc="Standard.AcceptTimeEventAction" uid="5242cb18-4dda-4330-a192-f92fe53f3841"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="5d22da97-0e75-42a7-9903-783c0b1079a0"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -286,23 +225,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="ca229f97-c9a1-4047-98de-139b5ff1764a"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="672aa7a7-f500-40cd-ba36-f77151804f51"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="1sec" mc="Standard.AcceptTimeEventAction" uid="5242cb18-4dda-4330-a192-f92fe53f3841"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="55c86c53-6319-407f-90aa-c74e2fb829fd"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -370,6 +293,83 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="6384a0ff-5d60-4ae1-b7cb-181e5021696b"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe gelb" mc="Standard.BindableInstance" uid="3f2ddf26-0654-45b6-ad87-c67819b1e7d8"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="55c86c53-6319-407f-90aa-c74e2fb829fd"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe gelb" mc="Standard.BindableInstance" uid="3f2ddf26-0654-45b6-ad87-c67819b1e7d8"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="d68448ac-7a88-4620-9ff6-b711073dda21"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lichtschranke Lager" mc="Standard.BindableInstance" uid="2356f332-7fef-4c4e-8661-86a3b20f4931"/>
+              </REFOBJ>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="949bc54c-3780-4068-b4de-ccd0d65319f8"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Lagerkapazität prüfen" mc="Standard.CallBehaviorAction" uid="a5e2e7ad-21bf-499e-9b9c-8d1a2e5c96d6"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
@@ -387,7 +387,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="5a9b5884-e85c-4b8c-9ac3-4d7e53034f97"/>
+        <COMPID name="AD Lager prüfen" mc="Standard.ActivityDiagram" uid="5a9b5884-e85c-4b8c-9ac3-4d7e53034f97"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -216,8 +216,7 @@
 *Station5->6*: "Werkstück verfügbar, Typ X" // Typ des vordersten Werkstückes
 *Station6->5*: "Werkstück anfordern" //Meldung, dass Station 6 bereit fürs Sortieren ist (Weiche bereits gestellt)
 *Station5->6*: "Werkstück wurde übergeben" // Station 5 hat das Förderband betätigt, Werkstück liegt auf der Rutsche, Förderband ist wieder aus
-*Station6->5*: "Werkstück wird gerade einsortiert" // Förderband bei Station 6 läuft also gerade --> Station 5 muss Förderband gestoppt halten
-*Station6->5*: "Werkstück wurde einsortiert" // Förderband bei Station 6 ist gestoppt]]></ATT>
+*Station6->5*: "Werkstück wurde einsortiert" // Förderband bei Station 6 ist gestoppt, Station 5 kann Förderband ggf. wieder bedienen]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"><![CDATA[Note1]]></ATT>
             <ATT name="status">1970354901745664</ATT>

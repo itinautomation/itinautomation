@@ -70,47 +70,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="9577f545-394c-4e99-b1ff-0be66284ca0f"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port6.5" mc="Standard.Port" uid="12b4ea29-25b0-4c29-9413-97762ba664f1"/>
-              </REFOBJ>
-            </LINK>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="60f9e0b6-9191-44d5-b4e6-559d7d2041c8"/>
-                <ATTRIBUTES>
-                  <ATT name="TransformationBehavior"></ATT>
-                  <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="IsMultiCast">false</ATT>
-                  <ATT name="IsMultiReceive">false</ATT>
-                  <ATT name="Effect">ReadFlow</ATT>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Annahme prüfen" mc="Standard.OpaqueAction" uid="52f410f3-e2e8-4ac4-88ba-aa62cc23c290"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="2dbba169-7b69-44f8-a864-3eb748e01873"/>
           <ATTRIBUTES>
             <ATT name="DecisionKind">ExclusiveDecision</ATT>
@@ -194,7 +153,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="b998f48d-ce16-48b0-8b95-b9db875ad0af"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="cd29acf7-b3c7-45b4-b3ea-7c4e470ee5d9"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -209,7 +168,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="4e4e74b4-d58e-443c-bc8e-be222a260c10"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="22853bfe-bbd9-45fa-94e0-bcbb21161adc"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -248,7 +207,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="7aaf1ba4-8a29-4e0c-b82b-4ae4009afd08"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="3204c24e-ebc6-442f-83c6-e2db394bc854"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -263,7 +222,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="d9ffa6ee-9592-45ec-ad04-149d91f93f99"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="3d4bbc79-8a58-44db-a867-354530dfff91"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -332,7 +291,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="4e4e74b4-d58e-443c-bc8e-be222a260c10"/>
+          <ID name="" mc="Standard.InstanceNode" uid="d121e300-d677-4888-966d-99ee0f9f1c97"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -344,13 +303,54 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.1.2" mc="Standard.Port" uid="b606d025-64ce-490b-baec-bff6a9938bd0"/>
+                <ID name="Lichtschranke Förderband" mc="Standard.BindableInstance" uid="3fbce50b-12f7-4e0a-bb05-0d3aac28f1bc"/>
+              </REFOBJ>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="d5633a50-56d6-4b1c-8d33-2a73bc5c02f1"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Annahme prüfen" mc="Standard.OpaqueAction" uid="52f410f3-e2e8-4ac4-88ba-aa62cc23c290"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="3d4bbc79-8a58-44db-a867-354530dfff91"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe gelb" mc="Standard.BindableInstance" uid="3f2ddf26-0654-45b6-ad87-c67819b1e7d8"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="d9ffa6ee-9592-45ec-ad04-149d91f93f99"/>
+          <ID name="" mc="Standard.InstanceNode" uid="22853bfe-bbd9-45fa-94e0-bcbb21161adc"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -362,7 +362,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.1.2" mc="Standard.Port" uid="b606d025-64ce-490b-baec-bff6a9938bd0"/>
+                <ID name="Lampe gelb" mc="Standard.BindableInstance" uid="3f2ddf26-0654-45b6-ad87-c67819b1e7d8"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>

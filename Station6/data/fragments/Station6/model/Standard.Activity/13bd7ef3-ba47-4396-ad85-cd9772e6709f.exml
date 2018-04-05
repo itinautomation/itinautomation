@@ -78,7 +78,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="5656ed5e-1fe2-4224-bb8f-6ed6237a7783"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="cb6b1ca0-def2-4a2c-95de-02469e9f072d"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -93,7 +93,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="9f9fed7e-8190-4b19-80e0-d2d024c785a2"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="65a14366-34da-468c-b57d-7f36cfb94431"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -102,7 +102,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="9f9fed7e-8190-4b19-80e0-d2d024c785a2"/>
+          <ID name="" mc="Standard.InstanceNode" uid="65a14366-34da-468c-b57d-7f36cfb94431"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -114,7 +114,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.7" mc="Standard.Port" uid="0c29f90d-705a-4e26-81f6-8412484a16e2"/>
+                <ID name="Förderband" mc="Standard.BindableInstance" uid="15765375-aff3-4f74-84fb-a2577e86c77c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -132,11 +132,28 @@
             <ATT name="Name"><![CDATA[locals]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="794fe1e0-b061-415b-b31b-65e0d3365514"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="e0a4acf6-6662-4887-ba4d-62cec17f0a6f"/>
+        <COMPID name="AD Förderband starten" mc="Standard.ActivityDiagram" uid="e0a4acf6-6662-4887-ba4d-62cec17f0a6f"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

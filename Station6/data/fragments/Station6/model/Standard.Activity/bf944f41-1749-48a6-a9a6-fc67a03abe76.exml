@@ -395,7 +395,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="f130bedc-b8b1-4f32-81b3-c40bfc28bfc3"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="19bdcd5d-0d1e-48d7-b2c8-9985a762091a"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -410,7 +410,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="9c6dfc95-b540-42ed-bbf3-d03f227221a9"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="597fda9a-7feb-47af-9ccb-3ca213c0e93f"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -473,56 +473,6 @@
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="b60247d2-322f-4bf1-854b-d3d826325150"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Werkstück wird gerade einsortiert" mc="Standard.SendSignalAction" uid="dd78e36e-4760-47ff-ab8c-39d80c040c4f"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Werkstück wird gerade einsortiert" mc="Standard.SendSignalAction" uid="dd78e36e-4760-47ff-ab8c-39d80c040c4f"/>
-          <ATTRIBUTES>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Werkstück wird gerade einsortiert]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="07d1272c-3df8-4219-b085-06ea457d0337"/>
-                <ATTRIBUTES>
-                  <ATT name="TransformationBehavior"></ATT>
-                  <ATT name="SelectionBehavior"></ATT>
-                  <ATT name="IsMultiCast">false</ATT>
-                  <ATT name="IsMultiReceive">false</ATT>
-                  <ATT name="Effect">ReadFlow</ATT>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="84476e70-98f2-44f1-b893-c3cca2ee7c30"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -537,7 +487,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="b7b1173e-90c5-44af-9449-b330400d60a8"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="f7fbe564-4760-4e3a-af26-aef43ebe1a33"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -552,7 +502,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="bb7cb0bf-e87d-449a-a460-a496911a99bc"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="62fa9e86-2570-445b-a816-68a5f57b64ae"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -606,7 +556,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="9c6dfc95-b540-42ed-bbf3-d03f227221a9"/>
+          <ID name="" mc="Standard.InstanceNode" uid="597fda9a-7feb-47af-9ccb-3ca213c0e93f"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -618,13 +568,13 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
+                <ID name="SPS5" mc="Standard.BindableInstance" uid="e1b7f2eb-7e60-4f2a-a8fd-9ecbda39e97f"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="84476e70-98f2-44f1-b893-c3cca2ee7c30"/>
+          <ID name="" mc="Standard.InstanceNode" uid="0b9e1eb7-89c6-4d0e-b15f-ef5eb28c4bd7"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -636,48 +586,12 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="bb7cb0bf-e87d-449a-a460-a496911a99bc"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port_sps5.1" mc="Standard.Port" uid="b1a62776-70a1-4922-8d3d-737c6af528b2"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="f4fb4fcc-1056-469d-805a-aa34b69d5eca"/>
-          <ATTRIBUTES>
-            <ATT name="IsControlType">false</ATT>
-            <ATT name="Ordering">FIFO</ATT>
-            <ATT name="SelectionBehavior"></ATT>
-            <ATT name="UpperBound"><![CDATA[1]]></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="port_sps5.2" mc="Standard.Port" uid="69e83d8e-e548-4519-abd3-bf735b1b147c"/>
+                <ID name="SPS5" mc="Standard.BindableInstance" uid="e1b7f2eb-7e60-4f2a-a8fd-9ecbda39e97f"/>
               </REFOBJ>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="57d749b3-3682-4797-bfda-701fb2a53e8b"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="02327e98-4486-41b3-a9b1-8cbab7920ae4"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -700,6 +614,24 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="62fa9e86-2570-445b-a816-68a5f57b64ae"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="SPS5" mc="Standard.BindableInstance" uid="e1b7f2eb-7e60-4f2a-a8fd-9ecbda39e97f"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
@@ -717,7 +649,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="ceb1190b-36f1-403b-a928-47cf4c7cb817"/>
+        <COMPID name="AD Einsortieren" mc="Standard.ActivityDiagram" uid="ceb1190b-36f1-403b-a928-47cf4c7cb817"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

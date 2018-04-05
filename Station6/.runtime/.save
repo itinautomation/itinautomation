@@ -1,9 +1,24 @@
-#Tue Apr 03 20:04:07 CEST 2018
-org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
-org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.diagram.editor.OpenedDiagrams3='Block diagram' {cb583ce7-de04-4836-8fd2-1e9abab2088e} Standard.StaticDiagram
-org.modelio.diagram.editor.OpenedDiagrams2='Activity diagram' {763f29f8-8224-4b6b-8da5-e6b51717eefe} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams1='Activity diagram' {ceb1190b-36f1-403b-a928-47cf4c7cb817} Standard.ActivityDiagram
-org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams0='Activity diagram' {f0cd8a76-4daa-4710-85c9-499ab3e03984} Standard.ActivityDiagram
+#Thu Apr 05 19:07:09 CEST 2018
+org.modelio.diagram.editor.OpenedDiagrams9='AD Einschalten' {035eaf39-4332-48e7-b127-0b31682073f6} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams8='Activity diagram' {446f585c-8d91-4ebd-8efc-a984aee4be48} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Activity1 diagram' {700a7ae1-c670-4518-8065-078df51e4040} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='AD Not-Aus' {9ac1a71b-5fba-4cb3-b481-ca42ea0017f9} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Sequence diagram' {70f2990b-4e2c-4fad-9933-fe1d117104e6} Standard.SequenceDiagram
 org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams4='Use Case diagram' {81d79a5d-edea-436a-bed4-a3eb292a073e} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Block diagram' {cb583ce7-de04-4836-8fd2-1e9abab2088e} Standard.StaticDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='AD Entgegennehmen' {763f29f8-8224-4b6b-8da5-e6b51717eefe} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='AD Einsortieren' {ceb1190b-36f1-403b-a928-47cf4c7cb817} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Activity diagram' {f0cd8a76-4daa-4710-85c9-499ab3e03984} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams18='AD Lager pr\u00FCfen' {5a9b5884-e85c-4b8c-9ac3-4d7e53034f97} Standard.ActivityDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.diagram.editor.OpenedDiagrams17='AD Zur\u00FCcksetzen' {68b63dd5-f4a5-4124-af97-1a9e437748fd} Standard.ActivityDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams16='AD F\u00F6rderband stoppen' {399f752b-39cf-408a-8c9a-123b0be0cf21} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams15='AD F\u00F6rderband starten' {e0a4acf6-6662-4887-ba4d-62cec17f0a6f} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams14='AD Weiche 2 zur\u00FCck stellen' {136fd34b-f9cf-42c8-b89a-486f90da1a32} Standard.ActivityDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mypc/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams13='AD Weiche 2 stellen' {d10ae12e-9149-4789-920f-7e038b38a587} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams12='AD Weiche 1 zur\u00FCck stellen' {5a1db03a-3958-41d1-bfdb-aa2b8b8b7312} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams11='AD Weiche 1 stellen' {9971bbf1-3809-486f-9b48-420fdab41d51} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='AD Ausschalten' {1b65e070-b9f7-4280-9ff9-677247b2235d} Standard.ActivityDiagram
