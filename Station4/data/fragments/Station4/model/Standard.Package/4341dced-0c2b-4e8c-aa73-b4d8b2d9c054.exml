@@ -30,7 +30,6 @@
         <COMPID name="Werkstücktransport" mc="Standard.UseCase" uid="497d12ba-1857-4c66-b8df-3d485aec61e2"/>
         <COMPID name="Übernahme" mc="Standard.UseCase" uid="f309e127-d142-4d37-b44d-7b0d0050c44e"/>
         <COMPID name="Übergabe" mc="Standard.UseCase" uid="edeb30e7-a95a-4e7d-97b4-4c049fc976fe"/>
-        <COMPID name="Station3" mc="Standard.Actor" uid="c74d7616-52b0-4693-9ac2-fa129bc4715a"/>
         <COMPID name="Station5" mc="Standard.Actor" uid="156b6e85-547d-400e-86cf-bac3d961a5b0"/>
         <COMPID name="Einschalten" mc="Standard.UseCase" uid="81dfdd45-327b-4c72-9f24-28b6d41f254d"/>
         <COMPID name="Aussortieren" mc="Standard.UseCase" uid="78010bc2-f74e-4893-ab02-a55966788b3c"/>
@@ -41,10 +40,12 @@
         <COMPID name="SPS" mc="Standard.Class" uid="3da2f66e-39cc-47a0-927c-7d4c5b92a525"/>
         <COMPID name="Aktuator" mc="Standard.Class" uid="7d3fa08b-d0dd-46a8-abeb-59636e90178e"/>
         <COMPID name="Taster" mc="Standard.Class" uid="5d4a8d60-9adb-4849-bd93-cdd0c864fb2b"/>
+        <COMPID name="Produktionsstrasse" mc="Standard.Class" uid="52b0a515-4a65-4b15-8988-25c46db66b63"/>
+        <COMPID name="Station3" mc="Standard.Actor" uid="c74d7616-52b0-4693-9ac2-fa129bc4715a"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="ca401254-3f15-4277-8dda-11aa91e5f188"/>
-        <COMPID name="Overview Block diagram" mc="Standard.StaticDiagram" uid="4bf706ca-f770-4571-bb34-ca4359e40681"/>
+        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="4bf706ca-f770-4571-bb34-ca4359e40681"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

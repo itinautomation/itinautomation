@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Station4" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Produktionsstrasse" version="4">
   <OBJECT>
-    <ID name="Station4" mc="Standard.Class" uid="50f58008-a452-41dd-a83b-02cbaa49edcf"/>
+    <ID name="Produktionsstrasse" mc="Standard.Class" uid="52b0a515-4a65-4b15-8988-25c46db66b63"/>
     <PID name="station4" mc="Standard.Package" uid="4341dced-0c2b-4e8c-aa73-b4d8b2d9c054"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,28 +11,28 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Station4]]></ATT>
+      <ATT name="Name"><![CDATA[Produktionsstrasse]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="InternalStructure">
         <OBJECT>
-          <ID name="SPS_Station_4" mc="Standard.BindableInstance" uid="24b1e4b2-a936-4a74-af35-3304d0066c0b"/>
+          <ID name="Station4" mc="Standard.BindableInstance" uid="40191d6b-e35d-48b9-9e12-1c89e022ff3c"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[SPS_Station_4]]></ATT>
+            <ATT name="Name"><![CDATA[Station4]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
-              <ID name="SPS" mc="Standard.Class" uid="3da2f66e-39cc-47a0-927c-7d4c5b92a525"/>
+              <ID name="Station4" mc="Standard.Class" uid="50f58008-a452-41dd-a83b-02cbaa49edcf"/>
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="" mc="Standard.Port" uid="a554e2a9-e232-4864-b701-97d7339c52eb"/>
+                <ID name="" mc="Standard.Port" uid="332d6120-48c1-4e58-9f81-bb9b4185ff55"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
@@ -51,7 +51,7 @@
                   </LINK>
                   <COMP relation="Tag">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="3f218380-4ff2-47b1-b6b0-f854fe853367"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="d8de5808-fa8a-404a-8187-92e98a3f3355"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -59,7 +59,7 @@
                       <DEPENDENCIES>
                         <COMP relation="Actual">
                           <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="5760043c-9d06-47fe-af34-b8a7abd1692d"/>
+                            <ID name="" mc="Infrastructure.TagParameter" uid="bec2404c-eabb-4736-b909-b81a1707fd70"/>
                             <ATTRIBUTES>
                               <ATT name="Value"><![CDATA[INOUT]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
@@ -79,22 +79,22 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Handhaben" mc="Standard.BindableInstance" uid="a14a4622-524b-4b76-9e8b-d491226ad401"/>
+          <ID name="Station3" mc="Standard.BindableInstance" uid="2bbc594f-46e5-420d-b8a1-97e3e7c8cc18"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Handhaben]]></ATT>
+            <ATT name="Name"><![CDATA[Station3]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
-              <ID name="Handhaben" mc="Standard.Class" uid="59faaffe-f93a-4188-960e-7bada0c4f29a"/>
+              <ID name="Station3" mc="Standard.Actor" uid="c74d7616-52b0-4693-9ac2-fa129bc4715a"/>
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="" mc="Standard.Port" uid="2ef70471-7348-492d-81a3-3fe659c08ab7"/>
+                <ID name="" mc="Standard.Port" uid="55929b71-b538-46e2-a020-862ddd0cde06"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
@@ -113,7 +113,7 @@
                   </LINK>
                   <COMP relation="Tag">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="631cb754-d8df-4b32-9076-1cd0c61146ac"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="32c6b46b-97d8-457e-8de4-d7bf876ec2f2"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -121,7 +121,7 @@
                       <DEPENDENCIES>
                         <COMP relation="Actual">
                           <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="76709567-3d31-4d25-bb5c-fa5563e58c66"/>
+                            <ID name="" mc="Infrastructure.TagParameter" uid="117418cd-1432-4f83-9ca5-efd40a0fc0f2"/>
                             <ATTRIBUTES>
                               <ATT name="Value"><![CDATA[INOUT]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
@@ -141,22 +141,22 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Tasterblock" mc="Standard.BindableInstance" uid="0e6be0af-aed7-4a5e-b2b2-073fdd0f8aa2"/>
+          <ID name="Station5" mc="Standard.BindableInstance" uid="955cc59b-b89c-4df8-ae22-f01b4d7434c6"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Tasterblock]]></ATT>
+            <ATT name="Name"><![CDATA[Station5]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
-              <ID name="Tasterblock" mc="Standard.Class" uid="07b613d2-06d2-4aa5-881f-b30756d03d1d"/>
+              <ID name="Station5" mc="Standard.Actor" uid="156b6e85-547d-400e-86cf-bac3d961a5b0"/>
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="" mc="Standard.Port" uid="999ff41a-19a0-4279-a40a-c20db12d7a65"/>
+                <ID name="" mc="Standard.Port" uid="f6a1515c-3316-45a1-ab9c-de034eefb5d4"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
@@ -175,7 +175,7 @@
                   </LINK>
                   <COMP relation="Tag">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="7fef9468-aeed-4f01-b01b-45a2d1a61638"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="43913015-2d4e-4d37-88cc-ad5c14c01451"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -183,7 +183,7 @@
                       <DEPENDENCIES>
                         <COMP relation="Actual">
                           <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="c976a5c1-5ff4-43cf-921a-23c7658f5be8"/>
+                            <ID name="" mc="Infrastructure.TagParameter" uid="59526a69-d830-490a-93e8-4b7a9811284a"/>
                             <ATTRIBUTES>
                               <ATT name="Value"><![CDATA[INOUT]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
@@ -196,28 +196,28 @@
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="ac19e21a-20d0-4347-8f82-23b3d2398157"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="isConjugated" mc="Infrastructure.TagType" uid="04c83455-5485-11e0-b794-0027103f347c"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Rutsche" mc="Standard.BindableInstance" uid="214e1edf-1a42-4cd5-a2b5-4452269c805e"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Rutsche]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedInformationFlow">
         <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="7f12cae8-5a25-46c1-b701-0c74424571c5"/>
+          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="7b9b8644-2069-47ef-bc96-f28c59ba2252"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -225,18 +225,18 @@
           <DEPENDENCIES>
             <LINK relation="InformationSource">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="2ef70471-7348-492d-81a3-3fe659c08ab7"/>
+                <ID name="" mc="Standard.Port" uid="55929b71-b538-46e2-a020-862ddd0cde06"/>
               </REFOBJ>
             </LINK>
             <LINK relation="InformationTarget">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="a554e2a9-e232-4864-b701-97d7339c52eb"/>
+                <ID name="" mc="Standard.Port" uid="332d6120-48c1-4e58-9f81-bb9b4185ff55"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="e3f5d337-0977-4580-afd9-cd287d35f8db"/>
+          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="11c00294-911c-4ef2-b301-afd5badfa7c1"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -244,12 +244,12 @@
           <DEPENDENCIES>
             <LINK relation="InformationSource">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="999ff41a-19a0-4279-a40a-c20db12d7a65"/>
+                <ID name="" mc="Standard.Port" uid="f6a1515c-3316-45a1-ab9c-de034eefb5d4"/>
               </REFOBJ>
             </LINK>
             <LINK relation="InformationTarget">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="a554e2a9-e232-4864-b701-97d7339c52eb"/>
+                <ID name="" mc="Standard.Port" uid="332d6120-48c1-4e58-9f81-bb9b4185ff55"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -258,20 +258,6 @@
       <LINK relation="Extension">
         <FOREIGNID name="Block" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
       </LINK>
-      <COMP relation="Tag">
-        <OBJECT>
-          <ID name="" mc="Infrastructure.TaggedValue" uid="3ffd84b6-a5aa-4ab9-941a-b12ecfc9aa87"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Definition">
-              <FOREIGNID name="Block_isEncapsulated" mc="Infrastructure.TagType" uid="00bc42a4-0000-19d1-0000-000000000000"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>
