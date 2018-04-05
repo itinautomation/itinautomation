@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SIDefinitions" version="4">
+  <OBJECT>
+    <ID name="SIDefinitions" mc="Standard.Project" uid="256e1bc8-25d9-47da-8dc9-1d1a014a9bcf"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[SIDefinitions]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="SIDefinitions" mc="Standard.Package" uid="8bc1d9de-0c59-47e6-8050-d0959f06a9fc"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
