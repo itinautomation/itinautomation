@@ -78,7 +78,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="13e65089-1efc-43a0-9bba-fc881602fb69"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="8e53985c-4eb1-4167-9944-1ee98b57a040"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -93,7 +93,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="8ddcb68b-02f4-4022-95c3-50c63f0abf10"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="d3c4cfb9-d5cf-42a7-9598-c24f332a6d52"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -102,7 +102,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="8ddcb68b-02f4-4022-95c3-50c63f0abf10"/>
+          <ID name="" mc="Standard.InstanceNode" uid="d3c4cfb9-d5cf-42a7-9598-c24f332a6d52"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -114,7 +114,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.8" mc="Standard.Port" uid="2341c7de-e709-4762-84dd-45531b9dbd74"/>
+                <ID name="Weiche 1" mc="Standard.BindableInstance" uid="10eaf55a-7623-4886-b5ab-e74ceb7991cc"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -136,7 +136,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="9971bbf1-3809-486f-9b48-420fdab41d51"/>
+        <COMPID name="AD Weiche 1 stellen" mc="Standard.ActivityDiagram" uid="9971bbf1-3809-486f-9b48-420fdab41d51"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

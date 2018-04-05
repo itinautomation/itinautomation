@@ -78,7 +78,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="8eb69776-6e8e-4004-93fd-a9063f0abfca"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="e37e47f6-fe0a-4ad9-b4ea-669e8c757f4a"/>
                 <ATTRIBUTES>
                   <ATT name="TransformationBehavior"></ATT>
                   <ATT name="SelectionBehavior"></ATT>
@@ -93,7 +93,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="" mc="Standard.InstanceNode" uid="8fe5645a-dbce-4de8-abd1-6394bc490175"/>
+                      <ID name="" mc="Standard.InstanceNode" uid="df10b52f-0571-4450-8cf1-0458852ed98f"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -102,7 +102,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.InstanceNode" uid="8fe5645a-dbce-4de8-abd1-6394bc490175"/>
+          <ID name="" mc="Standard.InstanceNode" uid="df10b52f-0571-4450-8cf1-0458852ed98f"/>
           <ATTRIBUTES>
             <ATT name="IsControlType">false</ATT>
             <ATT name="Ordering">FIFO</ATT>
@@ -114,7 +114,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="port6.8" mc="Standard.Port" uid="2341c7de-e709-4762-84dd-45531b9dbd74"/>
+                <ID name="Weiche 1" mc="Standard.BindableInstance" uid="10eaf55a-7623-4886-b5ab-e74ceb7991cc"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -136,7 +136,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Activity diagram" mc="Standard.ActivityDiagram" uid="5a1db03a-3958-41d1-bfdb-aa2b8b8b7312"/>
+        <COMPID name="AD Weiche 1 zurück stellen" mc="Standard.ActivityDiagram" uid="5a1db03a-3958-41d1-bfdb-aa2b8b8b7312"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

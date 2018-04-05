@@ -5,7 +5,7 @@
     <PID name="Gelbe Lampe ausschalten" mc="Standard.Activity" uid="f598059a-e1b1-424f-aae2-8cf8fb9f91e8"/>
     <ATTRIBUTES>
       <ATT name="IsVertical">false</ATT>
-      <ATT name="UiDataVersion">191</ATT>
+      <ATT name="UiDataVersion">335</ATT>
       <ATT name="UiData"><![CDATA[eJztU8FO4zAQ/RXL97qwhFWQQlFpUIUIFBUWiROaxNOuWceubLc0f79OkwAtahQktFz2ZOt53sy88ZvobJ1LskJjhVan9JAdUHI2iCbpM2aOCO4hSlyxwFOqzZzlmqMUmnEBcwM5Qy6cNgwyJ1bCFQwl5qicfUWawHE+rJG4QijJ4Vmbp9fSB3QQ3Rq9QOMKoiD3FSUUeulicODfHkAusW5FLaWk/UHUbwgfqHeukEi3hPxoE2LLeMsybZBV3A79jcBmwJE3xS7WboqzjlVufIqaSXDt4vTS97i5lpfrikmO2HpHaL+S1CbeoASH3PeyM7frEiKrEilHBIqD4WznZ0gQ/Jwdh8dZL+Qnh70AU94LcZb14CQMADFIMQjbpy/BuiulX1QCKcqdJu6cEWpOB01ZUk8n6m+iWoVpiZdqpPOFtsL5b9mTukOq0W8hucEyQyJsOc762MtIhPpju4efz2MDL76dBAo021Y8at2pZod4xbdMlhn8Cm0l/Df78znWtxtP8D2OiMcsGT5eTJ/Oh6Or8XTy6yb+GpN0WMf33/ZmoHd2CP7b4bvscD+5/Wof7H36C/+cmP4=]]></ATT>
       <ATT name="Name"><![CDATA[Activity diagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>
