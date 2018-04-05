@@ -408,12 +408,12 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="Werkstück kann abgelegt werden" mc="Standard.Message" uid="1ee7b979-ab68-450a-93cf-b47139799ac8"/>
+                <ID name="Bereit zur Übernahme" mc="Standard.Message" uid="1ee7b979-ab68-450a-93cf-b47139799ac8"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">ASyncCall</ATT>
-                  <ATT name="Name"><![CDATA[Werkstück kann abgelegt werden]]></ATT>
+                  <ATT name="Name"><![CDATA[Bereit zur Übernahme]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -422,6 +422,22 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7e30de41-0a90-4b59-8bbf-cfe969ce3244"/>
                     </REFOBJ>
                   </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Infrastructure.Note" uid="adf631f0-1961-4ac5-a9fb-7608812fce83"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[Platz frei und Förderband angehalten]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>

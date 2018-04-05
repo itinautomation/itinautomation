@@ -13,9 +13,6 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="OwnedBehavior">
-        <COMPID name="Übernahme" mc="Standard.Activity" uid="758671f4-c87a-4805-b07c-7f43fff48717"/>
-      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="89b21a05-86d0-4572-8b76-978ff58788cf"/>

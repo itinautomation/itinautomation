@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Übergabe" version="4">
   <OBJECT>
     <ID name="Übergabe" mc="Standard.Activity" uid="0f363916-1dcc-4105-b3e9-a43f6e5ccc66"/>
-    <PID name="Übergabe" mc="Standard.UseCase" uid="edeb30e7-a95a-4e7d-97b4-4c049fc976fe"/>
+    <PID name="station4" mc="Standard.Package" uid="4341dced-0c2b-4e8c-aa73-b4d8b2d9c054"/>
     <ATTRIBUTES>
       <ATT name="IsSingleExecution">false</ATT>
       <ATT name="IsReadOnly">false</ATT>

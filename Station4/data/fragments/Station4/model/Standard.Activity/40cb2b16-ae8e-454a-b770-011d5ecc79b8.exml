@@ -31,7 +31,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Hebezylinder ausfahren" mc="Standard.CallBehaviorAction" uid="096d3b7b-87ec-43fa-82cc-eacf1774b7ef"/>
+                      <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="1a1a0f14-3719-4811-9010-435decf62b88"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -169,7 +169,7 @@
             </COMP>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="c103d5ac-45ac-4d58-b93e-5e63a3e24a54"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="18caea08-bd69-4295-872a-1e21ea9e254c"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -179,7 +179,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Hebezylinder einfahren" mc="Standard.CallBehaviorAction" uid="9dd43b9b-208d-4cb4-ab21-adc4839a4cf0"/>
+                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="ba01be27-fb10-4ea4-930a-6dc9b453d125"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -345,21 +345,21 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Hebezylinder einfahren" mc="Standard.CallBehaviorAction" uid="9dd43b9b-208d-4cb4-ab21-adc4839a4cf0"/>
+          <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="1a1a0f14-3719-4811-9010-435decf62b88"/>
           <ATTRIBUTES>
             <ATT name="IsSynchronous">true</ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Hebezylinder einfahren]]></ATT>
+            <ATT name="Name"><![CDATA[Arm ausfahren]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Called">
-              <ID name="Hebezylinder einfahren" mc="Standard.Activity" uid="6a9516ec-97d0-47b7-a4fa-e9aee6f479b6"/>
+              <ID name="Arm ausfahren" mc="Standard.Activity" uid="a2cd83cf-b0a7-4fd4-8f94-0bdac2f901c1"/>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="1778aeca-f8b8-40f4-88af-2afc4a99f63f"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="43e05da5-e1e7-49b6-9814-6148577634a2"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -369,7 +369,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="ba01be27-fb10-4ea4-930a-6dc9b453d125"/>
+                      <ID name="Hebezylinder ausfahren" mc="Standard.CallBehaviorAction" uid="096d3b7b-87ec-43fa-82cc-eacf1774b7ef"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

@@ -21,7 +21,17 @@
         <COMPID name="Hebezylinder einfahren" mc="Standard.Activity" uid="6a9516ec-97d0-47b7-a4fa-e9aee6f479b6"/>
         <COMPID name="Hebezylinder ausfahren" mc="Standard.Activity" uid="cac460f9-375c-42dc-80a4-47737d9a61ed"/>
         <COMPID name="Übernahme / Übergabe" mc="Standard.Interaction" uid="acbb8642-e801-4638-8f84-3cdc2b7f77f5"/>
-        <COMPID name="Station 4 - Generelles Verhalten" mc="Standard.Activity" uid="adb09793-ad44-4271-9479-5872de9a38ee"/>
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="7b708efd-dd50-4712-82b9-3336c5d43c0c"/>
+        <COMPID name="Einschalten" mc="Standard.Activity" uid="49ec486e-0ec8-4eba-b464-620c2549a9fe"/>
+        <COMPID name="Aussortieren" mc="Standard.Activity" uid="c7a927fb-adeb-413c-bdb3-c916a8e6a6d4"/>
+        <COMPID name="Not-Aus zurücknehmen" mc="Standard.Activity" uid="ac6acb65-34e0-4937-8e01-0112cdf99317"/>
+        <COMPID name="Übergabe" mc="Standard.Activity" uid="0f363916-1dcc-4105-b3e9-a43f6e5ccc66"/>
+        <COMPID name="Übernahme" mc="Standard.Activity" uid="758671f4-c87a-4805-b07c-7f43fff48717"/>
+        <COMPID name="Werkstücktransport" mc="Standard.Activity" uid="59e9956c-ec7f-4ba1-b749-f195280d1912"/>
+        <COMPID name="Not-Aus" mc="Standard.Activity" uid="e1be61a6-6c9c-4622-b7af-da41ab58ba0a"/>
+        <COMPID name="Ausschalten" mc="Standard.Activity" uid="deff305d-d382-466c-8c1b-8b91a321b2e0"/>
+        <COMPID name="Arm einfahren" mc="Standard.Activity" uid="40c62d42-147c-4d04-83f7-1d0893296adb"/>
+        <COMPID name="Arm ausfahren" mc="Standard.Activity" uid="a2cd83cf-b0a7-4fd4-8f94-0bdac2f901c1"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Human Operator" mc="Standard.Actor" uid="f9dca37e-83dc-4eeb-9e97-01ecbfa828a3"/>
@@ -42,6 +52,8 @@
         <COMPID name="Taster" mc="Standard.Class" uid="5d4a8d60-9adb-4849-bd93-cdd0c864fb2b"/>
         <COMPID name="Produktionsstrasse" mc="Standard.Class" uid="52b0a515-4a65-4b15-8988-25c46db66b63"/>
         <COMPID name="Station3" mc="Standard.Actor" uid="c74d7616-52b0-4693-9ac2-fa129bc4715a"/>
+        <COMPID name="Lampe" mc="Standard.Class" uid="d032aa83-d395-4eeb-aa47-5f758031c29f"/>
+        <COMPID name="Not-Aus zurücknehmen" mc="Standard.UseCase" uid="070fb751-ab1f-41ac-afbc-00915cc5552e"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="ca401254-3f15-4277-8dda-11aa91e5f188"/>

@@ -60,9 +60,6 @@
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
-      <COMP relation="OwnedBehavior">
-        <COMPID name="Werkstücktransport" mc="Standard.Activity" uid="59e9956c-ec7f-4ba1-b749-f195280d1912"/>
-      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="39efb441-9a10-4ec7-8bf7-ff695eb82ec0"/>
@@ -145,6 +142,20 @@
           <DEPENDENCIES>
             <LINK relation="Model">
               <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="f254b721-8cc4-4b77-bfd5-328e81ab8589"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Die Hauptaufgabe der Station4. Werkstück werden von Station3 übernommen und entweder aussortiert oder an Station5 übergeben.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

@@ -214,10 +214,54 @@
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Com Bus" mc="Standard.Port" uid="d53f3479-7fbb-4e62-b315-722abf3c9beb"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">Inout</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Com Bus]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="5cc99fb4-33eb-4c0a-97f6-25c696bf8af5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="6d2709eb-bf7d-4b05-a8d5-12fd80c62b2a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedInformationFlow">
         <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="7f12cae8-5a25-46c1-b701-0c74424571c5"/>
+          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="dd0ce37c-c161-4b3e-99e3-7a15c4f88806"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -225,7 +269,7 @@
           <DEPENDENCIES>
             <LINK relation="InformationSource">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="2ef70471-7348-492d-81a3-3fe659c08ab7"/>
+                <ID name="" mc="Standard.Port" uid="999ff41a-19a0-4279-a40a-c20db12d7a65"/>
               </REFOBJ>
             </LINK>
             <LINK relation="InformationTarget">
@@ -236,7 +280,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="e3f5d337-0977-4580-afd9-cd287d35f8db"/>
+          <ID name="InformationFlow" mc="Standard.InformationFlow" uid="55fbe6f5-6f59-43b5-b16c-bd2977f19ab1"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -244,7 +288,7 @@
           <DEPENDENCIES>
             <LINK relation="InformationSource">
               <REFOBJ>
-                <ID name="" mc="Standard.Port" uid="999ff41a-19a0-4279-a40a-c20db12d7a65"/>
+                <ID name="" mc="Standard.Port" uid="2ef70471-7348-492d-81a3-3fe659c08ab7"/>
               </REFOBJ>
             </LINK>
             <LINK relation="InformationTarget">

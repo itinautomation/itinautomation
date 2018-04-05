@@ -371,7 +371,7 @@
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="77d50d89-08ee-4263-891d-d8aeec9ee130"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="afcfd7a0-703a-4b20-acdf-e45cf48f2b49"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -381,7 +381,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Aufnahme melden" mc="Standard.OpaqueAction" uid="d9d77151-644a-4c41-a155-c2cb42d007dd"/>
+                      <ID name="Arm einfahren" mc="Standard.CallBehaviorAction" uid="80b1960f-7afe-4a7d-ac33-b953c8b64305"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -415,6 +415,39 @@
                   <LINK relation="Target">
                     <REFOBJ>
                       <ID name="Werkstück aufnehmen" mc="Standard.OpaqueAction" uid="5acf1a58-20ce-4d1f-b5e9-9c1abb1c190a"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Arm einfahren" mc="Standard.CallBehaviorAction" uid="80b1960f-7afe-4a7d-ac33-b953c8b64305"/>
+          <ATTRIBUTES>
+            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Arm einfahren]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <ID name="Arm einfahren" mc="Standard.Activity" uid="40c62d42-147c-4d04-83f7-1d0893296adb"/>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="2ac57a5b-8bad-4093-a237-35adf3ef942b"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Aufnahme melden" mc="Standard.OpaqueAction" uid="d9d77151-644a-4c41-a155-c2cb42d007dd"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

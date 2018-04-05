@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ausschalten" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Not-Aus zurücknehmen" version="4">
   <OBJECT>
-    <ID name="Ausschalten" mc="Standard.UseCase" uid="d14d0157-cbbe-4727-b444-57cfe9825c60"/>
+    <ID name="Not-Aus zurücknehmen" mc="Standard.UseCase" uid="070fb751-ab1f-41ac-afbc-00915cc5552e"/>
     <PID name="station4" mc="Standard.Package" uid="4341dced-0c2b-4e8c-aa73-b4d8b2d9c054"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,13 +9,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Ausschalten]]></ATT>
+      <ATT name="Name"><![CDATA[Not-Aus zurücknehmen]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="848cdf2e-478f-479f-bdfd-641690f69108"/>
+          <ID name="" mc="Infrastructure.Note" uid="1dae9719-faa1-4792-a721-4968be3871e0"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -29,7 +29,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="09e46f40-d752-4d8f-b852-19737623eb3c"/>
+          <ID name="" mc="Infrastructure.Note" uid="14ed1a52-bcc0-4698-9123-06e42bfe07e3"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -43,7 +43,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="94ecd718-fb4b-4999-b361-b7d8c4075e0c"/>
+          <ID name="" mc="Infrastructure.Note" uid="5f743656-4615-4307-af65-8d9435be4257"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -57,7 +57,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="7570d2b2-2e1a-4fc5-b04c-778685f21bc7"/>
+          <ID name="" mc="Infrastructure.Note" uid="9e49cd48-003c-47e2-8ff0-f4a6e4d0a8aa"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -71,7 +71,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="5546b507-0be6-451c-b3f3-b9f1ae9c3173"/>
+          <ID name="" mc="Infrastructure.Note" uid="d0ae6585-c791-4194-83a4-da86a2e355bb"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -85,7 +85,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="11e37500-e053-4e56-b852-45fd5a54d432"/>
+          <ID name="" mc="Infrastructure.Note" uid="8ea97f5c-e580-4822-9935-e92ba3cc5de6"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -99,10 +99,9 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Note" mc="Infrastructure.Note" uid="9a08ee36-2554-4c5d-9878-c36f57da5105"/>
+          <ID name="Note" mc="Infrastructure.Note" uid="f60fc2a5-9c07-4f87-ba6e-026f66bdf7bc"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[Drücken des gelben Tasters wenn die Station eingeschaltet ist schaltet die Station aus. Das Licht des gelben Tasters leuchtet nun nicht mehr.
-]]></ATT>
+            <ATT name="Content"><![CDATA[Die Station befindet sich im Zustand Not-Aus. Drücken des roten Buttons nimmt den Not-Aus wieder zurück. Die Lampe des roten Tasters leuchtet danach nicht mehr.]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"><![CDATA[Note]]></ATT>
             <ATT name="status">1970354901745664</ATT>

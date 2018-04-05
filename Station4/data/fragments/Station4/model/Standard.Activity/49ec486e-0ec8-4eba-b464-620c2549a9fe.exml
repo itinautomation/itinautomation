@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Einschalten" version="4">
   <OBJECT>
     <ID name="Einschalten" mc="Standard.Activity" uid="49ec486e-0ec8-4eba-b464-620c2549a9fe"/>
-    <PID name="Einschalten" mc="Standard.UseCase" uid="81dfdd45-327b-4c72-9f24-28b6d41f254d"/>
+    <PID name="station4" mc="Standard.Package" uid="4341dced-0c2b-4e8c-aa73-b4d8b2d9c054"/>
     <ATTRIBUTES>
       <ATT name="IsSingleExecution">false</ATT>
       <ATT name="IsReadOnly">false</ATT>
@@ -180,7 +180,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="" mc="Standard.InstanceNode" uid="1279f039-ade6-4703-a362-ae7057363bd0"/>
+                            <ID name="" mc="Standard.InstanceNode" uid="0e3aa7b6-3897-4372-9eb5-47c99d509054"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -248,6 +248,24 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="0e3aa7b6-3897-4372-9eb5-47c99d509054"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe_Gelb" mc="Standard.BindableInstance" uid="2240e051-6a3c-495e-b7d3-da4aca2b49d9"/>
+              </REFOBJ>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
