@@ -1,0 +1,11 @@
+#Thu Apr 05 13:44:06 CEST 2018
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a01327876/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams5='Activity diagram' {1b7d7f33-f765-4076-9693-be51960aecde} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Internal Block diagram' {4a30afd1-6cf0-4214-bd0d-c270d7ad46b6} Standard.StaticDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a01327876/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.diagram.editor.OpenedDiagrams3='Interface Blockdiagram' {891cd01d-7fec-48ad-8d4e-548a97d5c433} Standard.StaticDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Sequence diagram' {4b856b25-6459-4bf7-874d-27a6da880baa} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Sequence diagram' {9c8648fe-edee-4290-a877-e1fcaa65b10a} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Usecase diagram' {ce8d4bcc-1158-4888-a9e7-aa488dbc6eb8} Standard.UseCaseDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a01327876/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a01327876/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom

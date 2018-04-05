@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Internal Block diagram" version="4">
+  <OBJECT>
+    <ID name="Internal Block diagram" mc="Standard.StaticDiagram" uid="4a30afd1-6cf0-4214-bd0d-c270d7ad46b6"/>
+    <PID name="roundTable" mc="Standard.Class" uid="61b37c13-33fe-4d4b-bba1-1ffed7204e27"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">84</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[Internal Block diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="roundTable" mc="Standard.Class" uid="61b37c13-33fe-4d4b-bba1-1ffed7204e27"/>
+        <REFOBJ>
+          <ID name="bowl0Full" mc="Standard.BindableInstance" uid="06038fdd-5faa-418a-853f-396e572a5a8f"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="readState" mc="Standard.Port" uid="50bd78f4-3a57-487b-9297-e137e7e7ac71"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="motorOn" mc="Standard.Port" uid="25084130-f6f2-48d6-b069-4c81eba0f598"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.BindableInstance" uid="b5bcb24a-2f6e-4025-b56a-0cc6c8a0bb74"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="bowlStates" mc="Standard.Attribute" uid="0124c5aa-b255-4d75-8600-8428b6ea419e"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="readState" mc="Standard.Port" uid="68a58e85-1803-4a13-bfce-9b97ae5f8885"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="inPosition" mc="Standard.BindableInstance" uid="49b46216-a861-4c11-bdcc-e7137f4bc5f6"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="InternalBlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-11b9-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

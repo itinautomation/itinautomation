@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="station3" version="4">
+  <OBJECT>
+    <ID name="station3" mc="Standard.Package" uid="550f03f5-e7b7-4c4a-988a-450cc6cbfc80"/>
+    <PID name="Station3" mc="Standard.Project" uid="c4735412-079d-4455-adab-8853fa2c7a53"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[station3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="rotateTable" mc="Standard.Activity" uid="602bd960-ec20-4d6d-8011-617c80afb145"/>
+        <COMPID name="stationWorkflow" mc="Standard.Activity" uid="e573d520-959a-4787-9dc9-587017b7116d"/>
+        <COMPID name="checkRoundTable" mc="Standard.Activity" uid="958fa37c-bcee-4f16-be32-ffbcbbb98211"/>
+        <COMPID name="emergencyShutDown" mc="Standard.Activity" uid="0179486d-e254-42c2-85c5-b0aba4383401"/>
+        <COMPID name="controlledShutDown" mc="Standard.Activity" uid="ead08ab1-feb7-429b-82b7-7476230f0fca"/>
+        <COMPID name="emptyLastBowl" mc="Standard.Activity" uid="964a46e5-d4df-49b0-92f7-94ed69c5ea4c"/>
+        <COMPID name="drillHole" mc="Standard.Activity" uid="b1768151-4bda-4887-9b90-7195ec794ada"/>
+        <COMPID name="checkHole" mc="Standard.Activity" uid="a72eab0b-1624-441f-beb4-83647943b7a7"/>
+        <COMPID name="processWorkpieces" mc="Standard.Activity" uid="cbee22f3-b438-4713-95fb-e99f6853d71b"/>
+        <COMPID name="Protocol2To3" mc="Standard.Interaction" uid="b35b243b-c7bc-4fc7-b02b-a3196833baa8"/>
+        <COMPID name="Protocol3To4" mc="Standard.Interaction" uid="320c4976-8f67-4d3e-856f-5a41cf3570f3"/>
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="864b64ba-5995-41b2-b9ad-08315afba657"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Operator" mc="Standard.Actor" uid="6feada42-901a-4906-a060-27dc1cdfdfe4"/>
+        <COMPID name="startStation" mc="Standard.UseCase" uid="7fb3f266-3bf3-4de1-97e3-33cefa56ae01"/>
+        <COMPID name="shutDownStation" mc="Standard.UseCase" uid="eaffdf34-c882-4bcb-9842-91d661a4b8dd"/>
+        <COMPID name="emergencyStop" mc="Standard.UseCase" uid="8aad9bb1-9473-41fc-9297-6c7a2ce04e7d"/>
+        <COMPID name="Human" mc="Standard.Actor" uid="b77dd14d-427c-4d62-96ff-4fd449d3e883"/>
+        <OBJECT>
+          <ID name="workpieceType" mc="Standard.Enumeration" uid="752386fd-a7c1-4525-97a5-85b8fe51814a"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[workpieceType]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Sensor" mc="Standard.Class" uid="55d0479f-147f-4684-b08a-9bb350d03d01"/>
+        <COMPID name="Motor" mc="Standard.Class" uid="13d9e3d4-f039-49fd-98b3-994ae730e50b"/>
+        <COMPID name="Drill" mc="Standard.Class" uid="f524dfc5-7e6e-4115-8eb1-f5b0ac4efc37"/>
+        <COMPID name="holeTester" mc="Standard.Class" uid="d406f12c-7a6a-44b8-99aa-006d67753f42"/>
+        <COMPID name="button" mc="Standard.Class" uid="bbdc4a21-7f9e-46a5-88d7-383be3e9d1ea"/>
+        <COMPID name="station4" mc="Standard.Class" uid="4c98df3c-abf9-40b8-a343-6f41f6d9e9be"/>
+        <COMPID name="station2" mc="Standard.Class" uid="5730b6c1-f11d-462a-8db2-212b930bdb7a"/>
+        <COMPID name="station3" mc="Standard.Class" uid="dd585102-b92a-4de0-bfec-0ff8fa95cf66"/>
+        <COMPID name="roundTable" mc="Standard.Class" uid="61b37c13-33fe-4d4b-bba1-1ffed7204e27"/>
+        <COMPID name="productionLine" mc="Standard.Class" uid="f8800aa3-4865-4222-abe4-da091ce104f2"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="ce8d4bcc-1158-4888-a9e7-aa488dbc6eb8"/>
+        <COMPID name="Interface Blockdiagram" mc="Standard.StaticDiagram" uid="891cd01d-7fec-48ad-8d4e-548a97d5c433"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
