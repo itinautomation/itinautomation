@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State diagram" version="4">
+  <OBJECT>
+    <ID name="State diagram" mc="Standard.StateMachineDiagram" uid="52c01701-6658-4dc4-951a-5aeab7179f56"/>
+    <PID name="State Machine" mc="Standard.StateMachine" uid="e464d804-89cf-4315-aba5-93396bff8591"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">183</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[State diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Station in Grundstellung" mc="Standard.State" uid="8067cdc8-c603-4a9a-b0b6-4d21f1f3a1db"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Initial State" mc="Standard.InitialPseudoState" uid="02fd42e9-f7ae-429f-a069-cad71b186807"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Transition" mc="Standard.Transition" uid="42b89318-fe2c-4c99-8664-f4adebddf864"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Neues Werkstück verfügbar" mc="Standard.State" uid="83764477-9760-4361-9ed7-15d948c47eab"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Transition" mc="Standard.Transition" uid="7e9288e8-78d1-481b-88f3-5afd77073262"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Materialerkennung (Werkstück da? Welche Farbe?)" mc="Standard.State" uid="fd845a28-f296-4f5b-92c0-e961378283ed"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Choice" mc="Standard.ChoicePseudoState" uid="d23c49b5-985a-4913-8833-a6b781bbc849"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Transition" mc="Standard.Transition" uid="a7bf91d9-c7bd-443d-abf4-05c849ef8e4e"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Transition" mc="Standard.Transition" uid="f581c045-c14b-4808-ba81-3ef64998bbe2"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Transition1" mc="Standard.Transition" uid="38f5a5a5-7e24-47fe-b193-8cf463e6e73f"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLStateMachineDiagram" mc="Infrastructure.Stereotype" uid="0fd7b4e3-d7d7-11e0-9a40-0027103f347c"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

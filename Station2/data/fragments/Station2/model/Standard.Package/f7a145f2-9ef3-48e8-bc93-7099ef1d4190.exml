@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modul Ablage" version="4">
+  <OBJECT>
+    <ID name="Modul Ablage" mc="Standard.Package" uid="f7a145f2-9ef3-48e8-bc93-7099ef1d4190"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Modul Ablage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück aussondern" mc="Standard.Activity" uid="557dc522-4180-41d3-a651-e5d7150ec49f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AD Werkstückhöhe messen" version="4">
+  <OBJECT>
+    <ID name="AD Werkstückhöhe messen" mc="Standard.ActivityDiagram" uid="034feb45-479a-4e22-bbfc-52f4334755eb"/>
+    <PID name="Werkstückhöhe messen" mc="Standard.Activity" uid="d7d5bd53-e75b-4f16-84d6-c4d59300be0f"/>
+    <ATTRIBUTES>
+      <ATT name="IsVertical">false</ATT>
+      <ATT name="UiDataVersion">278</ATT>
+      <ATT name="UiData"><![CDATA[eJztXdtu2zoW/RUjmFe64kW3cU8P0iTNCZo2RdqZg3kqKIlydCJLgSw3yY/N07ydHxtKvsRxHIm60ZIioEBj2SIpcu3NvbkWqfe/P8z80S8Wzb0w+O0IjpWj0e8f3l9ZfzE7HnkOv3Q0ih/v2G9HYTQdz0KH+V44djw6jehszBwvDqMxtWPvlxc/jpnPZiyI55sr6x+ez45XV06XV45GM/pXGP3cVK0cfXj/LQrvWBQ/jgI64zX69DFcxKc0pvy7f1N/wVZNCRa+f/Tuw/t36xte3Po9fvTZ0bMHQVkPMk9+Px/bYcTGy3sF2ndC5zZ1mLOu7OwhvmauYC1feRGrO0fsIT61Lngb0z+TP74s7xzh8cPOg75bPlLWw0fMpzFzeFt2+u1Lcmn0K7mSdBENHBo5452RGSmYuMwiKiC6SQFhCAHLcm2gIpdgTHRVZVZ27/t0Hn8OwvvgklrM32nE9zjygunRh+PT0Z8sup3Hf//Pvr35+783bDRj8zkL3r9Lf575hKHPLoKTcHYXzr2Yj88rdQgUdXLj+U7EkhIuvXn8DDK4FPa9gDeJ+hzzF8u/KmH9mjeGBtMEJquBQ5o+MZQJRvxfYSsgjVtBYgJLe2sauKvu/cqfYuRC24ZQMzhodQiIhTCglsX/wlBjjBmKomg1gHZV5Sipsz04VevB6bfIm9HoMXm2miGrTMriVRPFKy/q4bEyaMkAWmHQfqFe8FqRm37bGko9E6VrVNrhbBYGYz95nnHSII7PZK5cPmAVWF4EMZuyaDMkMKdv96DRGNDYVjR+54/t+14sUub8Jrz/6dkvyvoY8sposOkml/pzlv3IaVG37PE+jJwaSoupfftzHrOIhTW1zd8zFLtlxdFit6gnqC1nmxzbNitlCa4XpPPQOhL9lHxuIGrCqOw0BJUexU3Pujk1fQu72GEYAl1RGSCmQnjIb2HAEIUO0x2oG7iOkH9V8SituWVBFKyW6e7FcBsjKiicCNcziXHTGQAtJcCC2flqJyIsKJygDug8LDqHgOuQARcsl/OHaQkB/zk3+mVxeycnWGly0nichRRlAjU0IWpxHyCc9Hcg2LoIOMYCmy0NXzctiJkFDMN2AUEGAgbTdMB0y9RcaGk6NGow/BYFVdlJf0GYNhtOlUWr5EWBF5PqgNkCcVMR7JZLal/B7h+MD2ZUa3iV0+37ODDhNLYmrO42ccBq8aJEg6c9QUVbYifBplUNnbaRXi6bf8V4OdriBvKj4sk7ap7FHmy3iu0WDONRiZQ9/dXqK47SU+bShR+nioGz5dX6kbrLRAggVXYiP4RFOXDlsfOUjZKRGN2kwciQuB8gcUflEneb+n5SLE0GmFv9Cf98tf5cN1UCtQk0jQnEeKLuro8JWH6f0vdn/ZwsqIXBCFqUIWgrgGKmAYJNDRg6VoANXd2Arq0rml6D6SdVjzZ1tyenR+Vy+kwEN5zZlwSy5MweNT+F9RHONaX7qFy6nwnr6oFYKakrlpzmo+ZThT4Cd8j9G42+dmp5fcYZrzCfx2YKLDvgcssOmU7kEzeUNmR0WLJwYJgOS3mViyTNS2se8ruDepg63Uq5nQhy2F6wZntJKf4M92tLwtYSEUOKZauuDhzNpoAQZAADEgfozMaaRRxkqjkrwEKeZNWX7VLT4Vr1CQ2nhyWBK3lvApYhB+8LfGtKCnGt+oVWcMBY8qoGlrww32nYDilhM3QwrlXL0Ro6mMjbljCYcUUzLsgTkeyVhA4zw0TyOsIQNxVA7kASy15E2Gv8YrKQxcxf2X8Qxuk2Dv5fzQmSoU5gktxjNNF2lyoEbL0Hyf1F4EbcIKOFHS+Sgzt4H48MS3UtSCCwFGwCYqkKsIiBgEZNjCwDWiivs4RsPKnrcNPSTi2XXnA735ckkSq5vuuH95vg6hP/UBi/2y3JTMm3Jk0+jj5/HF7xNxrfiFT5PVxENjsO7Jsw2qlUdGP7ulKaFjLnlV/Tx+++51DLX5cs0BLHc13u0fh0szPMpx6vKV1xXEMXJ4sbxe3ilM3jvU+amToe9EmhYk5QiUdNhn+FoxX+88zgmiOPRZ+9YHeCOgsWs38KubnP7PEfJ2EQsJRxWBZ44Wye5er6xx9X51dfjy9zJqQUktf0drd78knjmEZTFovdKtCL+zx/ZsbVDc+/ie+evNMIU5VoTDUAUxwMiKsyYFHbBJpuu0wjGjRQzlJigeguqVHA/y990/P+VzNTw+e2mn6bGClbm5vAaCwhtD7O6zAHTS3bsMptikfq1TWcywacR/TuxrNP+MjOXxnPmlfBs2fyTMe+AxPRNPNtwaQZYrgZtIgK60pihj3Ey7k2aewXevccPpm5/KrJ3OJi73b74Ck3jGZp85LobxqFi7v0FKrN5cTvHUdRiWCwsnZKzUy9Gjjjx+zh7FXnggRHRYKSnzTBg+hRCGpm3rknUn1COUfip4imJk/9pyjtMrRpLBa2uqvbd4PWcGFtM49jPaerFzlLbzmK1l/Vbt91lCVX3tVyyeH6CnOmLF1zmW+drXLGL54vOLQP4B7kidt76RkKxbWiPmKaYEHYNRRN15+5hieHcBY4d6FXxC/ce058k2OUek7AmecT8o5cyXMKIGc9n71Ie8v6hey1hNJ+4U/mTW/iAzgGefnu4BhEHcN9CgZRz6AVSJnr9Qx5Vp3TwXlGnXN7bTatiaifC2QDCRrm58kF+fasSWYpe2nUTeQBKUDKyLrEqDdNdEf2G84cwItT05rJHTTRLE6yBqKcQ8lMhAaHcrgoYUa9YEnsD2KHpgR4WlFm9hBu9bBeFTXoVN+lC7dZW1cSdl9wx8qrfNv2eJfcJB4GMTfblSjgZPmpqipAK0pb16EK0LIVpwflyvVaVQF60bRJ3pNqaqknHUQBDYkC9MwEsWOigC3vNLJVrLmaawCIE47Ssnj4o+sWMBTVMJFpYMes490JW1WWlAXo2YTdW+V7630PRjM8b9b7eqrpAdY2o+ZoFjOpYF1kj2pHFn90yYeX6a9uAu6yt+rg6o+ezVa2I015I6s/enbK2DmGSM9MiWoNfvrpT4pFP81wRHrRXHLgiHY6sNqrotqmBzHk7cAcjLohRYhRQAPbKZsGsoza6J0M1JAsA+2ncR9cB2oMOtCW6EAN0cyqC1yuIfnon356h2am/oHNbZ7NNSppaAc2t6Jblc7mGuXEug3s8DaK0qp1cLlmexlODCcvkFaByzWLpkISWWuIJqgEqzeQuQ2Ruaa8dxHJ3eFtaggy7AKbER0QiGxgajYBSNexRhmx0QtpXZnop9wOb1Gq7uVOX7OAsPVNMb+1Ht3UsQ3hmYyu2Sf5rSlZfmu+eZ81JGztSdjMQX57yIRteyTKCWNby2qbwscJDy5VmkstxmmbRXPqrvBfsugvqGQvEHRK+wYVYZHuECn1SfsGlQLa4LdKlskSv0GlZjnt4Sl1qEhW1Q6OpQlKHSqDRrYlnDpUGpLIHkhMBxV5EtleOofDn64Elb4KZJsV00mndKEilvXtPWM+aUsVFhfCooxqHTQuhO1lNzWl1PHVr/G4EBaN5Z8eNaETmmFwJyVkTG2kb08vrs9OfnSYuoVQ9imnjb2Dpf1vZ6iBu4WwgI61/+RtM2NejbrNnC9rY2flhwmw3PmtjRzkAeEh3u8BYXtf8MHDBozrDBta/IYPMnlxGn9H44deyL8g7NMbPrbl76aJTVVFEBjExXwmcw1gGaoDTOhAS1Opo73Q45cJH0oe5lEhikDDO0Gy2vDJC1ZHgFjYxQ7DEOiKygAxFcJbYWHAEIUO0x2oG7tet9ZgIm/hzk1aurVml7a8YTUYRCKnu3ZIuQCRPAFr4izfvAtrRr0AUaUTW1u84ihNvoCys8suco1IstyzpwZ+eLYRdUG5+DbYRiQiXeyKygkJ6xYHB9EznROqpHd8Gy5Fms4Ji0gnOyRhwPKOOO2pS2nBiUAQV5JCtjinkHYkEMSiaVkXdo9BLFm7ONh2AdsedpC90rYad5BB3AXZZ3+3kMlnfnE5cWkzzC8uysHWwvziFtOh0Kz1LQ4Qt/eFFSqe7Bp2GeZ3u5Jjax76i5h9ZMsILX46UQXzjlXTnhW7QcPK+oaBW66JWybyjlWVyy2ryNKIpZrAZTaPswi0ADUZBDZSTdcghq1C2hluefPznHkvm1ckDfGKh1oBIBJpRVLi7Ke+obeZFQDSV1ZR3goAqZlWPChfQGQTiv007S7yBWSgINvDFxDRRLATy4pENgvZT68yLCt2dlmRdIGM7e+y4vZQqDWfYtMCGZgq+SybnvrXw8vA1OFsmrbIwFSRk2m6pANXhbndwT+0WAeuViIoW7xi04ODJ3KJkY/T04je82G/pI9sl5pSxRJwZ1nCnGd9vIwk0dsuUo5fKXZXQcuuf7OUtwudte2dno8vj/9zdv3z4/HJ5/Prq399Pa15hSWDXdgatvmmqGeAEFsEGADRACB+XH2rGwmvfvV/9pF9ug==]]></ATT>
+      <ATT name="Name"><![CDATA[AD Werkstückhöhe messen]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Initial Node" mc="Standard.InitialNode" uid="f1cc1168-4771-4b23-abb1-4316eee80006"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="b3f3de31-705e-4904-bbb3-e2a1de7d1783"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.InstanceNode" uid="b79b13eb-88cf-4282-8e67-e7b96f1b6718"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Call Operation" mc="Standard.CallOperationAction" uid="1bae21c0-a3e6-4396-8730-c1f781fc7067"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="3a546e58-e0d3-4f5e-bac9-67cfe6461825"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ControlFlow" mc="Standard.ControlFlow" uid="c536f6f8-139a-4bbe-b77b-805892983d96"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Object Node" mc="Standard.InstanceNode" uid="e20bc5f7-d6ca-4428-814d-7ec36b4d2952"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="39621e3f-ce47-412c-96c4-27736ae4c249"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Note" mc="Infrastructure.Note" uid="8b5fb141-b039-4b50-b482-6a932b81b261"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ControlFlow" mc="Standard.ControlFlow" uid="99395521-84f3-4ef8-b85d-91d1b65ad671"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="ControlFlow" mc="Standard.ControlFlow" uid="52b64b59-fec3-441b-a9e1-c259f848c51a"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLActivityDiagram" mc="Infrastructure.Stereotype" uid="374ff012-d57b-11e0-8ec9-0027103f347c"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -10,7 +10,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Model">
-        <COMPID name="station2" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+        <COMPID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
       </COMP>
       <COMP relation="DiagramRoot">
         <COMPID name="Station2" mc="Infrastructure.DiagramSet" uid="3d23342d-0480-4840-af1f-90473f38907a"/>
