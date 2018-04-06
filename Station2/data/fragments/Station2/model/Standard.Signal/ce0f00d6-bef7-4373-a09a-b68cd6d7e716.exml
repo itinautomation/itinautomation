@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Starte Werkstückübergabe von S1 zu S2" version="4">
+  <OBJECT>
+    <ID name="Starte Werkstückübergabe von S1 zu S2" mc="Standard.Signal" uid="ce0f00d6-bef7-4373-a09a-b68cd6d7e716"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">true</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Starte Werkstückübergabe von S1 zu S2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

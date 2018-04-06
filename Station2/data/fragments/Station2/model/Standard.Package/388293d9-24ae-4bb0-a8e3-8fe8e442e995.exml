@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="station2" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Station Prüfen" version="4">
   <OBJECT>
-    <ID name="station2" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
     <PID name="Station2" mc="Standard.Project" uid="14685acc-d872-42fe-957e-f37c3c69a0e0"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,9 +9,177 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[station2]]></ATT>
+      <ATT name="Name"><![CDATA[Station Prüfen]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES></DEPENDENCIES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="e464d804-89cf-4315-aba5-93396bff8591"/>
+        <COMPID name="Werkstück prüfen" mc="Standard.Activity" uid="765c5139-b36f-4dc7-abfb-c320f7ba6598"/>
+        <COMPID name="Werkstückannahme und -übergabe" mc="Standard.Interaction" uid="5b11ef4f-ee8a-4ab2-8343-4c31dfa6453f"/>
+        <COMPID name="Laufender Betrieb" mc="Standard.Activity" uid="71325e6e-c00f-4604-905e-1de2aef88c8c"/>
+      </COMP>
+      <COMP relation="Declared">
+        <OBJECT>
+          <ID name="Millimeter" mc="Standard.Instance" uid="46c3236e-29eb-4099-a8c9-c98e8f6ca2af"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Millimeter]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <FOREIGNID name="double" mc="Standard.DataType" uid="00000004-0000-0010-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Unit" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-19fa-0000-000000000000"/>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Dependency" uid="aa5bac10-a0e2-42f2-a68c-4501ad5c3a08"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <FOREIGNID name="Length" mc="Standard.Instance" uid="5d2e8eb1-df89-11e0-bddc-8000600fe800"/>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="UnitQuantityKind" mc="Infrastructure.Stereotype" uid="e002f3a2-c234-11df-83b7-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="d2662f19-32f8-4dcb-a25b-3ddbfc148727"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="50a330e4-fd4a-4bb9-901f-def2d099c386"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[mm]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="Unit_symbol" mc="Infrastructure.TagType" uid="a8023330-c19c-11df-a585-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="ee7cb8b3-a432-46ab-bb36-93835bb245f0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="138f4c5b-1f0d-4773-b0f6-069f2e6310d6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Millimeter]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="Unit_description" mc="Infrastructure.TagType" uid="aec06234-c19c-11df-a585-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="f95502ba-72f5-457f-b2b5-0f57533daa06"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="8073a396-fafc-4fd0-a677-b2140bc0e918"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[SI Base Units::Length]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="Unit_quantityKind" mc="Infrastructure.TagType" uid="af86465b-c19c-11df-a585-001302895b2b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Modul Erkennen" mc="Standard.Package" uid="95b637f4-4b0a-45a4-8c2b-8fa13a1c1214"/>
+        <COMPID name="Modul Heben" mc="Standard.Package" uid="9c046bf0-fe4d-427b-979f-5071ab9d0e05"/>
+        <COMPID name="Modul Messen" mc="Standard.Package" uid="ea0ffaa7-7310-463d-877e-56fa9afb62b8"/>
+        <COMPID name="Modul Übergabe" mc="Standard.Package" uid="cb578414-077b-442c-817e-a4250dec8c32"/>
+        <COMPID name="Modul Ablage" mc="Standard.Package" uid="f7a145f2-9ef3-48e8-bc93-7099ef1d4190"/>
+        <COMPID name="Werkstückeigenschaften" mc="Standard.Class" uid="09585a51-d623-41bd-9f29-050da477de8b"/>
+        <COMPID name="S1 ist bereit zur Werkstückübergabe" mc="Standard.Signal" uid="8d045182-bd5d-488a-9e83-c46bfe193b0d"/>
+        <COMPID name="Starte Werkstückübergabe von S1 zu S2" mc="Standard.Signal" uid="ce0f00d6-bef7-4373-a09a-b68cd6d7e716"/>
+        <COMPID name="S2 ist bereit zur Werkstückübergabe" mc="Standard.Signal" uid="cf1d593e-a994-417e-802b-8f962cf14b5e"/>
+        <COMPID name="Starte Werkstückübergabe von S2 zu S3" mc="Standard.Signal" uid="d70c9612-2e92-43a0-90a0-e30cf0a06117"/>
+        <COMPID name="Modul Eingang" mc="Standard.Package" uid="33be66b1-1f88-4368-bb03-54a5eb5897f0"/>
+        <COMPID name="Werkstückübergabe von S1 zu S2 beendet" mc="Standard.Signal" uid="250a4948-f590-4552-9788-99790f48dafb"/>
+        <COMPID name="Werkstückübergabe von S2 zu S3 beendet" mc="Standard.Signal" uid="f7ca2ef9-0023-4a27-b0cd-5f3d5529579d"/>
+        <COMPID name="Mensch" mc="Standard.Actor" uid="da8babe4-1ee6-4874-bd31-29721bcd219b"/>
+        <COMPID name="Not-Halt" mc="Standard.UseCase" uid="90e5d165-2997-4b2e-97c5-38e071cccf9f"/>
+        <COMPID name="Menschlicher Anlagenbediener" mc="Standard.Actor" uid="e9e726ae-ddb9-46f4-aa20-15c74169426c"/>
+        <COMPID name="Speicherprogrammierbare Steuerung (SPS)" mc="Standard.Actor" uid="3f69cd7d-c6b5-4502-970b-f89b64c6d73e"/>
+        <COMPID name="Anlage einschalten" mc="Standard.UseCase" uid="5294b11c-096a-40ad-9960-e0e17791abac"/>
+        <COMPID name="Anlage ausschalten" mc="Standard.UseCase" uid="7125b558-4151-4808-aadd-7ebdb8b7c601"/>
+        <COMPID name="Aktoren in Ausgangsstellung zurückversetzen" mc="Standard.UseCase" uid="534cf7c3-c293-4caf-8633-392f982f36a8"/>
+        <COMPID name="Werkstück prüfen" mc="Standard.UseCase" uid="d91158a1-b3ed-4756-812b-412eb94e0d5f"/>
+        <COMPID name="Eigenschaften des Werkstücks ermitteln" mc="Standard.UseCase" uid="b95a61f1-50df-4a52-8de3-5f1d274c732a"/>
+        <COMPID name="Werkstück auswerfen" mc="Standard.UseCase" uid="d55e6ef8-9753-4ca1-9cc6-8870912fe89b"/>
+        <COMPID name="Werkstück aussondern" mc="Standard.UseCase" uid="f482d4f1-7704-4bdd-8896-76998773c9b5"/>
+        <COMPID name="Werkstück von Station 1 annehmen" mc="Standard.UseCase" uid="616da8a5-cd29-412a-88a7-dcb03aa52329"/>
+        <COMPID name="Werkstück an Station 3 weitergeben" mc="Standard.UseCase" uid="baee5cc8-5a1b-433a-8bcb-4a60fb9cb62f"/>
+        <COMPID name="Höhe bestimmen" mc="Standard.UseCase" uid="a96a8de1-3248-48ee-bb65-5248ed1f82ae"/>
+        <COMPID name="Material/Farbe bestimmen" mc="Standard.UseCase" uid="1a06bca8-666d-49e3-9b2b-f4e16ac325c4"/>
+        <COMPID name="Ausschussrampe leeren" mc="Standard.UseCase" uid="a2d71473-b256-469d-8e50-596053180704"/>
+        <COMPID name="Anlage einschalten" mc="Standard.Signal" uid="61c90872-942f-4f86-a96d-223ae87693ca"/>
+        <COMPID name="Anlage ausschalten" mc="Standard.Signal" uid="2d3fa79f-0e26-4153-b86b-65ab195dd09c"/>
+        <COMPID name="Not-Halt" mc="Standard.Signal" uid="b5359950-404d-4ab3-9d8b-c844a553ae4f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Package diagram" mc="Standard.StaticDiagram" uid="c7df6316-afc8-43c0-adbb-baaf87691bcd"/>
+        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="cfe9093a-5c59-4bd8-abb6-4de1cdd895bb"/>
+        <COMPID name="Anwendungsfälle" mc="Standard.UseCaseDiagram" uid="208cfa8b-4055-4f00-bc0f-809164243cf6"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="194df1c4-36f3-4692-bc81-28962b43a884"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
   </OBJECT>
 </EXT>

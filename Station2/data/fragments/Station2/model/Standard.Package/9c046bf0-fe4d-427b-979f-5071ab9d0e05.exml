@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modul Heben" version="4">
+  <OBJECT>
+    <ID name="Modul Heben" mc="Standard.Package" uid="9c046bf0-fe4d-427b-979f-5071ab9d0e05"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Modul Heben]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Hebezylinder nach oben" mc="Standard.Activity" uid="caeba990-d632-424e-adb0-337e9b82842c"/>
+        <COMPID name="Hebezylinder nach unten" mc="Standard.Activity" uid="ff05d1c1-8399-467a-8a8e-e50c5dc3f3d6"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Hebezylinder" mc="Standard.Class" uid="5c3e7305-fb9c-46b3-8db2-86c4b8f38d73"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
