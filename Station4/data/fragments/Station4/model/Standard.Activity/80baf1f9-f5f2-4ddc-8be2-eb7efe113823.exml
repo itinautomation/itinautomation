@@ -31,7 +31,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Hebezylinder ausfahren" mc="Standard.CallBehaviorAction" uid="0172fc66-0f31-44fa-80e4-46845e8161c9"/>
+                      <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="0d6ed472-13bc-4f68-b0c9-282e90b04dd0"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -448,6 +448,39 @@
                   <LINK relation="Target">
                     <REFOBJ>
                       <ID name="Aufnahme melden" mc="Standard.OpaqueAction" uid="d9d77151-644a-4c41-a155-c2cb42d007dd"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="0d6ed472-13bc-4f68-b0c9-282e90b04dd0"/>
+          <ATTRIBUTES>
+            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Arm ausfahren]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Called">
+              <ID name="Arm ausfahren" mc="Standard.Activity" uid="a2cd83cf-b0a7-4fd4-8f94-0bdac2f901c1"/>
+            </LINK>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="84162e2d-044c-4bba-a28b-87070878cdbd"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Hebezylinder ausfahren" mc="Standard.CallBehaviorAction" uid="0172fc66-0f31-44fa-80e4-46845e8161c9"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

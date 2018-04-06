@@ -1,12 +1,8 @@
-#Thu Apr 05 15:34:43 CEST 2018
-org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams6='Aussortieren' {6a79d018-2384-4d4a-b9dc-e51f358ce18e} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams5='\u00DCbergabe' {859d1131-1a60-43bf-b9af-4e5ac43dbbd4} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams4='Ausschalten' {653103e3-2247-4a87-b4fe-ffdb213f5d49} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams3='Einschalten' {7a03458a-f111-4b56-8fa5-5b670f6ef132} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams2='\u00DCbernahme' {bf018e65-794b-47a1-ac6a-1d85c34f79e7} Standard.ActivityDiagram
+#Fri Apr 06 09:37:15 CEST 2018
 org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.diagram.editor.OpenedDiagrams1='Werkst\u00FCcktransport' {514d4387-0355-46e1-b4d8-c1f9a246f99e} Standard.ActivityDiagram
-org.modelio.diagram.editor.OpenedDiagrams0='Block diagram' {4bf706ca-f770-4571-bb34-ca4359e40681} Standard.StaticDiagram
-org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams2='Aussortieren' {6a79d018-2384-4d4a-b9dc-e51f358ce18e} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='\u00DCbergabe' {859d1131-1a60-43bf-b9af-4e5ac43dbbd4} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='\u00DCbernahme' {bf018e65-794b-47a1-ac6a-1d85c34f79e7} Standard.ActivityDiagram
 org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/a00304130/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom

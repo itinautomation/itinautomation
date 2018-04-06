@@ -72,7 +72,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Werkstück loslassen" mc="Standard.OpaqueAction" uid="57574ace-82a8-4132-9760-15bca8b3717c"/>
+                      <ID name="Werkstück noch immer gegriffen?" mc="Standard.OpaqueAction" uid="6ccb7a76-3927-459e-bd68-363308b502bc"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -142,7 +142,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="032e4109-7c09-46b5-884f-a07bce87984b"/>
+                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="41c2c13b-49ee-414a-bd32-52ef8c25e806"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -169,23 +169,123 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Arm ausfahren" mc="Standard.CallBehaviorAction" uid="032e4109-7c09-46b5-884f-a07bce87984b"/>
+          <ID name="Werkstück noch immer gegriffen?" mc="Standard.OpaqueAction" uid="6ccb7a76-3927-459e-bd68-363308b502bc"/>
           <ATTRIBUTES>
-            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Arm ausfahren]]></ATT>
+            <ATT name="Name"><![CDATA[Werkstück noch immer gegriffen?]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Called">
-              <ID name="Arm ausfahren" mc="Standard.Activity" uid="a2cd83cf-b0a7-4fd4-8f94-0bdac2f901c1"/>
+            <COMP relation="Input">
+              <OBJECT>
+                <ID name="Druckdifferenz Sensor" mc="Standard.InputPin" uid="e777ba2a-7f8f-4410-a178-471308e1e2ba"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSelf">false</ATT>
+                  <ATT name="IsControl">false</ATT>
+                  <ATT name="IsExpansion">false</ATT>
+                  <ATT name="IsControlType">false</ATT>
+                  <ATT name="Ordering">FIFO</ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="UpperBound"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[Druckdifferenz Sensor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="264845e0-e179-4d88-8f1d-53fe17486cbc"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="580ea819-d81d-4d95-8936-b1e1a5c6898b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="2ef0a92c-781a-499f-b576-35d68db15c73"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Druckdifferenz" mc="Standard.Instance" uid="029cd058-19b1-442c-a35f-027c2b7db645"/>
+              </REFOBJ>
             </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e5ca1dc1-ad70-4e2b-b8b3-34b163be4e02"/>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="560f3fcd-a09d-4b61-a25d-4d34f46bc90c"/>
                 <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
                   <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Druckdifferenz Sensor" mc="Standard.InputPin" uid="e777ba2a-7f8f-4410-a178-471308e1e2ba"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="580ea819-d81d-4d95-8936-b1e1a5c6898b"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="db4d55f1-d3fc-4b47-ac85-7f809ba57ad1"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[Ja]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Werkstück loslassen" mc="Standard.OpaqueAction" uid="57574ace-82a8-4132-9760-15bca8b3717c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="634d4693-fff1-45e5-b234-1f1b792ae498"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[Nein]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -196,6 +296,22 @@
                       <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="41c2c13b-49ee-414a-bd32-52ef8c25e806"/>
                     </REFOBJ>
                   </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Infrastructure.Note" uid="e15c34f8-fed6-42a8-b49d-e4c211f56773"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[Wenn Werkstück verloren gegangen ist beginnt eine neue Übernahme.]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
