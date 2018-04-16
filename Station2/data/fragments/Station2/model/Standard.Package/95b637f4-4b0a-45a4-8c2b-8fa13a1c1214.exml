@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modul Erkennen" version="4">
+  <OBJECT>
+    <ID name="Modul Erkennen" mc="Standard.Package" uid="95b637f4-4b0a-45a4-8c2b-8fa13a1c1214"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Modul Erkennen]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück identifizieren" mc="Standard.Activity" uid="bd0bee11-081f-4ee2-8e34-b4b8f9b4ab92"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Induktiver Näherungssensor" mc="Standard.Class" uid="811a494d-0bbd-44e7-9e88-8e9be7ffde85"/>
+        <COMPID name="Näherungssensor" mc="Standard.Class" uid="9824da55-c9ec-40e9-a456-a2ada7e12cb8"/>
+        <COMPID name="Kapazitiver Näherungssensor" mc="Standard.Class" uid="dce31192-c792-43bb-8af7-6563fe5cb39b"/>
+        <COMPID name="Optischer Sensor" mc="Standard.Class" uid="599f43e8-d261-4cec-8d7b-6572de6f4bc8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

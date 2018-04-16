@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modul Eingang" version="4">
+  <OBJECT>
+    <ID name="Modul Eingang" mc="Standard.Package" uid="33be66b1-1f88-4368-bb03-54a5eb5897f0"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Modul Eingang]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück annehmen" mc="Standard.Activity" uid="2aa96ea4-be6d-4173-815a-8594714f6c87"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

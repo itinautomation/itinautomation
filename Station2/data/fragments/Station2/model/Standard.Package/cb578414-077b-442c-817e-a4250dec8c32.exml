@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modul Übergabe" version="4">
+  <OBJECT>
+    <ID name="Modul Übergabe" mc="Standard.Package" uid="cb578414-077b-442c-817e-a4250dec8c32"/>
+    <PID name="Station Prüfen" mc="Standard.Package" uid="388293d9-24ae-4bb0-a8e3-8fe8e442e995"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Modul Übergabe]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Werkstück übergeben" mc="Standard.Activity" uid="8ea45c94-f947-4bc8-86e1-c8c5a9eaaf01"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Stopper" mc="Standard.Class" uid="39a397be-8b52-46d6-9112-2c06a962b843"/>
+        <COMPID name="Auswurfzylinder" mc="Standard.Class" uid="e375f04a-4f74-4c42-ac7f-9d21d298d4d3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
