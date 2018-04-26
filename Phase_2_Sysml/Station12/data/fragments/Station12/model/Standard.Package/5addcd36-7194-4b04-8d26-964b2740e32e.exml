@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="station12" version="4">
+  <OBJECT>
+    <ID name="station12" mc="Standard.Package" uid="5addcd36-7194-4b04-8d26-964b2740e32e"/>
+    <PID name="Station12" mc="Standard.Project" uid="5fc6c9b1-df19-4aaa-835b-4a8d041d4344"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[station12]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Overall" mc="Standard.StateMachine" uid="32b18cab-2da4-43a6-b5b0-e5ba5129c942"/>
+        <COMPID name="Initialization" mc="Standard.StateMachine" uid="6a63a315-6716-42a0-9939-9d57d5729c62"/>
+        <COMPID name="Normal Operation" mc="Standard.StateMachine" uid="ebf976f1-6cda-422c-95b4-b7c15ad64b71"/>
+        <COMPID name="State Machine S1" mc="Standard.StateMachine" uid="5674ccef-8e49-4a38-8801-124630017ec3"/>
+        <COMPID name="State Machine S2" mc="Standard.StateMachine" uid="c64d8df7-c00d-44c5-a542-eb2d894ce88c"/>
+        <COMPID name="State Machine Ramp" mc="Standard.StateMachine" uid="7a1da887-ccfc-4b92-aa81-2512d3cc25ea"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Controlled Shutdown" mc="Standard.UseCase" uid="daa942cb-4880-4978-b40f-f575b496da3c"/>
+        <COMPID name="Emergency Shutdown" mc="Standard.UseCase" uid="a666d7af-cf0e-4d67-ba1f-39e0aa3e313b"/>
+        <COMPID name="Pass Material Unit" mc="Standard.UseCase" uid="95574728-9b28-4751-b0b6-bfc2e738b89c"/>
+        <COMPID name="Normal Operation" mc="Standard.UseCase" uid="9017cbd3-22a0-4521-ace5-cb08099bcf19"/>
+        <COMPID name="Refill Magazine" mc="Standard.UseCase" uid="16732f03-79aa-4585-b3ae-3964a7a32507"/>
+        <COMPID name=" Operator" mc="Standard.Actor" uid="8c9a0034-08a3-4296-9bfb-3c5622a6153d"/>
+        <COMPID name="Check Material Unit" mc="Standard.UseCase" uid="f1019ddf-6015-4340-9948-3fa28bd8fcbf"/>
+        <COMPID name="Discard Material Unit" mc="Standard.UseCase" uid="7df2e43d-917c-4984-bf9b-224669b7bea0"/>
+        <COMPID name="Station34" mc="Standard.Actor" uid="3e25ccac-fdeb-4ffc-99fc-5c5e9c0033b1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="6157308d-2038-4dcc-a9cf-761c84105684"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
