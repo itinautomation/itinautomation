@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="station34" version="4">
+  <OBJECT>
+    <ID name="station34" mc="Standard.Package" uid="cbcd7e43-3d9f-422e-ac32-ff5117eafcb4"/>
+    <PID name="Station34" mc="Standard.Project" uid="570134e7-0e84-4ddb-9cf5-9454ae895e37"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[station34]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Uebernahme-Protokoll" mc="Standard.Interaction" uid="9b16c90d-2b14-4a8a-8e4e-58180c934b84"/>
+        <COMPID name="Uebergabe-Protokoll" mc="Standard.Interaction" uid="49436428-dbec-413b-93bc-4a69d17fe292"/>
+        <COMPID name="Not-Aus" mc="Standard.Interaction" uid="edd59b8f-c4b4-4b10-b4dd-67fc9ca56d40"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Human Operator" mc="Standard.Actor" uid="20fb066a-d5d6-4a50-b610-f39becbc96f7"/>
+        <COMPID name="Einschalten" mc="Standard.UseCase" uid="0e05c892-d0ad-4323-b3c8-1b5d64c0a7ec"/>
+        <COMPID name="Not-Aus" mc="Standard.UseCase" uid="4183ea8d-2d87-4a44-acfe-eec716e5ffe1"/>
+        <COMPID name="Lager &quot;Aussortiert&quot; leeren" mc="Standard.UseCase" uid="4ae4acc2-0c45-4d0b-b696-19b065717a09"/>
+        <COMPID name="Station12" mc="Standard.Actor" uid="1929bbff-d098-4e35-aee7-4ed14e2c73db"/>
+        <COMPID name="Station56" mc="Standard.Actor" uid="45ae5ccb-da60-4f01-9d12-cc612fd9cccb"/>
+        <COMPID name="Betrieb" mc="Standard.UseCase" uid="47f5845a-3762-4e66-9a7d-0ff3375728c9"/>
+        <COMPID name="Handhaben" mc="Standard.UseCase" uid="7949a6fe-7b83-4bff-bacb-7c8df3d4dbbe"/>
+        <COMPID name="Übergabe" mc="Standard.UseCase" uid="0a67b3a2-4667-4d83-b203-0be249e31ae6"/>
+        <COMPID name="Aussortieren" mc="Standard.UseCase" uid="194eda33-8a06-4448-804c-6aebcc4f4388"/>
+        <COMPID name="Not-Aus weitergeben" mc="Standard.UseCase" uid="4e830d59-1d29-4e83-97da-ebff4b94d67d"/>
+        <COMPID name="Übernahme" mc="Standard.UseCase" uid="63091600-f228-4b85-a04f-b2e8e76469ea"/>
+        <COMPID name="Bohren" mc="Standard.UseCase" uid="9643bc63-4bda-4554-9ad9-853314deef38"/>
+        <COMPID name="Prüfen" mc="Standard.UseCase" uid="079e8fd3-0601-416d-8bb7-560c2ca5fa51"/>
+        <COMPID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
+        <COMPID name="Sensor" mc="Standard.Class" uid="e075e297-74a3-4be5-84ee-604c2ae40033"/>
+        <COMPID name="SPS" mc="Standard.Class" uid="57acd43c-0695-4a7d-bb2d-96638f7c705b"/>
+        <COMPID name="Station34" mc="Standard.Class" uid="c93fef77-3f21-46e1-981b-d50e9d61f8cd"/>
+        <COMPID name="Handhaben" mc="Standard.Class" uid="bc6cdba9-8e36-428e-aa3b-88ebd4ea2132"/>
+        <COMPID name="Bohren" mc="Standard.Class" uid="244f4e75-417e-434e-9849-07d6ecf4a565"/>
+        <COMPID name="Produktionsstrasse" mc="Standard.Class" uid="a8ccf6fa-d429-460e-b86b-00cb6f67a3ab"/>
+        <COMPID name="Pruefen" mc="Standard.Class" uid="191b4752-47a9-4dfe-8eec-8ff94c5d64f2"/>
+        <COMPID name="Rotationszylinder" mc="Standard.Class" uid="62cc3939-bfce-40ec-8d3d-228d6a5e3456"/>
+        <COMPID name="Initialisieren" mc="Standard.UseCase" uid="871a38d8-89d4-4a46-b15c-5221d3ff17a1"/>
+        <COMPID name="Transport" mc="Standard.UseCase" uid="c130263b-6c06-465c-a717-2bfde940ff27"/>
+        <COMPID name="Ausgangsposition einnehmen" mc="Standard.UseCase" uid="dd289f0e-9b79-4f03-9634-d5dc86d1cfbd"/>
+        <COMPID name="Aufnehmen" mc="Standard.UseCase" uid="7e1e569d-db53-46cd-aa51-18858febe830"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="58918e15-e880-4491-8d69-59eca8d350ce"/>
+        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="546c4fd8-2e2c-48a8-a7c3-290089a3ddf8"/>
+        <COMPID name="Internal Block diagram" mc="Standard.StaticDiagram" uid="a7e7d965-03ed-4f9e-90b3-d6219e4a16b5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

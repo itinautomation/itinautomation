@@ -1,0 +1,14 @@
+#Sat Apr 28 13:36:04 CEST 2018
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mario/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mario/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mario/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams8='AD Betrieb' {bc91ef28-b3df-42bb-acee-9b41c04b540c} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='AD Uebernahme' {9d3ec8bb-12df-414a-92a7-a52c2a9b4b2d} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='AD Aufnehmen' {52e06837-60f4-4c10-9ac3-e1199eaa118b} Standard.ActivityDiagram
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/mario/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams5='AD Ausgangsposition einnehmen' {a0103854-7f8f-4351-8982-7fd2a9591626} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='AD Transport' {03650645-831f-4266-a0cb-224a6577b96b} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='AD Aussortieren' {f91f2d6a-bb83-460b-af3a-00494e771d30} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='AD Uebergabe' {e1d13172-a068-4192-b0e2-99380fd914c5} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='AD Handhaben' {2b88700b-017f-47e5-b992-be46d0a76ea9} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Usecase diagram' {58918e15-e880-4491-8d69-59eca8d350ce} Standard.UseCaseDiagram

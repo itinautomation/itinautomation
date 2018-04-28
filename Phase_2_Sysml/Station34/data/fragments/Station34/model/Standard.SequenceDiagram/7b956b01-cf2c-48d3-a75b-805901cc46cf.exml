@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SD Not-Aus" version="4">
+  <OBJECT>
+    <ID name="SD Not-Aus" mc="Standard.SequenceDiagram" uid="7b956b01-cf2c-48d3-a75b-805901cc46cf"/>
+    <PID name="Not-Aus" mc="Standard.Interaction" uid="edd59b8f-c4b4-4b10-b4dd-67fc9ca56d40"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">27</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="Name"><![CDATA[SD Not-Aus]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="r" mc="Standard.Lifeline" uid="6f19ccfb-0dce-463f-a126-05364ffa83c4"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="r1" mc="Standard.Lifeline" uid="c6f3e5b9-0944-41a3-ad7c-7eae88c5292e"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="r2" mc="Standard.Lifeline" uid="efd334c6-9b14-412a-95d0-bab98d88117a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="r3" mc="Standard.Lifeline" uid="5e2d37ea-8337-4a08-aa53-0655d2099360"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="ab83ccde-da8f-45e5-a29c-6adeed6bbdef"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="8280ecc8-7e90-4a4a-85d4-941d8c4ebeed"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Not-Aus Taster gedrückt" mc="Standard.Message" uid="00673e4b-84a3-4711-86d9-f54a7cb4674f"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="501998b9-26dc-4f7e-8ab1-5ac14a44fdd9"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fe14f289-e9ef-44cb-8960-50e9fff8dc83"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Not-Aus weitergeben" mc="Standard.Message" uid="fcca7102-8804-49e0-92f4-9a517685f54d"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="f8773e8e-e062-4eec-9f7b-ee6e96977177"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="480274e5-8666-4fb0-a591-e87887203d46"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7e67585d-3b68-4899-ac7c-34a610be4177"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="0294b592-6dd5-44e5-b067-9085e6e4a4ff"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="c8d5299e-a937-4124-a601-130b11af6a8a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="c5877183-e931-4500-ae20-fd7d82b2fb6a"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Not-Aus weitergeben" mc="Standard.Message" uid="48e9b826-8e97-43ae-8742-90b1f2d930fb"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="09dbbfe7-b512-46bc-b007-1236ae5c9b70"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4b424db9-14a8-4243-a384-ace46b879b67"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLSequenceDiagram" mc="Infrastructure.Stereotype" uid="0691339b-d7d7-11e0-9a40-0027103f347c"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
