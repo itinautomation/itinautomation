@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamespaceUris>
+    <Uri>http://tilab.tuwien.ac.at/ITIA/Station12</Uri>
+  </NamespaceUris>
+  <Aliases>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+  </Aliases>
+  <UADataType BrowseName="1:Color" NodeId="ns=1;i=2001">
+    <DisplayName>Color</DisplayName>
+    <Description>Color</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2002</Reference>
+    </References>
+  </UADataType>
+  <UAVariable BrowseName="1:StringEnum" DataType="LocalizedText" NodeId="ns=1;i=2002" ParentNodeId="ns=1;i=2001">
+    <DisplayName>StringEnum</DisplayName>
+    <Description>StringEnum</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=2001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText>
+        <uax:LocalizedText>
+          <uax:Encoding>2</uax:Encoding>
+          <uax:Locale />
+          <uax:Text>RED</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Encoding>2</uax:Encoding>
+          <uax:Locale />
+          <uax:Text>SILVER</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Encoding>2</uax:Encoding>
+          <uax:Locale />
+          <uax:Text>BLACK</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAMethod BrowseName="1:isMaterialAvailable" NodeId="ns=1;i=2006" ParentNodeId="i=2253">
+    <DisplayName>isMaterialAvailable</DisplayName>
+    <Description>isMaterialAvailable</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=2253</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2007</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable BrowseName="0:OutputArguments" DataType="Argument" NodeId="ns=1;i=2007" ParentNodeId="ns=1;i=2006" ValueRank="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <Description>OutputArguments</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=2006</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=296</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>material_is_available</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Encoding>2</uax:Encoding>
+                <uax:Locale />
+                <uax:Text>Indicates wether the station is ready to pass on a material unit</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAMethod BrowseName="1:releaseMaterial" NodeId="ns=1;i=2008" ParentNodeId="i=2253">
+    <DisplayName>releaseMaterial</DisplayName>
+    <Description>releaseMaterial</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=2253</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2009</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable BrowseName="0:OutputArguments" DataType="Argument" NodeId="ns=1;i=2009" ParentNodeId="ns=1;i=2008" ValueRank="0">
+    <DisplayName>OutputArguments</DisplayName>
+    <Description>OutputArguments</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=2008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=296</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>material_unit_information</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Encoding>2</uax:Encoding>
+                <uax:Locale />
+                <uax:Text>Information about the released material unit</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAObject BrowseName="1:MaterialUnit" NodeId="ns=1;i=2012" ParentNodeId="i=2253">
+    <DisplayName>MaterialUnit</DisplayName>
+    <Description>MaterialUnit</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=2253</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=2013</Reference>
+    </References>
+  </UAObject>
+  <UAVariable BrowseName="1:NoName" DataType="ns=1;i=2001" NodeId="ns=1;i=2013" ParentNodeId="ns=1;i=2012">
+    <DisplayName>NoName</DisplayName>
+    <Description>NoName</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=2012</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:Int32>1</uax:Int32>
+    </Value>
+  </UAVariable>
+</UANodeSet>

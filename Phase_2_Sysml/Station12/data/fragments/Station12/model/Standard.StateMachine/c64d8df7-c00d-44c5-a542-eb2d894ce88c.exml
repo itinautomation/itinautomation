@@ -224,6 +224,22 @@
                             <ID name="Move slider front (B)" mc="Standard.State" uid="858a42e7-cc20-4798-a9cc-ce1769db27e3"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="Note" mc="Infrastructure.Note" uid="4a09a396-f56b-4c2e-afa0-857742c78641"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[Only happens if State Machine Ramp is in state "Empty".]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"><![CDATA[Note]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
@@ -587,6 +603,22 @@
                             <ID name="Waiting for clear way" mc="Standard.State" uid="72f9f40e-f823-413b-87ae-d1c2b627d650"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="Note" mc="Infrastructure.Note" uid="baf9dc27-e427-4139-8ca7-9b7445688583"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[Only happens if State Machine S1 is in state "Idle".]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"><![CDATA[Note]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>

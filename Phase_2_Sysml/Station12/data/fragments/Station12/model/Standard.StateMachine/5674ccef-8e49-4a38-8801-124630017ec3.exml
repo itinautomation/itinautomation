@@ -134,6 +134,22 @@
                             <ID name="Move arm to checking (B)" mc="Standard.State" uid="5ad826e3-b2e0-4432-9b7e-f777c428eeac"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="Note" mc="Infrastructure.Note" uid="f1a8c1ff-d903-406d-a32e-e139adb74f10"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[Only happens if State Machine S2 is in state "Idle".]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"><![CDATA[Note]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
@@ -194,6 +210,22 @@
                             <ID name="Move arm to checking (A)" mc="Standard.State" uid="b2ada4e1-5e67-4def-98cc-ef2cc1ca0d6a"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="Note" mc="Infrastructure.Note" uid="7d68800a-094c-48dd-b572-5a6c6f5a828b"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[Only happens if State Machine S2 is in state "idle".]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"><![CDATA[Note]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
@@ -352,6 +384,22 @@
                             <ID name="Slider to front" mc="Standard.State" uid="0fbc5c23-6cde-42ed-a7de-f79bc8628e7f"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="Note" mc="Infrastructure.Note" uid="c79d799a-1031-484b-a952-352ef25bb3a7"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[Only happens if magzine is not empty.]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"><![CDATA[Note]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
