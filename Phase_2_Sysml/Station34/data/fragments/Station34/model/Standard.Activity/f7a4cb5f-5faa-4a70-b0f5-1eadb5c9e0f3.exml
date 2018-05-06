@@ -58,11 +58,6 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Pruefer" mc="Standard.BindableInstance" uid="3596a6a2-90d4-4aea-812b-1467370b80de"/>
-              </REFOBJ>
-            </LINK>
             <COMP relation="Outgoing">
               <OBJECT>
                 <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="896815b5-032b-43f1-9285-3d322117843e"/>
@@ -139,13 +134,7 @@
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Pruefer_runter" mc="Standard.BindableInstance" uid="d271dc7a-33c1-43d0-af03-211bd53965a9"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Standard.InstanceNode" uid="5724d4a5-9fb6-41c4-b841-e1704a848b11"/>
@@ -160,7 +149,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="Pruefer_rauf" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
+                <ID name="Pruefer" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -390,13 +379,7 @@
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Pruefer_runter" mc="Standard.BindableInstance" uid="d271dc7a-33c1-43d0-af03-211bd53965a9"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Standard.InstanceNode" uid="2e0e28dd-42c6-42e8-9ba3-02aca3696a18"/>
@@ -411,7 +394,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="Pruefer_rauf" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
+                <ID name="Pruefer" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>

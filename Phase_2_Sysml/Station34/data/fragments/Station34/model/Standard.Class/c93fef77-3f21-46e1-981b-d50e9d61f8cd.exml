@@ -15,6 +15,22 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="Operation" mc="Standard.Operation" uid="9d03abed-d511-479a-832f-32f540439979"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[Operation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="InternalStructure">
         <OBJECT>
           <ID name="SPS34" mc="Standard.BindableInstance" uid="98ad9a0c-a2b6-4e10-9306-d0b6cf6880c0"/>
@@ -48,17 +64,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="0ba032bb-092e-496f-9b20-b7adbf8e778a"/>
+                <ID name="1.0" mc="Standard.Port" uid="0ba032bb-092e-496f-9b20-b7adbf8e778a"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[1.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -77,7 +93,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="01e0e560-b6f4-46bc-8b55-bc50a9698dd2"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -110,17 +126,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="3330277a-e9c6-415a-9e35-1fe89a6c1cc8"/>
+                <ID name="1.3" mc="Standard.Port" uid="3330277a-e9c6-415a-9e35-1fe89a6c1cc8"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[1.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -139,7 +155,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="fa317c60-da35-48ad-b1ff-fe7c4839fb36"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -172,17 +188,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="b032f73c-116a-4459-8275-0fb0f3daeaaa"/>
+                <ID name="Q0.0" mc="Standard.Port" uid="b032f73c-116a-4459-8275-0fb0f3daeaaa"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q0.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -201,7 +217,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="f4049221-1986-4848-83b0-a57a263ac8b5"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -234,17 +250,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="7418e7d4-b602-47e3-ac3d-173340e4c53f"/>
+                <ID name="0.2" mc="Standard.Port" uid="7418e7d4-b602-47e3-ac3d-173340e4c53f"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[0.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -263,7 +279,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="7c877049-80cd-45ac-8c40-61d15148aa8a"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -281,13 +297,13 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Fixierer_fixieren" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
+          <ID name="Fixierer" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Fixierer_fixieren]]></ATT>
+            <ATT name="Name"><![CDATA[Fixierer]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -296,17 +312,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="9ddf753e-22eb-48fd-997c-f4a2ddccf059"/>
+                <ID name="Q263.2" mc="Standard.Port" uid="9ddf753e-22eb-48fd-997c-f4a2ddccf059"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q263.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -325,7 +341,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="3e12b551-9e44-4b3b-9480-5163be420a78"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -358,17 +374,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="b15e33bd-3465-40b0-b5dc-2971d10d303b"/>
+                <ID name="0.1" mc="Standard.Port" uid="b15e33bd-3465-40b0-b5dc-2971d10d303b"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[0.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -387,69 +403,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="16bbe433-bae4-4d1e-afbe-ef6c6769e4aa"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
-                              <ATT name="status">1970354901745664</ATT>
-                            </ATTRIBUTES>
-                            <DEPENDENCIES></DEPENDENCIES>
-                          </OBJECT>
-                        </COMP>
-                        <LINK relation="Definition">
-                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Fixierer_lösen" mc="Standard.BindableInstance" uid="a2eee13b-b799-417e-9a56-07b4bc197713"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Fixierer_lösen]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Base">
-              <ID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
-            </LINK>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="f3013678-ddb8-4131-9fb0-c8af89a78217"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Extension">
-                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
-                  </LINK>
-                  <COMP relation="Tag">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="846c72b8-8092-40bf-9cb1-9950ca7684f9"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <COMP relation="Actual">
-                          <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="544dbf8b-0a92-4715-8caa-837474d6dcad"/>
-                            <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -482,17 +436,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="8bd970b8-b552-4ff8-9738-3245e23863dc"/>
+                <ID name="1.1" mc="Standard.Port" uid="8bd970b8-b552-4ff8-9738-3245e23863dc"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[1.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -511,7 +465,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="14c8e05d-e681-4b22-9d60-4f4281ed68b2"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -544,17 +498,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="0ea38e40-c9c0-4c22-96d3-14359f8a2cd9"/>
+                <ID name="1.2" mc="Standard.Port" uid="0ea38e40-c9c0-4c22-96d3-14359f8a2cd9"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[1.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -573,7 +527,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="7cda8b34-730d-4892-adf5-3901aad785e0"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -606,17 +560,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="201e29a5-405f-418f-91ee-72f5adf5189a"/>
+                <ID name="0.3" mc="Standard.Port" uid="201e29a5-405f-418f-91ee-72f5adf5189a"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[0.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -635,7 +589,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="d0eb40f1-f779-47b5-a316-52ef19b8fdbc"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -668,17 +622,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="51bb2e5f-7ffb-4611-b1e6-6c72f1a72ec7"/>
+                <ID name="Q0.2" mc="Standard.Port" uid="51bb2e5f-7ffb-4611-b1e6-6c72f1a72ec7"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q0.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -697,7 +651,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="1a8c852e-0119-4c34-bbb8-25c9cfce87e6"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -730,17 +684,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="bec43c37-2c67-4b4c-a109-76bc4fbc1ec7"/>
+                <ID name="0.0" mc="Standard.Port" uid="bec43c37-2c67-4b4c-a109-76bc4fbc1ec7"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[0.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -759,7 +713,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="ae7aa27c-a315-49c6-9b81-6576f52999b8"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -777,7 +731,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pruefer" mc="Standard.BindableInstance" uid="3596a6a2-90d4-4aea-812b-1467370b80de"/>
+          <ID name="Pruefer" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -788,145 +742,21 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Base">
-              <ID name="Sensor" mc="Standard.Class" uid="e075e297-74a3-4be5-84ee-604c2ae40033"/>
-            </LINK>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="48209082-312a-4dbf-b08d-aa7216eee7da"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Extension">
-                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
-                  </LINK>
-                  <COMP relation="Tag">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="d6202f98-a2ad-4e74-8be8-af00825775c7"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <COMP relation="Actual">
-                          <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="df3b5b20-d467-49df-a6fe-de27c1bee48a"/>
-                            <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
-                              <ATT name="status">1970354901745664</ATT>
-                            </ATTRIBUTES>
-                            <DEPENDENCIES></DEPENDENCIES>
-                          </OBJECT>
-                        </COMP>
-                        <LINK relation="Definition">
-                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Pruefer_runter" mc="Standard.BindableInstance" uid="d271dc7a-33c1-43d0-af03-211bd53965a9"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Pruefer_runter]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Base">
               <ID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="bd80fa1d-39be-43a0-9421-4f9ff2346aec"/>
+                <ID name="Q263.0" mc="Standard.Port" uid="ddc5cf41-a896-49ba-b6e0-efdafbae96d4"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Extension">
-                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
-                  </LINK>
-                  <COMP relation="Tag">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="7a1ea5a6-4def-4370-aaee-3714c504128a"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <COMP relation="Actual">
-                          <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="baf447c3-d2fc-4c1c-adcd-32c05a2f6b10"/>
-                            <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
-                              <ATT name="status">1970354901745664</ATT>
-                            </ATTRIBUTES>
-                            <DEPENDENCIES></DEPENDENCIES>
-                          </OBJECT>
-                        </COMP>
-                        <LINK relation="Definition">
-                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Pruefer_rauf" mc="Standard.BindableInstance" uid="e33f4c02-bc2e-4836-b556-bfbe534c9f9f"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Pruefer_rauf]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Base">
-              <ID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
-            </LINK>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="ddc5cf41-a896-49ba-b6e0-efdafbae96d4"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q263.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -945,7 +775,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="43d94732-7898-49e6-85f3-8df696f5eefa"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -978,17 +808,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="d6475184-90ff-4450-b58f-bdddf970b0da"/>
+                <ID name="Q263.4" mc="Standard.Port" uid="d6475184-90ff-4450-b58f-bdddf970b0da"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q263.4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1007,7 +837,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="07280ad5-63c9-4e02-801b-f3d07a7d157a"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1040,17 +870,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="fa13729c-6365-4ba9-b471-14b6de0cb2c2"/>
+                <ID name="Q263.5" mc="Standard.Port" uid="fa13729c-6365-4ba9-b471-14b6de0cb2c2"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q263.5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1069,7 +899,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="92df66c5-5fdc-4915-8e4f-b71c49f03de9"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1102,17 +932,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="7a7175ce-cc7c-44cb-b6ad-faafa26b27e6"/>
+                <ID name="3.1" mc="Standard.Port" uid="7a7175ce-cc7c-44cb-b6ad-faafa26b27e6"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[3.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1131,7 +961,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="3802f098-3963-417d-9e4e-ca764c1f1669"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1164,17 +994,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="a158887b-3f7f-4709-b938-5795848e0013"/>
+                <ID name="2.1" mc="Standard.Port" uid="a158887b-3f7f-4709-b938-5795848e0013"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[2.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1193,7 +1023,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="58c57839-9895-4e5c-a9fb-a568ad125ae3"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1226,17 +1056,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="81215466-38c7-4cdf-9506-1d2edfed3e8f"/>
+                <ID name="3.2" mc="Standard.Port" uid="81215466-38c7-4cdf-9506-1d2edfed3e8f"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[3.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1255,7 +1085,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="eab8939a-a80e-48e1-89da-c868a1f1a164"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1288,17 +1118,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="2632208e-3467-4dc2-96dc-1ee0206c48e4"/>
+                <ID name="2.0" mc="Standard.Port" uid="2632208e-3467-4dc2-96dc-1ee0206c48e4"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[2.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1317,7 +1147,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="3267c986-d291-4495-a612-8eb38a30b81b"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1350,17 +1180,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="44184e9b-3608-43dc-afa3-9c42349e9096"/>
+                <ID name="2.2" mc="Standard.Port" uid="44184e9b-3608-43dc-afa3-9c42349e9096"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[2.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1379,7 +1209,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="36c91c99-85e0-431d-b2fc-300fc0b85c63"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1412,17 +1242,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="84a2498e-136b-4f4f-9b4d-a630456b2a54"/>
+                <ID name="2.3" mc="Standard.Port" uid="84a2498e-136b-4f4f-9b4d-a630456b2a54"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[2.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1441,7 +1271,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="bd4e2354-d93d-4308-9108-1d08033eff48"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1459,13 +1289,13 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Arm_runter" mc="Standard.BindableInstance" uid="91c63424-a3ab-4ef2-a29a-a77116c6b57f"/>
+          <ID name="Arm_Höhe" mc="Standard.BindableInstance" uid="91c63424-a3ab-4ef2-a29a-a77116c6b57f"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Arm_runter]]></ATT>
+            <ATT name="Name"><![CDATA[Arm_Höhe]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -1474,17 +1304,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="9fbd7749-0f4c-40a0-b265-6d62b59e4fe1"/>
+                <ID name="Q266.4" mc="Standard.Port" uid="9fbd7749-0f4c-40a0-b265-6d62b59e4fe1"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q266.4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1503,69 +1333,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="cc9dc1f1-7453-4d9f-b207-763d91459f4f"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
-                              <ATT name="status">1970354901745664</ATT>
-                            </ATTRIBUTES>
-                            <DEPENDENCIES></DEPENDENCIES>
-                          </OBJECT>
-                        </COMP>
-                        <LINK relation="Definition">
-                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Arm_rauf" mc="Standard.BindableInstance" uid="20632f0b-898d-432b-9792-e079cb3389ee"/>
-          <ATTRIBUTES>
-            <ATT name="IsConstant">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Arm_rauf]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Base">
-              <ID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
-            </LINK>
-            <COMP relation="Part">
-              <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="5788da39-8a4d-43a1-b77d-005bfc6807cf"/>
-                <ATTRIBUTES>
-                  <ATT name="IsBehavior">false</ATT>
-                  <ATT name="IsService">true</ATT>
-                  <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
-                  <ATT name="IsConstant">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Extension">
-                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
-                  </LINK>
-                  <COMP relation="Tag">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="6d1035c3-e509-42a8-830d-71f7d87ec006"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <COMP relation="Actual">
-                          <OBJECT>
-                            <ID name="" mc="Infrastructure.TagParameter" uid="de703f23-4c35-4127-9047-25685b47bcd2"/>
-                            <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1598,17 +1366,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="ede45b35-e39a-4f4b-9586-82564780689f"/>
+                <ID name="Q266.6" mc="Standard.Port" uid="ede45b35-e39a-4f4b-9586-82564780689f"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q266.6]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1627,7 +1395,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="8ebc98d3-cc5b-40e4-a56d-131a4fa4df2d"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1660,17 +1428,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="49a6638d-1b45-472f-ae30-9c8bcb25c2da"/>
+                <ID name="Q266.7" mc="Standard.Port" uid="49a6638d-1b45-472f-ae30-9c8bcb25c2da"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q266.7]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1689,7 +1457,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="b9947510-37c4-4f18-a0f0-77dab3ec49a4"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1722,17 +1490,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="2bb8fd16-1b38-402a-b8e0-0106dd5a206b"/>
+                <ID name="Q265.1" mc="Standard.Port" uid="2bb8fd16-1b38-402a-b8e0-0106dd5a206b"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q265.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1751,7 +1519,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="853f753f-9d06-4ce1-a051-7540e10fa492"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1784,17 +1552,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="b39b9d86-6c61-4c6c-8d84-8503bbf5be38"/>
+                <ID name="Q265.0" mc="Standard.Port" uid="b39b9d86-6c61-4c6c-8d84-8503bbf5be38"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q265.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1813,7 +1581,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="381aaf92-3b40-4dfa-86e2-278f7609a756"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1831,13 +1599,13 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Saugen" mc="Standard.BindableInstance" uid="18b62500-0bdf-4b80-bb7b-4384569cb335"/>
+          <ID name="Saugen_aus" mc="Standard.BindableInstance" uid="18b62500-0bdf-4b80-bb7b-4384569cb335"/>
           <ATTRIBUTES>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Value"></ATT>
-            <ATT name="Name"><![CDATA[Saugen]]></ATT>
+            <ATT name="Name"><![CDATA[Saugen_aus]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -1846,17 +1614,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="6c20f1cc-a989-47ef-abb5-641ef1753f8e"/>
+                <ID name="Q265.3" mc="Standard.Port" uid="6c20f1cc-a989-47ef-abb5-641ef1753f8e"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q265.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1875,7 +1643,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="c9709bf1-87bc-423d-8650-aafdb73d8566"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1908,17 +1676,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="f1b93414-2d1f-43c8-824b-d8a1f4a7d12b"/>
+                <ID name="261.2" mc="Standard.Port" uid="f1b93414-2d1f-43c8-824b-d8a1f4a7d12b"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[261.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1937,7 +1705,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="f10c0005-b5d0-4582-94cc-59cbaa03710c"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -1970,17 +1738,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="7b7df4a6-1f0b-46e7-bff5-a1385b6b738a"/>
+                <ID name="261.3" mc="Standard.Port" uid="7b7df4a6-1f0b-46e7-bff5-a1385b6b738a"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[261.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -1999,7 +1767,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="16300c93-787d-47fa-95fc-2f096782656c"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2032,17 +1800,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="00ba8981-4ef7-4626-aad5-5d68d234c9f7"/>
+                <ID name="261.1" mc="Standard.Port" uid="00ba8981-4ef7-4626-aad5-5d68d234c9f7"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[261.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2061,7 +1829,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="ceb537a6-6928-4a6f-848a-41190b851b1b"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2094,17 +1862,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="f2b124e8-f8dd-4b94-8ef7-52ec6a410c58"/>
+                <ID name="261.0" mc="Standard.Port" uid="f2b124e8-f8dd-4b94-8ef7-52ec6a410c58"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[261.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2123,7 +1891,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="cec0e77c-81ef-4f1c-856b-25d4b6baa7ae"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2156,17 +1924,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="6ec35670-d2a5-4d4b-a72d-bedb8e08cba1"/>
+                <ID name="264.6" mc="Standard.Port" uid="6ec35670-d2a5-4d4b-a72d-bedb8e08cba1"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[264.6]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2185,7 +1953,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="6781a006-d311-4368-bc84-434d469a32f1"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2218,17 +1986,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="86a35833-2d74-4d4f-a420-4bcdf71a6fe7"/>
+                <ID name="264.7" mc="Standard.Port" uid="86a35833-2d74-4d4f-a420-4bcdf71a6fe7"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[264.7]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2247,7 +2015,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="c8b29c11-57a2-4386-8547-cbf91582c4c6"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2280,17 +2048,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="184909a7-b0ac-430c-9a0d-d1b91baf3045"/>
+                <ID name="264.5" mc="Standard.Port" uid="184909a7-b0ac-430c-9a0d-d1b91baf3045"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[264.5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2309,7 +2077,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="12092694-6793-4f06-92e1-4f8d66fceccb"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2342,17 +2110,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="264e1c8b-3d9a-4680-bf63-e52a6d688b04"/>
+                <ID name="264.4" mc="Standard.Port" uid="264e1c8b-3d9a-4680-bf63-e52a6d688b04"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">Out</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[264.4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2371,7 +2139,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="f8a8e78b-6fa7-4494-b261-f85d9e757110"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2404,17 +2172,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="85d6ffce-8b2e-4e7b-a131-51d80a018d75"/>
+                <ID name="Q261.2" mc="Standard.Port" uid="85d6ffce-8b2e-4e7b-a131-51d80a018d75"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q261.2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2433,7 +2201,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="64cfce67-5c84-44f0-811b-cf0754e709dd"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2466,17 +2234,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="457eff7a-3758-4a7c-b1cf-9a05a54bdb3b"/>
+                <ID name="Q261.3" mc="Standard.Port" uid="457eff7a-3758-4a7c-b1cf-9a05a54bdb3b"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q261.3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2495,7 +2263,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="b48915f1-4460-40cc-ba34-f491581842f4"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2528,17 +2296,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="beb6f941-7c20-4992-80e6-ee076410a5db"/>
+                <ID name="Q261.1" mc="Standard.Port" uid="beb6f941-7c20-4992-80e6-ee076410a5db"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q261.1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2557,7 +2325,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="88819175-1a34-4ab5-92e2-57d9f43443b4"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2590,17 +2358,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="64ec004e-4ce9-44a3-ab05-3ba01c46e5ef"/>
+                <ID name="Q264.6" mc="Standard.Port" uid="64ec004e-4ce9-44a3-ab05-3ba01c46e5ef"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q264.6]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2619,7 +2387,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="12af31d3-d869-4da5-bf76-19c8f8bc8e49"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2652,17 +2420,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="f417b525-deff-4a2e-bcc1-188995025d84"/>
+                <ID name="Q264.4" mc="Standard.Port" uid="f417b525-deff-4a2e-bcc1-188995025d84"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q264.4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2681,7 +2449,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="ea821b11-2bab-425f-9cd8-4445ef6ac51e"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2714,17 +2482,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="ee60d20c-4e44-4ffd-a84b-4fadc8a3fd05"/>
+                <ID name="Q264.5" mc="Standard.Port" uid="ee60d20c-4e44-4ffd-a84b-4fadc8a3fd05"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q264.5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2743,7 +2511,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="bee43e25-fd86-4900-bcc8-a4cd92bcb12f"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2776,17 +2544,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="5afc42ed-0210-48f7-bafa-5e089c409cfa"/>
+                <ID name="Q264.7" mc="Standard.Port" uid="5afc42ed-0210-48f7-bafa-5e089c409cfa"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q264.7]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2805,7 +2573,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="4a8f371b-5801-4ec9-9bbe-3ef638f3bcac"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -2838,17 +2606,17 @@
             </LINK>
             <COMP relation="Part">
               <OBJECT>
-                <ID name="FlowPort" mc="Standard.Port" uid="3e5c7d3f-4ac2-441c-81b8-34c88343c413"/>
+                <ID name="Q261.0" mc="Standard.Port" uid="3e5c7d3f-4ac2-441c-81b8-34c88343c413"/>
                 <ATTRIBUTES>
                   <ATT name="IsBehavior">false</ATT>
                   <ATT name="IsService">true</ATT>
                   <ATT name="IsConjugated">false</ATT>
-                  <ATT name="Direction">Inout</ATT>
+                  <ATT name="Direction">In</ATT>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[FlowPort]]></ATT>
+                  <ATT name="Name"><![CDATA[Q261.0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2867,7 +2635,7 @@
                           <OBJECT>
                             <ID name="" mc="Infrastructure.TagParameter" uid="3822e69e-6f72-45c9-ab7f-dc24f5219ef2"/>
                             <ATTRIBUTES>
-                              <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>
@@ -3242,6 +3010,130 @@
                             <ID name="" mc="Infrastructure.TagParameter" uid="1bb44043-8f30-4a28-b092-87231566bd1b"/>
                             <ATTRIBUTES>
                               <ATT name="Value"><![CDATA[INOUT]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Angesaugt" mc="Standard.BindableInstance" uid="bb247e09-0599-4658-9ff6-71606b9003a8"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Angesaugt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Sensor" mc="Standard.Class" uid="e075e297-74a3-4be5-84ee-604c2ae40033"/>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID name="3.0" mc="Standard.Port" uid="8bf1c326-97d3-4a76-af48-050db38eea19"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">Out</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[3.0]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="82b1cd16-26b3-4202-89c2-591e09394991"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Infrastructure.TagParameter" uid="5ef028f9-b1af-498c-af53-8d4dfdd623c3"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Infrastructure.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Saugen_ein" mc="Standard.BindableInstance" uid="07b2dfa1-8a41-4f31-a172-7b0474534694"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Saugen_ein]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="Aktuator" mc="Standard.Class" uid="7938bb97-0cae-46c8-8c85-1bd4aaf09d13"/>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID name="Q265.2" mc="Standard.Port" uid="2e0b87eb-c971-4a82-872d-dd49b4422d30"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">In</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Q265.2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="FlowPort" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-1a57-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="6857c296-ff2a-4756-977d-0d01c5718154"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Infrastructure.TagParameter" uid="ddd1551f-87e6-40f8-9389-ae0dc9f27599"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES></DEPENDENCIES>

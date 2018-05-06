@@ -522,7 +522,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="Fixierer_fixieren" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
+                <ID name="Fixierer" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -540,7 +540,7 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="Fixierer_fixieren" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
+                <ID name="Fixierer" mc="Standard.BindableInstance" uid="d4e8a294-8931-46f5-a031-ebe6e2ca5f07"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -591,13 +591,7 @@
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Fixierer_lösen" mc="Standard.BindableInstance" uid="a2eee13b-b799-417e-9a56-07b4bc197713"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Standard.InstanceNode" uid="6e935a37-a0e2-48a8-9a72-f5b63a625d11"/>
@@ -609,13 +603,7 @@
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Represented">
-              <REFOBJ>
-                <ID name="Fixierer_lösen" mc="Standard.BindableInstance" uid="a2eee13b-b799-417e-9a56-07b4bc197713"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Standard.InstanceNode" uid="d7e22cda-668f-4493-8ef3-8542f534cfe9"/>
