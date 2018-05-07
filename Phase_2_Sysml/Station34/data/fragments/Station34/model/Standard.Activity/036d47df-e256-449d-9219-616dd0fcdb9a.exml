@@ -223,7 +223,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="57286c06-17b5-4c9e-9857-d87229dffa52"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="5e270aa4-5084-4e73-9af2-074a460491ec"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -233,7 +233,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Prüfe Werkstück erhalten" mc="Standard.OpaqueAction" uid="478cabde-a414-4122-8afd-88938a2afaa5"/>
+                      <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="2ebcf235-a9df-489f-bb7b-15b1d21afb4d"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -308,52 +308,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="7d1299ae-8b45-4ba0-b133-38741f579f08"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="19f58040-36d6-497c-a191-03b90148af7d"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="19f58040-36d6-497c-a191-03b90148af7d"/>
-          <ATTRIBUTES>
-            <ATT name="IsCombineDuplicate">true</ATT>
-            <ATT name="JoinSpec"><![CDATA[and]]></ATT>
-            <ATT name="Name"><![CDATA[Fork/Join2]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="4a91d9f2-f7c5-480b-ae0d-77b30aad88ae"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Melde Werkstück erhalten an Station 12" mc="Standard.SendSignalAction" uid="ebba1fbd-6d6b-4180-be32-cbee0b660812"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="a38d48ed-47f1-4068-aa63-e4d67ec76f22"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="16a021f2-3c15-41cb-90a0-5971004c4f38"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -370,16 +325,6 @@
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Melde Werkstück erhalten an Station 12" mc="Standard.SendSignalAction" uid="ebba1fbd-6d6b-4180-be32-cbee0b660812"/>
-          <ATTRIBUTES>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Melde Werkstück erhalten an Station 12]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Standard.InstanceNode" uid="3a3c44f7-f52c-4706-9be5-ff2d344a0dea"/>
@@ -415,6 +360,64 @@
                   <LINK relation="Target">
                     <REFOBJ>
                       <ID name="Prüfe Werkstück erhalten" mc="Standard.OpaqueAction" uid="478cabde-a414-4122-8afd-88938a2afaa5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="2ebcf235-a9df-489f-bb7b-15b1d21afb4d"/>
+          <ATTRIBUTES>
+            <ATT name="IsCombineDuplicate">true</ATT>
+            <ATT name="JoinSpec"><![CDATA[and]]></ATT>
+            <ATT name="Name"><![CDATA[Fork/Join2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="57286c06-17b5-4c9e-9857-d87229dffa52"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Prüfe Werkstück erhalten" mc="Standard.OpaqueAction" uid="478cabde-a414-4122-8afd-88938a2afaa5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Station 12 meldet WS übergeben" mc="Standard.AcceptSignalAction" uid="80ca8cc8-05fd-4e37-8cec-87d04f862559"/>
+          <ATTRIBUTES>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Station 12 meldet WS übergeben]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e4d55014-0d5a-482b-8e2c-4b5b19026c19"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Fork/Join2" mc="Standard.ForkJoinNode" uid="2ebcf235-a9df-489f-bb7b-15b1d21afb4d"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

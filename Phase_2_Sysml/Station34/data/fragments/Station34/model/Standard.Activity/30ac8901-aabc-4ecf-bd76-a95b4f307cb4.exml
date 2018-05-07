@@ -13,12 +13,12 @@
     <DEPENDENCIES>
       <COMP relation="OwnedNode">
         <OBJECT>
-          <ID name="Lampe weiß 3 einschalten" mc="Standard.OpaqueAction" uid="67239ae4-f26b-43ab-bea4-cee3a4836400"/>
+          <ID name="Lampe weiß 3 und 4 einschalten" mc="Standard.OpaqueAction" uid="67239ae4-f26b-43ab-bea4-cee3a4836400"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Lampe weiß 3 einschalten]]></ATT>
+            <ATT name="Name"><![CDATA[Lampe weiß 3 und 4 einschalten]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -56,6 +56,27 @@
                   <LINK relation="Target">
                     <REFOBJ>
                       <ID name="" mc="Standard.InstanceNode" uid="a5e08a0f-8382-4322-8fbc-c7550145843e"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="8cc2c465-aecc-47e2-9931-5efdd5ac209f"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="8ff30f38-d5a0-4fbd-863b-ef4590325afe"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -206,12 +227,30 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Lampe weiß 3 einschalten" mc="Standard.OpaqueAction" uid="67239ae4-f26b-43ab-bea4-cee3a4836400"/>
+                      <ID name="Lampe weiß 3 und 4 einschalten" mc="Standard.OpaqueAction" uid="67239ae4-f26b-43ab-bea4-cee3a4836400"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="8ff30f38-d5a0-4fbd-863b-ef4590325afe"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe_weiss_4" mc="Standard.BindableInstance" uid="a5a8309e-d888-4620-8cce-9963765e414d"/>
+              </REFOBJ>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

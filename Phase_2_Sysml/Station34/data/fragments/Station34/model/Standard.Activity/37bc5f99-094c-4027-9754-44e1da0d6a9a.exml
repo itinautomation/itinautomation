@@ -37,27 +37,6 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
-            <COMP relation="Descriptor">
-              <OBJECT>
-                <ID name="Note" mc="Infrastructure.Note" uid="660dd380-a677-4a8d-bbbc-ac90cb07f77c"/>
-                <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[TODO: 
-
-Wie wird hier abgebildet, ob in einem Slot etwas ist?
-
-Wie stellt man hier die (unendlichen) Wiederholungen dar?
-]]></ATT>
-                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
-                  <ATT name="Name"><![CDATA[Note]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Model">
-                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -162,7 +141,7 @@ Wie stellt man hier die (unendlichen) Wiederholungen dar?
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="0199d125-4544-4d61-908f-ff82804d700b"/>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="da28664f-dd78-448a-8cc3-7bb9d9c1eba6"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -195,7 +174,7 @@ Wie stellt man hier die (unendlichen) Wiederholungen dar?
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="0199d125-4544-4d61-908f-ff82804d700b"/>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="da28664f-dd78-448a-8cc3-7bb9d9c1eba6"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -228,7 +207,7 @@ Wie stellt man hier die (unendlichen) Wiederholungen dar?
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="0199d125-4544-4d61-908f-ff82804d700b"/>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="da28664f-dd78-448a-8cc3-7bb9d9c1eba6"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -261,7 +240,7 @@ Wie stellt man hier die (unendlichen) Wiederholungen dar?
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="0199d125-4544-4d61-908f-ff82804d700b"/>
+                      <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="da28664f-dd78-448a-8cc3-7bb9d9c1eba6"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -276,6 +255,80 @@ Wie stellt man hier die (unendlichen) Wiederholungen dar?
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Fork/Join1" mc="Standard.ForkJoinNode" uid="da28664f-dd78-448a-8cc3-7bb9d9c1eba6"/>
+          <ATTRIBUTES>
+            <ATT name="IsCombineDuplicate">true</ATT>
+            <ATT name="JoinSpec"><![CDATA[and]]></ATT>
+            <ATT name="Name"><![CDATA[Fork/Join1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="508a3eb8-6fac-4e3c-b2bb-40a08e34f2bf"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="5e06f485-d800-4a61-bc63-adb417d9fa1c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="5e06f485-d800-4a61-bc63-adb417d9fa1c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="5746c2b1-60a8-432c-9ed3-6c32ba4197a5"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[ausschalten]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="Standard.ActivityFinalNode" uid="0199d125-4544-4d61-908f-ff82804d700b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="5c74dee3-6910-4224-a68d-990ca7557332"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[nicht ausschalten]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Fork/Join" mc="Standard.ForkJoinNode" uid="631fcc4b-c246-4aa4-b3d2-ba88422c33b2"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedCollaboration">

@@ -105,12 +105,12 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Lampe rot 3 einschalten" mc="Standard.OpaqueAction" uid="1d55120f-3836-42cf-9d98-64cf7aea226c"/>
+          <ID name="Lampe rot 3 und 4 einschalten" mc="Standard.OpaqueAction" uid="1d55120f-3836-42cf-9d98-64cf7aea226c"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Lampe rot 3 einschalten]]></ATT>
+            <ATT name="Name"><![CDATA[Lampe rot 3 und 4 einschalten]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -147,7 +147,28 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Lampe weiss 3 ausschalten" mc="Standard.OpaqueAction" uid="50a01e8c-89d2-4a27-9a54-acb00dfc3423"/>
+                      <ID name="Lampe weiss 3 und 4 ausschalten" mc="Standard.OpaqueAction" uid="50a01e8c-89d2-4a27-9a54-acb00dfc3423"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="109120fd-2c31-49ac-8244-b417b75b341b"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="109acf45-e5dd-4a66-84e2-86e42f04f8d8"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -156,12 +177,12 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Lampe weiss 3 ausschalten" mc="Standard.OpaqueAction" uid="50a01e8c-89d2-4a27-9a54-acb00dfc3423"/>
+          <ID name="Lampe weiss 3 und 4 ausschalten" mc="Standard.OpaqueAction" uid="50a01e8c-89d2-4a27-9a54-acb00dfc3423"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Lampe weiss 3 ausschalten]]></ATT>
+            <ATT name="Name"><![CDATA[Lampe weiss 3 und 4 ausschalten]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -203,6 +224,27 @@
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="ObjectFlow" mc="Standard.ObjectFlow" uid="4a335936-7ef8-4683-982f-6957691fcfce"/>
+                <ATTRIBUTES>
+                  <ATT name="TransformationBehavior"></ATT>
+                  <ATT name="SelectionBehavior"></ATT>
+                  <ATT name="IsMultiCast">false</ATT>
+                  <ATT name="IsMultiReceive">false</ATT>
+                  <ATT name="Effect">ReadFlow</ATT>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ObjectFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.InstanceNode" uid="e331bb50-b649-41b2-8be2-945651db23ef"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -227,7 +269,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Lampe rot 3 einschalten" mc="Standard.OpaqueAction" uid="1d55120f-3836-42cf-9d98-64cf7aea226c"/>
+                      <ID name="Lampe rot 3 und 4 einschalten" mc="Standard.OpaqueAction" uid="1d55120f-3836-42cf-9d98-64cf7aea226c"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -398,6 +440,42 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="109acf45-e5dd-4a66-84e2-86e42f04f8d8"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe_rot_4" mc="Standard.BindableInstance" uid="78f9c768-185d-470a-ae4c-1fddb46322a7"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InstanceNode" uid="e331bb50-b649-41b2-8be2-945651db23ef"/>
+          <ATTRIBUTES>
+            <ATT name="IsControlType">false</ATT>
+            <ATT name="Ordering">FIFO</ATT>
+            <ATT name="SelectionBehavior"></ATT>
+            <ATT name="UpperBound"><![CDATA[1]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Lampe_weiss_4" mc="Standard.BindableInstance" uid="a5a8309e-d888-4620-8cce-9963765e414d"/>
+              </REFOBJ>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
