@@ -20,6 +20,44 @@
         <COMPID name="State Machine S1" mc="Standard.StateMachine" uid="5674ccef-8e49-4a38-8801-124630017ec3"/>
         <COMPID name="State Machine S2" mc="Standard.StateMachine" uid="c64d8df7-c00d-44c5-a542-eb2d894ce88c"/>
         <COMPID name="State Machine Ramp" mc="Standard.StateMachine" uid="7a1da887-ccfc-4b92-aa81-2512d3cc25ea"/>
+        <COMPID name="Handshake (Protocol)" mc="Standard.Interaction" uid="9fedb9c6-4e3d-408c-8f0a-585fccd30cec"/>
+        <COMPID name="Handshake (Implementation)" mc="Standard.Interaction" uid="9c5ad2d4-3417-48c3-9b2a-077d9aead97f"/>
+      </COMP>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="5b3f8ac7-53cc-4de7-95ae-fa85c4b7c0b5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="2cbbe4d4-46d6-454e-ace1-52dd6de89fc8"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="OPC UA Server" mc="Standard.BindableInstance" uid="c129e8ed-8f35-4e94-af60-683a3ae81c72"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="ba968316-e8cd-44cf-b2df-ab6f90236ddb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="OPC UA Server" mc="Standard.BindableInstance" uid="c129e8ed-8f35-4e94-af60-683a3ae81c72"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="2cbbe4d4-46d6-454e-ace1-52dd6de89fc8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Controlled Shutdown" mc="Standard.UseCase" uid="daa942cb-4880-4978-b40f-f575b496da3c"/>
@@ -31,9 +69,23 @@
         <COMPID name="Check Material Unit" mc="Standard.UseCase" uid="f1019ddf-6015-4340-9948-3fa28bd8fcbf"/>
         <COMPID name="Discard Material Unit" mc="Standard.UseCase" uid="7df2e43d-917c-4984-bf9b-224669b7bea0"/>
         <COMPID name="Station34" mc="Standard.Actor" uid="3e25ccac-fdeb-4ffc-99fc-5c5e9c0033b1"/>
+        <COMPID name="SPS" mc="Standard.Class" uid="be040ecb-0dd7-45df-94b1-8714b29b2ec1"/>
+        <COMPID name="Station12" mc="Standard.Class" uid="9bfbb761-cbc2-47ca-8201-2c1d031db8f5"/>
+        <COMPID name="OPC UA Server" mc="Standard.Class" uid="2e784977-3568-4895-8a66-e670894f14b5"/>
+        <COMPID name="Station &quot;Verteilen&quot;" mc="Standard.Class" uid="335741e7-106a-455a-bd08-56be9a332806"/>
+        <COMPID name="Station &quot;Prüfen&quot;" mc="Standard.Class" uid="24b1bfd5-6fea-455b-801b-399f1fd6ac7e"/>
+        <COMPID name="Magazine" mc="Standard.Class" uid="f14f7e6c-8a65-4671-ad2e-e93fd71e8451"/>
+        <COMPID name="Arm" mc="Standard.Class" uid="42974abf-780f-465a-94b1-946581d51113"/>
+        <COMPID name="Platform" mc="Standard.Class" uid="9de4a483-7b5c-4822-94b6-b9a6b5f99c52"/>
+        <COMPID name="Height Measurement" mc="Standard.Class" uid="1938cd85-62c6-4423-ac9c-93ffa7473e8d"/>
+        <COMPID name="Ramp" mc="Standard.Class" uid="27a55c26-39e8-4051-a277-a21004d64a10"/>
+        <COMPID name="Waste Ramp" mc="Standard.Class" uid="3f5d5907-45e2-48b2-893a-7ac96486bf3a"/>
+        <COMPID name="OPC UA Orchestrator" mc="Standard.Class" uid="2cbbe4d4-46d6-454e-ace1-52dd6de89fc8"/>
+        <COMPID name="Raspberry Pi" mc="Standard.Class" uid="1ae81cae-7f5f-4d80-ad39-6225b50db7a6"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Usecase diagram" mc="Standard.UseCaseDiagram" uid="6157308d-2038-4dcc-a9cf-761c84105684"/>
+        <COMPID name="Block diagram" mc="Standard.StaticDiagram" uid="383bc873-5dd8-4c3f-81d9-65057bc124a3"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

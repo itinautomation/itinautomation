@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Handshake (Protocol)" version="4">
+  <OBJECT>
+    <ID name="Handshake (Protocol)" mc="Standard.SequenceDiagram" uid="a11a23dc-5d59-4e90-9ca9-70e7d4df7db2"/>
+    <PID name="Handshake (Protocol)" mc="Standard.Interaction" uid="9fedb9c6-4e3d-408c-8f0a-585fccd30cec"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">124</ATT>
+      <ATT name="UiData"><![CDATA[eJztXV1zo7gS/Suu1H24+yBHSAJJW9nZmkmys6nJ7Ewlu7dqn6YEEgkbDLmAJ/G/X+GPTOw4gPmwgfBmgxGi6T5qHZ2WT359nPij7yqKvTD45cgYw6PRr+9Ovtj/KCcZeVIfOhols3v1y1EY3YwnoVS+F46lJ24iMRkr6SVhNI7V/6cqcNRY+WqigiR+OrL64cfJ9fLI2eLI0Wgi/gmjb0+3hkfvTr5G4b2KktkoEBN9R1/MwmlyJhKhz/1P+FO17Eow9f2j43cnx6sLXlx6ncx8dbT2ICjrQeL09/HYCSM1XlxboH+nInaEVHJ1s/PH5Eq5Be/yh25ieeVIPSZn9oXu4/xj+uHz4soRHj9uPOjx4pGyHj5SvkiU1H3ZsNvn9NDoe3okNZEIpIjkeOPNjIRhCISlA0xpckAUh4A7ggMKFZVEulTaKNv6voiTT0H4EFwKW/kbnbhOIi+4OXr3u759fCvu1Oi/+vIkdEL/p5Pj+S8zHy701UVwGk7uw9hL9Kt5pfkCTZ3eer6MVNrCpRcna96CS7m977n6h4HS/n65/Lizoz/rBKnWiVUXvvrCmZ87DYM4iYQXJEV69bhh2YsgUTcqenIgBGG2G8xyGmA51z94MrnNacPANLuRW+Xd3CY5rZC8R1nZtFBArew+UjaGFjQRIIRiQCwFgcDQAZQihRzmmFSx3cN7C7aZjWNbCmwLFG0ajqpYrwwO6RunMGKg9oCPVS3ub5V+c9EzDPp9fkBHf6JjP3X7CmPviyDeeSCmRZ1VN/U4q+yx5uCxBTx24TMV/ZY14rf7TxX5fj10cwQbPLQkpsa34cM3z3nRxIdQ30MET3ZJoqnKfsp5S3dq9hBGMqcxV/hxXmuJcO6+xYmKVFhP1/wtxi/Q1JNnPZ/gwcyoXUWpE04mYTCe33jxq+UpHa9nyhVTP5lPWs4XRxfesffINTKnq0Podj50i0TboWK3aN+qBu/xYuDNi+tMwiN/NLZDOXs2Fn/QX2tNHHM4hG3BnTkpHzLHwwR36icV80ajHNGhHpUzTXsW3yvHcz1n/nDaZ89XJ66fn6jCxBiZM+xde7i9f03RNFaO5+TRNAayqvM0wKiBpkE5LM2TuQsF3/a3MLIENokSJoC2YQMiEQa2xRWQ0sGGAS2EKKmFtDEyp/kdY23qM2YZXDswdVNwQM4kPlqBcuUm8P1AOZaDUP1COQIpMyFmQFBLAMKwAzh1dcLhCm5LiCSDuB6UK0ymdBflShiztyiHsumEXAwJHWcapedehbsvq1/Uhnuo3CJ3Xp9zetxWJKQ5vro3IDRyGlE5HrFTRG9vY8Rc07JcxIEwDQmIYTPAXS6AQDp9wQxKKmUtOIma1yccACfrs2oLAXMr/JUTDhwW/ipOv/sFf+2Z7rYB/zBzlCRSASaRCYhJGGCcOQAqg1qcEVMZm+lqSfzrk4ahAat2Bf/KaRcOi38VJ+Y9wz8y4N+PSKVScRe5GGDKMSBCz+84VARIR0ob66kdgvWwgSiTe+kZ/pWwalfwL5PuaCf+4Wam7F3Fv9YQgW3AP8ehkkBEgeAKAsIsFzCIXWBiJCimtm1bJeBkC/7hwsqNHuBfCat2BP9wOdXBYfGvmTl7R/EPwQH/fkSqYSDD5UJnKtJGgChCAEPYAKY0CBWWQYng9eBfJgnTM/wrYdU241/GykixRRNcTl5Sc7kRrlh30HC9EcmrF8pDtt6XG2HuGsqgwHJdAoh0EbCJDQG1XSRsg2PES+hVt2FV4RKODmBVFfOVAaWlBg+T9tQb4WYKN9pScIT3XM/xAiMGp93WZi0lR6Qcd9G+miOy58oFXCJtfYNOOlQdNVN1RLJ5gm5VHZE9FyYMsTuUHbW17IhU3LSifWVHpLAyYUgf9xjdNdQdkYpiheYV+aTWmoG9KvJN0hcd6l4E+dyhTNomBqaDDECYK4DNlAE4UpyZJrZdsx6imfRSaFDZmC3kl/OQrOCA3EFFgtknRUJ/gLANC3IMEkxNSgHFygKEcwaYQSTAtmBUCQuZrqhnT623JEgoYdUWAuY2+DM7KEgw+yRIqAx/fIC/Z8pxBBmymQTQwRIQqigQto0BpAhjgiF1iV0P/L0lPUIJq3YF/ipuXHEQ+GumhqCj8DfUI61tKGFJzCVhgHOdnhAdtMC2jXkhjUIcG1CYTj341yeNQwNW7Qr+VdzS4iD418yMvav4N+jx17aa4AxLUwKa0vQkTVe4Le100wkpqGlZkNWDf1YmBdMz/Cth1TbjXzk96stTG3279IK7eNs6ilVu/4yJimNxk6pXPy8+VQFNq6igQHusrx9E3/Wr0LhR4JbX4TRy1PvAuQ2jneUCZypOSl6a9q+UROFKW0hFn7xgcyH6PJhOfi4Uz5/U7D96IAi0ebVZFg1eyKfIOru4Oj/9M2fReW62K3G3KWPNf4BERDcqKXZpSXgrLNnoALwtw2ckHRMJh3DApU0BgaYDuCshsCyLORLbBjXrKCv6rPsWecIf/RV4yUh8F54vbF8VQLdFJG28iWzBwFrgzs/qyNVWUHMYL/JeFs60+t+ZIvas/x9RFn1YqpTqYWwrb6Gy6NPHSNzfes6pfvPxK+97v5lz9siWibMbjpVNfQyO1dRSQL8cSz0mKkh9IH2Kz+J+3ccKUVWp+uXux5N4gRtGk3mfXD98uInC6b3u/oU+/Jv+Hn9MD+xfxWjt+Y85rBIbDLZ7YKwxv099JHWOb3PvaE4dYGXzIy/T5h/hoF32t0jM80Ph/8gVL0MdbmEhBb27vHzDBmfh1E5da/k24Rht7sS90c40Z+Keo9/5nkce5AmANoG3pCbaKsf7rKZRC5H002TqUIUMtDBxMMBI3fl1UXSZCC9Y6IEHjXRTFQ40mxRpB7K+DWClhTQgxbO05eE0WXsfReHDAUB2zxUn/QPZJnI1kTpD0ZUpugPv8VYzrwbh4Xg+lXu97bQERRt9acScfr5K8T1/3+WUGLWS5DR7ujqQ5ANJvuYufdJArMYXm5mWItwAlmQCEMsmQAiFAHYdm0KibGXVsffql/sFPP88Wk/nH0Q8ipSjvO9KlmTM6Q5z9oHYrHGRt1/E5kvGnGYTEINjNbWbX78cK5MxZ+VKe1pGcrF9/89o8zXB3RwfB8arPYwX21WCMzBeTTFerFAFUTfWJVnhSpQBa3uzLsl2EG+8VXZsb2BSs8jh8PQ527PUYYCU2ulzNggX3hR9zqqJI2qhz3n23HWgzwf6fM1d+rSDxGp8QRJa0DYpwJIjQJDDATMcBGxpEa5cZHNax9Y6Z/qadWagJFnOd5iUDpxmjRWh/eI0X5LlPHuKPThWU3992C/HyiTLeaHNNLs08+J73kyTb9bsdn5kPPjMi+8qIhlmXg0RM7zc7qAtW0vjhTekHCChxmR5WDlrz8oZ30F4MaycNYqpBiwkUOjG0pkB96xT6B+2dnDtzIBdWIjv8+LZftjx3A1bPtycReJB+96lmKloExqK8Rdy0UKss8XZ/I+S1prcD6LtdtWOeFI/aeJt5itPedrH8eX7v8+vvn14f/rp49WXv/44qxkFMgisZ69t6yY+BixWkDI4RAMO8eeXr3V7wqun/gUzhnLJ]]></ATT>
+      <ATT name="Name"><![CDATA[Handshake (Protocol)]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Station12" mc="Standard.Lifeline" uid="eb306052-4473-46e0-a30c-772e2c8c57e8"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Station34" mc="Standard.Lifeline" uid="e39f1e17-6ff4-4df2-b4b0-7bf2ab193297"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="8f566f29-a51d-41b8-9f9a-a2110380d7dd"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="9c78db53-5c21-48fa-b8e1-92e98553bf59"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="80437577-73e6-4998-814d-3ba87ea625fa"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="32082b8d-0c3d-47e7-abb3-072334307f4b"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Material Unit available" mc="Standard.Message" uid="dc52ac49-9db7-405c-9fd0-6668cd3b1752"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Optional: Material Unit was received" mc="Standard.Message" uid="b856e491-6d8a-46b4-aae2-3fcb704ebe60"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="40983d5d-74b0-4c3d-9bdb-483da756608c"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="40785038-a76a-483c-97fc-7fa9bd02d803"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="1121f9a3-3db2-4e44-8231-5d147a6174a9"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="cc7d4027-a9e0-486f-803f-532a737bbb62"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Drop Material Unit" mc="Standard.Message" uid="2d060b57-3d92-42c9-81c2-bd649ef2b979"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7de9f2f3-3793-4a6a-90e4-dcddb302d204"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="38ced4de-8d25-4548-898c-0e1769845e10"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="6a354ea5-0b1b-4d23-b69e-ddc311062274"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="66d39d48-994d-42b8-bb1e-8d2e29310a5c"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="SysMLSequenceDiagram" mc="Infrastructure.Stereotype" uid="0691339b-d7d7-11e0-9a40-0027103f347c"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
