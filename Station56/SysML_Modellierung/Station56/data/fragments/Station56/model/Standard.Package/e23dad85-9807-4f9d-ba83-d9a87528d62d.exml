@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="station56" version="4">
+  <OBJECT>
+    <ID name="station56" mc="Standard.Package" uid="e23dad85-9807-4f9d-ba83-d9a87528d62d"/>
+    <PID name="Station56" mc="Standard.Project" uid="3e7cef2b-7bdd-4318-9a86-c0ec9e2d1c28"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[station56]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Uebernahmeprotokoll" mc="Standard.Interaction" uid="c6051aab-5785-496b-a330-c20cb01c4745"/>
+        <COMPID name="Aktivität Initialisieren" mc="Standard.Activity" uid="216ea482-9715-4d53-8341-cf20c70f0acd"/>
+        <COMPID name="Aktivität Normalbetrieb" mc="Standard.Activity" uid="ab59a94c-1433-438b-ac6b-358172a455dd"/>
+      </COMP>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="7450958e-51b2-4540-9e0d-52f3d6ba4f0c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Station56" mc="Standard.Class" uid="367fb7c4-2108-4703-98ec-0ef2a8c19223"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="58847e60-5275-4477-8350-11c74723f428"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Station56" mc="Standard.Class" uid="367fb7c4-2108-4703-98ec-0ef2a8c19223"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="23b44e1b-247b-436a-9789-f4e90941d0ea"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Station34" mc="Standard.Class" uid="1a00efc6-1e41-4703-8a1f-4ae0ab552b6b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="6849cd5a-fd35-49d8-a6c8-c0339abe3b91"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Station34" mc="Standard.Class" uid="1a00efc6-1e41-4703-8a1f-4ae0ab552b6b"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="8130da6f-26d3-4122-b311-1b85bbbc480c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Station12" mc="Standard.Class" uid="30d2ff56-ea9c-41a5-b5c7-214ea9631910"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="261a1983-3f10-4284-b070-188106bd2a37"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Station12" mc="Standard.Class" uid="30d2ff56-ea9c-41a5-b5c7-214ea9631910"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Station56" mc="Standard.Class" uid="367fb7c4-2108-4703-98ec-0ef2a8c19223"/>
+        <COMPID name="SPS" mc="Standard.Class" uid="5faa5e31-8d78-4af1-ab41-cb98282ef6a0"/>
+        <COMPID name="OPC Server" mc="Standard.Class" uid="002b5f60-b159-424d-af64-8d3a05e02243"/>
+        <COMPID name="Raspberry Pi" mc="Standard.Class" uid="eb043e4a-87d7-4319-8b6f-c2e3188d6497"/>
+        <COMPID name="OPC UA Orchestrator" mc="Standard.Class" uid="4eec9ff4-411c-477d-a364-a1560919e509"/>
+        <COMPID name="I/O System" mc="Standard.Class" uid="be20fca1-cb69-49ff-af32-4440d581ac10"/>
+        <COMPID name="Station5" mc="Standard.Class" uid="dbe9cfd4-eb43-4745-bb04-8c7c645fee4d"/>
+        <COMPID name="Station6" mc="Standard.Class" uid="97593741-741d-46b2-a4c3-473f9873795f"/>
+        <COMPID name="Station34" mc="Standard.Class" uid="1a00efc6-1e41-4703-8a1f-4ae0ab552b6b"/>
+        <COMPID name="Station12" mc="Standard.Class" uid="30d2ff56-ea9c-41a5-b5c7-214ea9631910"/>
+        <COMPID name="HMI" mc="Standard.Class" uid="836d0e7b-d80e-42f4-9974-9993a8b3d1f8"/>
+        <COMPID name="Bereit zur Werkstückannahme" mc="Standard.Signal" uid="083ff561-e4b9-4ec3-a7de-424918d7278b"/>
+        <COMPID name="Werkstück wurde abgelegt" mc="Standard.Signal" uid="49c4e513-e4a9-490e-b7da-b94cc1c51a11"/>
+        <COMPID name="Neues Werkstück bereit für die Übergabe" mc="Standard.Signal" uid="4f4145e2-370e-4c1b-96b0-ebf6e0cf2446"/>
+        <COMPID name="Warnung" mc="Standard.Signal" uid="5e1e8560-1e19-4879-a33e-6e555813df35"/>
+        <COMPID name="Fehler" mc="Standard.Signal" uid="742f28d5-3d04-4a7b-be0a-6db8f7b35f16"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="BD Gesamtsystem" mc="Standard.StaticDiagram" uid="82236e25-b167-41ab-bb2d-04a966fe10e5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

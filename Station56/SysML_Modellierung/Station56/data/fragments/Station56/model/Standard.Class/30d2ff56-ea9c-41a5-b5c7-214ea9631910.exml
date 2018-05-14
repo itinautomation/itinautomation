@@ -1,0 +1,273 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Station12" version="4">
+  <OBJECT>
+    <ID name="Station12" mc="Standard.Class" uid="30d2ff56-ea9c-41a5-b5c7-214ea9631910"/>
+    <PID name="station56" mc="Standard.Package" uid="e23dad85-9807-4f9d-ba83-d9a87528d62d"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Station12]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[S7-300]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="SPS" mc="Standard.Class" uid="5faa5e31-8d78-4af1-ab41-cb98282ef6a0"/>
+            </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="ip" mc="Standard.AttributeLink" uid="75c6910d-e87f-4105-8de6-bef936f74e2a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[192.168.162.33]]></ATT>
+                  <ATT name="Name"><![CDATA[ip]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="ip" mc="Standard.Attribute" uid="3e758707-4e3a-4531-8141-38860b10fe9b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="OPC Server 12" mc="Standard.BindableInstance" uid="ca6b304f-bec8-4602-a432-ff3e1b71800f"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[OPC Server 12]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="OPC Server" mc="Standard.Class" uid="002b5f60-b159-424d-af64-8d3a05e02243"/>
+            </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="ip" mc="Standard.AttributeLink" uid="c5e88322-e398-43f1-b590-4be4417dce7f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[192.168.162.36]]></ATT>
+                  <ATT name="Name"><![CDATA[ip]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="ip" mc="Standard.Attribute" uid="52f53afb-9e5b-4033-b9dd-2c7a546b4759"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ET200S" mc="Standard.BindableInstance" uid="8cca29e3-fc91-4de9-9603-f88ca6155030"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[ET200S]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="I/O System" mc="Standard.Class" uid="be20fca1-cb69-49ff-af32-4440d581ac10"/>
+            </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="ip" mc="Standard.AttributeLink" uid="eec44784-3729-48cd-b902-c2d8002cdde6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[192.168.162.34]]></ATT>
+                  <ATT name="Name"><![CDATA[ip]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="ip" mc="Standard.Attribute" uid="b46ae03e-1777-4b7b-af65-daf0311897a3"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="HMI" mc="Standard.BindableInstance" uid="27a52637-5fe8-4da7-8915-4c55d87b0483"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[HMI]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="HMI" mc="Standard.Class" uid="836d0e7b-d80e-42f4-9974-9993a8b3d1f8"/>
+            </LINK>
+            <COMP relation="Slot">
+              <OBJECT>
+                <ID name="ip" mc="Standard.AttributeLink" uid="3730655e-dabe-4a40-a3f9-26dfe6d85f0e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[192.168.162.37]]></ATT>
+                  <ATT name="Name"><![CDATA[ip]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="ip" mc="Standard.Attribute" uid="0a0a7e1d-5a62-4df5-ae8c-14b78b52f165"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="88b8240c-810a-4c08-8a83-9a9ea62c3817"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="ET200S" mc="Standard.BindableInstance" uid="8cca29e3-fc91-4de9-9603-f88ca6155030"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="2291642e-9261-45f8-88f5-e79651362082"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="ET200S" mc="Standard.BindableInstance" uid="8cca29e3-fc91-4de9-9603-f88ca6155030"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="774172ef-0926-4d2d-aef3-9fc59d86a82f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="OPC Server 12" mc="Standard.BindableInstance" uid="ca6b304f-bec8-4602-a432-ff3e1b71800f"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="f35b7c24-07cc-4c88-9e0a-ed4c9c972e16"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="OPC Server 12" mc="Standard.BindableInstance" uid="ca6b304f-bec8-4602-a432-ff3e1b71800f"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="d11c1cef-d622-4b5c-8b1a-52b8eb1d6aef"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="HMI" mc="Standard.BindableInstance" uid="27a52637-5fe8-4da7-8915-4c55d87b0483"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="7bc61195-a7ee-4d77-8d44-20e046724842"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="S7-300" mc="Standard.BindableInstance" uid="53f7409c-19cf-4f29-aee6-f8efa88d0357"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="HMI" mc="Standard.BindableInstance" uid="27a52637-5fe8-4da7-8915-4c55d87b0483"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="Block" mc="Infrastructure.Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

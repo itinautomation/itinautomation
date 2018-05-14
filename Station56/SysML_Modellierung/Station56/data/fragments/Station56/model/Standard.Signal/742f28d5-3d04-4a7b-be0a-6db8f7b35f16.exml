@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Fehler" version="4">
+  <OBJECT>
+    <ID name="Fehler" mc="Standard.Signal" uid="742f28d5-3d04-4a7b-be0a-6db8f7b35f16"/>
+    <PID name="station56" mc="Standard.Package" uid="e23dad85-9807-4f9d-ba83-d9a87528d62d"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">true</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Fehler]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

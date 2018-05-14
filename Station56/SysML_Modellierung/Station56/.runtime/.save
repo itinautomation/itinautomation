@@ -1,0 +1,9 @@
+#Mon May 14 05:12:10 CEST 2018
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/thoma/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/thoma/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/thoma/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.module.propertytab.SysMLArchitect\ v3.7.02\ GModule\ @file\:///C\:/Users/thoma/.modelio/3.7/modules/SysMLArchitect_3.7.02/SysMLArchitect_3.7.02.jmdac\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams3='AD Normalbetrieb' {58481de0-f557-4907-9d60-452a5f4b71c5} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='AD Initialisieren' {a8f728bb-4a3e-4cc2-aff9-12a433c77e70} Standard.ActivityDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='SD Uebernahme' {77e55c2c-4006-4404-8bba-cb10e8a7a8ba} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='BD Gesamtsystem' {82236e25-b167-41ab-bb2d-04a966fe10e5} Standard.StaticDiagram
