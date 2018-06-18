@@ -1,0 +1,2183 @@
+[
+    {
+        "id": "ca8d0d0.8c6ab7",
+        "type": "tab",
+        "label": "Test-Flow ITIA Target12",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "b061fd02.dc2e1",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a1b248ce.5ff2e",
+        "type": "tab",
+        "label": "SPS - OPC",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "39392bb1.ce95f4",
+        "type": "tab",
+        "label": "OPC - SPS",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1ab5d0b5.6a8def",
+        "type": "s7 endpoint",
+        "z": "",
+        "address": "192.168.162.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "cycletime": "100",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "PLC12",
+        "vartable": [
+            {
+                "addr": "DB14,X7.0",
+                "name": "Station2_ready"
+            },
+            {
+                "addr": "DB14,BYTE0",
+                "name": "Material_Platform"
+            },
+            {
+                "addr": "DB14,BYTE1",
+                "name": "Material_Ramp"
+            },
+            {
+                "addr": "DB12,X4.0",
+                "name": "EmergencyShutdown"
+            },
+            {
+                "addr": "DB12,X4.3",
+                "name": "TurnOn"
+            },
+            {
+                "addr": "DB12,X4.2",
+                "name": "TurnOff"
+            },
+            {
+                "addr": "DB14,X7.1",
+                "name": "Station1_ready"
+            },
+            {
+                "addr": "DB14,X7.2",
+                "name": "Station1_done"
+            },
+            {
+                "addr": "DB14,BYTE8",
+                "name": "HandoverType"
+            },
+            {
+                "addr": "DB12,X0.5",
+                "name": "On_Off"
+            }
+        ]
+    },
+    {
+        "id": "a54cfabe.21d07",
+        "type": "OPCUA-IIoT-Connector",
+        "z": "",
+        "discoveryUrl": "",
+        "endpoint": "opc.tcp://localhost:55388/",
+        "keepSessionAlive": true,
+        "loginEnabled": false,
+        "securityPolicy": "None",
+        "securityMode": "NONE",
+        "name": "LOCAL SERVER",
+        "showErrors": true,
+        "publicCertificateFile": "",
+        "privateKeyFile": "",
+        "defaultSecureTokenLifetime": "",
+        "endpointMustExist": true,
+        "autoSelectRightEndpoint": true,
+        "strategyMaxRetry": "",
+        "strategyInitialDelay": "",
+        "strategyMaxDelay": "",
+        "strategyRandomisationFactor": "",
+        "requestedSessionTimeout": ""
+    },
+    {
+        "id": "40dad4cd.982d9c",
+        "type": "OPCUA-IIoT-Connector",
+        "z": "",
+        "discoveryUrl": "",
+        "endpoint": "opc.tcp://localhost:55388/",
+        "keepSessionAlive": true,
+        "loginEnabled": false,
+        "securityPolicy": "None",
+        "securityMode": "NONE",
+        "name": "LOCAL DEMO SERVER",
+        "showErrors": false,
+        "publicCertificateFile": "",
+        "privateKeyFile": "",
+        "defaultSecureTokenLifetime": "60000",
+        "endpointMustExist": false,
+        "autoSelectRightEndpoint": false
+    },
+    {
+        "id": "39321a60.fa24b6",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "bff49e7e.f070f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "39321a60.fa24b6",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d7e7c19b.5fb56",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "89dea43f.b4c84",
+        "type": "OPCUA-IIoT-Flex-Server",
+        "z": "ca8d0d0.8c6ab7",
+        "port": "55380",
+        "endpoint": "UA/Target12",
+        "acceptExternalCommands": true,
+        "maxAllowedSessionNumber": "",
+        "maxConnectionsPerEndpoint": "",
+        "maxAllowedSubscriptionNumber": "",
+        "alternateHostname": "",
+        "name": "OPC-Server 12",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "allowAnonymous": true,
+        "isAuditing": false,
+        "serverDiscovery": true,
+        "users": [],
+        "xmlsets": [],
+        "publicCertificateFile": "",
+        "privateCertificateFile": "",
+        "maxNodesPerRead": 1000,
+        "maxNodesPerBrowse": 2000,
+        "addressSpaceScript": "function constructAlarmAddressSpace(server, addressSpace, eventObjects, done) {\n    // server = the created node-opcua server\n    // addressSpace = script placeholder\n    // eventObjects = to hold event variables in memory from this script\n    \n    // internal global sandbox objects are \n    // node = node of the flex server, \n    // coreServer = core iiot server object for debug and access to nodeOPCUA,\n    // and scriptObjects to hold variables and functions\n    \n    // globals are to find on node.context().global and should be initialized here\n    node.context().global.set(\"TestOPCUAVarValue\", {})\n    node.context().global.set(\"button1\", false)\n    node.context().global.set(\"button2\", false)\n    node.context().global.set(\"button3\", false)\n    node.context().global.set(\"button4\", false)\n    node.context().global.set(\"led1\", false)\n    \n    coreServer.internalDebugLog('init dynamic address space')\n    node.warn('construct new address space for OPC UA')\n    \n    // from here - see the node-opcua docs how to build address sapces\n    let tanks = addressSpace.addObject({\n        browseName: 'Tanks',\n        description: 'The Object representing some tanks',\n        organizedBy: addressSpace.rootFolder.objects,\n        notifierOf: addressSpace.rootFolder.objects.server\n    })\n    \n    let oilTankLevel = addressSpace.addVariable({\n        browseName: 'OilTankLevel',\n        displayName: 'Oil Tank Level',\n        description: 'Fill level in percentage (0% to 100%) of the oil tank',\n        propertyOf: tanks,\n        dataType: 'Double',\n        eventSourceOf: tanks\n    })\n    \n    // ---------------------------------------------------------------------------------\n    // Let's create a exclusive Limit Alarm that automatically raise itself\n    // when the tank level is out of limit\n    // ---------------------------------------------------------------------------------\n    let exclusiveLimitAlarmType = addressSpace.findEventType('ExclusiveLimitAlarmType')\n    node.assert(exclusiveLimitAlarmType !== null)\n    \n    let oilTankLevelCondition = addressSpace.instantiateExclusiveLimitAlarm(exclusiveLimitAlarmType, {\n        componentOf: tanks,\n        conditionSource: oilTankLevel,\n        browseName: 'OilTankLevelCondition',\n        displayName: 'Oil Tank Level Condition',\n        description: 'ExclusiveLimitAlarmType Condition',\n        conditionName: 'OilLevelCondition',\n        optionals: [\n          'ConfirmedState', 'Confirm' // confirm state and confirm Method\n        ],\n        inputNode: oilTankLevel,   // the letiable that will be monitored for change\n        highHighLimit: 0.9,\n        highLimit: 0.8,\n        lowLimit: 0.2\n    })\n    \n    // --------------------------------------------------------------\n    // Let's create a second letiable with no Exclusive alarm\n    // --------------------------------------------------------------\n    let gasTankLevel = addressSpace.addVariable({\n        browseName: 'GasTankLevel',\n        displayName: 'Gas Tank Level',\n        description: 'Fill level in percentage (0% to 100%) of the gas tank',\n        propertyOf: tanks,\n        dataType: 'Double',\n        eventSourceOf: tanks\n    })\n    \n    let nonExclusiveLimitAlarmType = addressSpace.findEventType('NonExclusiveLimitAlarmType')\n    node.assert(nonExclusiveLimitAlarmType !== null)\n    \n    let gasTankLevelCondition = addressSpace.instantiateNonExclusiveLimitAlarm(nonExclusiveLimitAlarmType, {\n        componentOf: tanks,\n        conditionSource: gasTankLevel,\n        browseName: 'GasTankLevelCondition',\n        displayName: 'Gas Tank Level Condition',\n        description: 'NonExclusiveLimitAlarmType Condition',\n        conditionName: 'GasLevelCondition',\n        optionals: [\n          'ConfirmedState', 'Confirm' // confirm state and confirm Method\n        ],\n        inputNode: gasTankLevel,   // the letiable that will be monitored for change\n        highHighLimit: 0.9,\n        highLimit: 0.8,\n        lowLimit: 0.2\n    })\n    \n    // variable with value\n    if(scriptObjects.testReadWrite === undefined || scriptObjects.testReadWrite === null) {\n            scriptObjects.testReadWrite = 1000.0\n    }\n    \n    let myVariables = addressSpace.addObject({\n        browseName: 'MyVariables',\n        description: 'The Object representing some variables',\n        organizedBy: addressSpace.rootFolder.objects,\n        notifierOf: addressSpace.rootFolder.objects.server\n    })\n    \n    if(coreServer.core) {\n        addressSpace.addVariable({\n            componentOf: myVariables,\n            nodeId: 'ns=4;s=Button1',\n            browseName: 'Button1',\n            displayName: 'Button1',\n            dataType: 'Boolean',\n            value: {\n                get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                        dataType: 'Boolean',\n                        value: node.context().global.get('button1')\n                    })\n                },\n                set: function (variant) {\n                    //scriptObjects.testReadWrite = parseFloat(variant.value)\n                    return coreServer.core.nodeOPCUA.StatusCodes.Good\n                }\n            }\n            \n        })\n        addressSpace.addVariable({\n            componentOf: myVariables,\n            nodeId: 'ns=4;s=Button2',\n            browseName: 'Button2',\n            displayName: 'Button2',\n            dataType: 'Boolean',\n            value: {\n                get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                        dataType: 'Boolean',\n                        value: node.context().global.get('button2')\n                    })\n                },\n                set: function (variant) {\n                    //scriptObjects.testReadWrite = parseFloat(variant.value)\n                    return coreServer.core.nodeOPCUA.StatusCodes.Good\n                }\n            }\n            \n        })\n        addressSpace.addVariable({\n            componentOf: myVariables,\n            nodeId: 'ns=4;s=Button3',\n            browseName: 'Button3',\n            displayName: 'Button3',\n            dataType: 'Boolean',\n            value: {\n                get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                        dataType: 'Boolean',\n                        value: node.context().global.get('button3')\n                    })\n                },\n                set: function (variant) {\n                    //scriptObjects.testReadWrite = parseFloat(variant.value)\n                    return coreServer.core.nodeOPCUA.StatusCodes.Good\n                }\n            }\n            \n        })\n        addressSpace.addVariable({\n            componentOf: myVariables,\n            nodeId: 'ns=4;s=Button4',\n            browseName: 'Button4',\n            displayName: 'Button4',\n            dataType: 'Boolean',\n            value: {\n                get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                        dataType: 'Boolean',\n                        value: node.context().global.get('button4')\n                    })\n                },\n                set: function (variant) {\n                    //scriptObjects.testReadWrite = parseFloat(variant.value)\n                    return coreServer.core.nodeOPCUA.StatusCodes.Good\n                }\n            }\n            \n        })\n        addressSpace.addVariable({\n            componentOf: myVariables,\n            nodeId: 'ns=4;s=Led1',\n            browseName: 'Led1',\n            displayName: 'LED1',\n            dataType: 'Boolean',\n            value: {\n                get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                        dataType: 'Boolean',\n                        value: node.context().global.get('led1')\n                    })\n                },\n                set: function (variant) {\n                    //scriptObjects.testReadWrite = parseFloat(variant.value)\n                    node.context().global.set('led1', variant.value)\n                    return coreServer.core.nodeOPCUA.StatusCodes.Good\n                }\n            }\n            \n        })\n        \n        \n        let globalValue = node.context().global.get(\"TestOPCUAVarValue\")\n        if(globalValue) {\n            coreServer.internalDebugLog('init TestOPCUAVarValue in address space')\n            let testOPCUAVarValue = addressSpace.addVariable({\n                componentOf: myVariables,\n                nodeId: 'ns=4;s=TestOPCUAVarValue',\n                browseName: 'TestOPCUAVarValue',\n                displayName: 'Test OPC UA Variable Value',\n                dataType: 'Double',\n                \n                value: {\n                  get: function () {\n                    return new coreServer.core.nodeOPCUA.Variant({\n                      dataType: 'Double',\n                      value: node.context().global.get(\"TestOPCUAVarValue\").value\n                    })\n                  },\n                  set: function (variant) {\n                      scriptObjects.testReadWrite = parseFloat(variant.value)\n                      return coreServer.core.nodeOPCUA.StatusCodes.Good\n                  }\n                }\n            })\n            \n        }\n    \n    } else {\n        coreServer.internalDebugLog('coreServer.core needed for coreServer.core.nodeOPCUA')\n    }\n\n    // hold event objects in memory \n    eventObjects.oilTankLevel = oilTankLevel\n    eventObjects.oilTankLevelCondition = oilTankLevelCondition\n    \n    eventObjects.gasTankLevel = gasTankLevel\n    eventObjects.gasTankLevelCondition = gasTankLevelCondition\n    \n    done()\n}",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "b1e17327.a9e1a"
+            ]
+        ]
+    },
+    {
+        "id": "b1e17327.a9e1a",
+        "type": "debug",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bf298609.9c5978",
+        "type": "s7 in",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "button1",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "129d6713.fbe0e9"
+            ]
+        ]
+    },
+    {
+        "id": "18fcc0.359e6b41",
+        "type": "s7 in",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "button2",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "15aebafa.9290bd"
+            ]
+        ]
+    },
+    {
+        "id": "91e70b46.61ebd8",
+        "type": "s7 in",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "button3",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "8c03c85.7906738"
+            ]
+        ]
+    },
+    {
+        "id": "30efa219.3a7e3e",
+        "type": "s7 in",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "button4",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "37d2f3a6.2343b4"
+            ]
+        ]
+    },
+    {
+        "id": "4b54bd77.8fa554",
+        "type": "s7 out",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "",
+        "name": "",
+        "x": 490,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "757f6b02.028df4",
+        "type": "OPCUA-IIoT-Write",
+        "z": "ca8d0d0.8c6ab7",
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": false,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "x": 510,
+        "y": 700,
+        "wires": [
+            [
+                "74b563c8.510c1c"
+            ]
+        ]
+    },
+    {
+        "id": "a5510d31.0bf8e",
+        "type": "debug",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 830,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b02298d2.c2e328",
+        "type": "OPCUA-IIoT-Node",
+        "z": "ca8d0d0.8c6ab7",
+        "injectType": "write",
+        "nodeId": "ns=4;s=TestReadWrite",
+        "datatype": "Double",
+        "value": "",
+        "name": "",
+        "topic": "",
+        "showErrors": true,
+        "x": 370,
+        "y": 700,
+        "wires": [
+            [
+                "757f6b02.028df4"
+            ]
+        ]
+    },
+    {
+        "id": "cfc236d1.437da",
+        "type": "inject",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "topic": "TestTopicWrite",
+        "payload": "1234.56",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "b02298d2.c2e328"
+            ]
+        ]
+    },
+    {
+        "id": "74b563c8.510c1c",
+        "type": "OPCUA-IIoT-Response",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "x": 680,
+        "y": 700,
+        "wires": [
+            [
+                "a5510d31.0bf8e"
+            ]
+        ]
+    },
+    {
+        "id": "129d6713.fbe0e9",
+        "type": "function",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "setvar button1",
+        "func": "\nglobal.set('button1', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ca4f26c.a4ecd4",
+        "type": "inject",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da4b1d62.eb8928",
+        "type": "inject",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15aebafa.9290bd",
+        "type": "function",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "setvar button2",
+        "func": "\nglobal.set('button2', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c03c85.7906738",
+        "type": "function",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "setvar button3",
+        "func": "\nglobal.set('button3', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37d2f3a6.2343b4",
+        "type": "function",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "setvar button4",
+        "func": "\nglobal.set('button4', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1c448d1.67157",
+        "type": "function",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "getvar led1",
+        "func": "\nmsg.payload = global.get('led1', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "4b54bd77.8fa554"
+            ]
+        ]
+    },
+    {
+        "id": "455832d7.b25824",
+        "type": "inject",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "e1c448d1.67157"
+            ]
+        ]
+    },
+    {
+        "id": "648c16c4.cb0218",
+        "type": "OPCUA-IIoT-Discovery",
+        "z": "ca8d0d0.8c6ab7",
+        "name": "",
+        "x": 220,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83dcd36e.084a4",
+        "type": "s7 out",
+        "z": "ca8d0d0.8c6ab7",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "LED1",
+        "name": "",
+        "x": 490,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "79b93b21.b436dc",
+        "type": "ui_gauge",
+        "z": "b061fd02.dc2e1",
+        "name": "Platform",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Platform",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#ff80ff",
+            "#000000",
+            "#e0e0e0"
+        ],
+        "seg1": "1",
+        "seg2": "2",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b657f015.ab54d",
+        "type": "s7 in",
+        "z": "b061fd02.dc2e1",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Material_Platform",
+        "diff": true,
+        "name": "Platform",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "fc568791.7493c"
+            ]
+        ]
+    },
+    {
+        "id": "4f9e5240.c92944",
+        "type": "ui_gauge",
+        "z": "b061fd02.dc2e1",
+        "name": "Ramp",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Ramp",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#ff80ff",
+            "#000000",
+            "#e0e0e0"
+        ],
+        "seg1": "1",
+        "seg2": "2",
+        "x": 510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "2bec2d40.6c54ea",
+        "type": "s7 in",
+        "z": "b061fd02.dc2e1",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Material_Ramp",
+        "diff": true,
+        "name": "Ramp",
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "4f9e5240.c92944"
+            ]
+        ]
+    },
+    {
+        "id": "e4aa51c2.7c63e8",
+        "type": "function",
+        "z": "b061fd02.dc2e1",
+        "name": "",
+        "func": "if (msg.payload==4) {\n    msg.payload=\"fehlerhaft\";\n} else if (msg.payload!=0) {\n    msg.payload=\"gültig\";\n} else {\n    msg.payload=\" \";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "3ee54b59.0b1d6c",
+                "84a425d1.d6867"
+            ]
+        ]
+    },
+    {
+        "id": "3ee54b59.0b1d6c",
+        "type": "ui_text",
+        "z": "b061fd02.dc2e1",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Werkstück",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 830,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fc568791.7493c",
+        "type": "switch",
+        "z": "b061fd02.dc2e1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "4",
+                "vt": "num"
+            },
+            {
+                "t": "lte",
+                "v": "4",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "79b93b21.b436dc"
+            ],
+            [
+                "e4aa51c2.7c63e8"
+            ]
+        ]
+    },
+    {
+        "id": "84a425d1.d6867",
+        "type": "ui_switch",
+        "z": "b061fd02.dc2e1",
+        "name": "",
+        "label": "Fehlerhaftes Werkstück",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 870,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a85225e4.ad441",
+        "type": "s7 in",
+        "z": "b061fd02.dc2e1",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Not-Aus",
+        "diff": true,
+        "name": "Not-Aus",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "a3a873f.3a5e71",
+                "102e594f.2f099f"
+            ]
+        ]
+    },
+    {
+        "id": "9a9fa90c.6e2418",
+        "type": "ui_text",
+        "z": "b061fd02.dc2e1",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Not-Aus",
+        "label": "Not-Aus",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 660,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a3a873f.3a5e71",
+        "type": "function",
+        "z": "b061fd02.dc2e1",
+        "name": "",
+        "func": "if (msg.payload==true) {\n    msg.payload=\"Not-Aus!\";\n} else {\n    msg.payload=\"ok\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "9a9fa90c.6e2418"
+            ]
+        ]
+    },
+    {
+        "id": "102e594f.2f099f",
+        "type": "ui_switch",
+        "z": "b061fd02.dc2e1",
+        "name": "",
+        "label": "Not-Aus",
+        "group": "bff49e7e.f070f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 460,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf3c8971.9a5d08",
+        "type": "OPCUA-IIoT-Discovery",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "x": 80,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6596bc10.7e6e74",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=ReadyHandover",
+        "browsename": "ReadyHandover",
+        "displayname": "ReadyHandover",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=HandoverProtocol",
+        "referencetype": "Organizes",
+        "name": "ReadyHandover",
+        "x": 280,
+        "y": 600,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "822ddbd4.6042b8",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "inject",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "startDelay": "",
+        "name": "",
+        "addressSpaceItems": [],
+        "x": 70,
+        "y": 620,
+        "wires": [
+            [
+                "151496a3.7cbb31",
+                "93b9a945.6a2238"
+            ]
+        ]
+    },
+    {
+        "id": "942fd4d9.fbc638",
+        "type": "OPCUA-IIoT-Server",
+        "z": "a1b248ce.5ff2e",
+        "port": "55388",
+        "endpoint": "ITIA/Target12",
+        "acceptExternalCommands": true,
+        "maxAllowedSessionNumber": "100",
+        "maxConnectionsPerEndpoint": "100",
+        "maxAllowedSubscriptionNumber": "100",
+        "alternateHostname": "",
+        "name": "OPC-Server 12",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "asoDemo": false,
+        "allowAnonymous": true,
+        "isAuditing": false,
+        "serverDiscovery": true,
+        "users": [],
+        "xmlsets": [],
+        "publicCertificateFile": "",
+        "privateCertificateFile": "",
+        "maxNodesPerRead": 1000,
+        "maxNodesPerBrowse": 2000,
+        "x": 520,
+        "y": 720,
+        "wires": [
+            [
+                "68ffe99f.4566f"
+            ]
+        ]
+    },
+    {
+        "id": "151496a3.7cbb31",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=HandoverProtocol",
+        "browsename": "HandoverProtocol",
+        "displayname": "HandoverProtocol",
+        "objecttype": "FolderType",
+        "datatype": "",
+        "value": "",
+        "referenceNodeId": "ns=0;i=85",
+        "referencetype": "Organizes",
+        "name": "HandoverProtocol",
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "68ffe99f.4566f",
+        "type": "debug",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "c6ab0243.c286b",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "inject",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "startDelay": "",
+        "name": "",
+        "addressSpaceItems": [],
+        "x": 70,
+        "y": 560,
+        "wires": [
+            [
+                "6596bc10.7e6e74",
+                "1e2ff228.60916e",
+                "13f8e02e.d7a26",
+                "d5f65afa.c1a338",
+                "59051244.be86a4",
+                "e0842d51.af7cb8",
+                "1251da86.b14c6d",
+                "5088f6a7.710798"
+            ]
+        ]
+    },
+    {
+        "id": "1e2ff228.60916e",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=DoneHandover",
+        "browsename": "DoneHandover",
+        "displayname": "DoneHandover",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=HandoverProtocol",
+        "referencetype": "Organizes",
+        "name": "DoneHandover",
+        "x": 280,
+        "y": 640,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "7312f74e.e1843",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "inject",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "startDelay": "15",
+        "name": "",
+        "addressSpaceItems": [],
+        "x": 70,
+        "y": 680,
+        "wires": [
+            [
+                "852b1fc9.594a88"
+            ]
+        ]
+    },
+    {
+        "id": "852b1fc9.594a88",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=TypeHandover",
+        "browsename": "TypeHandover",
+        "displayname": "TypeHandover",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "UInt16",
+        "value": "",
+        "referenceNodeId": "ns=5;s=HandoverProtocol",
+        "referencetype": "Organizes",
+        "name": "TypeHandover",
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "93b9a945.6a2238",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=Control",
+        "browsename": "Control",
+        "displayname": "Control",
+        "objecttype": "FolderType",
+        "datatype": "",
+        "value": "",
+        "referenceNodeId": "ns=0;i=85",
+        "referencetype": "Organizes",
+        "name": "Control",
+        "x": 260,
+        "y": 900,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "13f8e02e.d7a26",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=EmergencyShutdown",
+        "browsename": "EmergencyShutdown",
+        "displayname": "EmergencyShutdown",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=Control",
+        "referencetype": "Organizes",
+        "name": "EmergencyShutdown",
+        "x": 300,
+        "y": 940,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "d5f65afa.c1a338",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=Shutdown",
+        "browsename": "Shutdown",
+        "displayname": "Shutdown",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=Control",
+        "referencetype": "Organizes",
+        "name": "Shutdown",
+        "x": 260,
+        "y": 980,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "59051244.be86a4",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=TurnOn",
+        "browsename": "TurnOn",
+        "displayname": "TurnOn",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=Control",
+        "referencetype": "Organizes",
+        "name": "TurnOn",
+        "x": 260,
+        "y": 1020,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "465fd3a3.73f1c4",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=ReadyHandover",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write ReadyHandover",
+        "topic": "",
+        "showErrors": true,
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "e0842d51.af7cb8",
+        "type": "delay",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 260,
+        "y": 480,
+        "wires": [
+            [
+                "afe70e70.cf6d7"
+            ]
+        ]
+    },
+    {
+        "id": "afe70e70.cf6d7",
+        "type": "function",
+        "z": "a1b248ce.5ff2e",
+        "name": "init to false",
+        "func": "\nreturn {payload: false};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "465fd3a3.73f1c4",
+                "6bc31aa2.5b8a24",
+                "c12fab11.296f6",
+                "d31c37a1.701df8",
+                "546e171b.568cb",
+                "b6db4975.65617"
+            ]
+        ]
+    },
+    {
+        "id": "a4f94a78.bcb8e",
+        "type": "OPCUA-IIoT-Write",
+        "z": "a1b248ce.5ff2e",
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": false,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "x": 980,
+        "y": 120,
+        "wires": [
+            [
+                "f06f5bdb.9ac388"
+            ]
+        ]
+    },
+    {
+        "id": "f06f5bdb.9ac388",
+        "type": "OPCUA-IIoT-Response",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "x": 1130,
+        "y": 120,
+        "wires": [
+            [
+                "9f5dfb01.cf4218"
+            ]
+        ]
+    },
+    {
+        "id": "9f5dfb01.cf4218",
+        "type": "debug",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1290,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6bc31aa2.5b8a24",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=DoneHandover",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write DoneHandover",
+        "topic": "",
+        "showErrors": true,
+        "x": 740,
+        "y": 140,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "c12fab11.296f6",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=EmergencyShutdown",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write EmergencyShutdown",
+        "topic": "",
+        "showErrors": true,
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "d31c37a1.701df8",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=Shutdown",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write Shutdown",
+        "topic": "",
+        "showErrors": true,
+        "x": 720,
+        "y": 280,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "546e171b.568cb",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=TurnOn",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write TurnOn",
+        "topic": "",
+        "showErrors": true,
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "d6254fe8.e781",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=TypeHandover",
+        "datatype": "UInt16",
+        "value": "",
+        "name": "Write TypeHandover",
+        "topic": "",
+        "showErrors": true,
+        "x": 740,
+        "y": 180,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "f9f409ae.ce891",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "39392bb1.ce95f4",
+        "injectType": "read",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "startDelay": "20",
+        "name": "Pull TurnOn",
+        "addressSpaceItems": [
+            {
+                "name": "TurnOn",
+                "nodeId": "ns=5;s=TurnOn",
+                "datatypeName": "Boolean"
+            }
+        ],
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "b08fbd17.804138"
+            ]
+        ]
+    },
+    {
+        "id": "b08fbd17.804138",
+        "type": "OPCUA-IIoT-Read",
+        "z": "39392bb1.ce95f4",
+        "attributeId": 0,
+        "maxAge": 1,
+        "depth": 1,
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": true,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "parseStrings": true,
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "577a8579.ecd9a4"
+            ]
+        ]
+    },
+    {
+        "id": "577a8579.ecd9a4",
+        "type": "OPCUA-IIoT-Result-Filter",
+        "z": "39392bb1.ce95f4",
+        "nodeId": "ns=5;s=TurnOn",
+        "datatype": "Boolean",
+        "fixedValue": false,
+        "fixPoint": 2,
+        "withPrecision": false,
+        "precision": 2,
+        "entry": 1,
+        "justValue": true,
+        "withValueCheck": false,
+        "minvalue": "",
+        "maxvalue": "",
+        "defaultvalue": "",
+        "topic": "",
+        "name": "",
+        "showErrors": false,
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "d4dcbd1d.74633"
+            ]
+        ]
+    },
+    {
+        "id": "d4dcbd1d.74633",
+        "type": "switch",
+        "z": "39392bb1.ce95f4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "5996562c.9a3f18",
+                "1fc189c8.ba21ce"
+            ],
+            [
+                "1fc189c8.ba21ce"
+            ]
+        ]
+    },
+    {
+        "id": "5996562c.9a3f18",
+        "type": "function",
+        "z": "39392bb1.ce95f4",
+        "name": "set to false",
+        "func": "\nreturn {payload: false};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 80,
+        "wires": [
+            [
+                "f707405.5fbad4"
+            ]
+        ]
+    },
+    {
+        "id": "f707405.5fbad4",
+        "type": "OPCUA-IIoT-Node",
+        "z": "39392bb1.ce95f4",
+        "injectType": "write",
+        "nodeId": "ns=5;s=TurnOn",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write TurnOn",
+        "topic": "",
+        "showErrors": true,
+        "x": 1020,
+        "y": 80,
+        "wires": [
+            [
+                "cea7d74b.f477d"
+            ]
+        ]
+    },
+    {
+        "id": "cea7d74b.f477d",
+        "type": "OPCUA-IIoT-Write",
+        "z": "39392bb1.ce95f4",
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": false,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "x": 1430,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58f08ecc.0c6588",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "39392bb1.ce95f4",
+        "injectType": "read",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "startDelay": "20",
+        "name": "Poll Shutdown",
+        "addressSpaceItems": [
+            {
+                "name": "Shutdown",
+                "nodeId": "ns=5;s=Shutdown",
+                "datatypeName": "Boolean"
+            }
+        ],
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "ae26cbc2.afa91"
+            ]
+        ]
+    },
+    {
+        "id": "ae26cbc2.afa91",
+        "type": "OPCUA-IIoT-Read",
+        "z": "39392bb1.ce95f4",
+        "attributeId": 0,
+        "maxAge": 1,
+        "depth": 1,
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": true,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "parseStrings": true,
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "d28200ca.4a4298"
+            ]
+        ]
+    },
+    {
+        "id": "d28200ca.4a4298",
+        "type": "OPCUA-IIoT-Result-Filter",
+        "z": "39392bb1.ce95f4",
+        "nodeId": "ns=5;s=Shutdown",
+        "datatype": "Boolean",
+        "fixedValue": false,
+        "fixPoint": 2,
+        "withPrecision": false,
+        "precision": 2,
+        "entry": 1,
+        "justValue": true,
+        "withValueCheck": false,
+        "minvalue": "",
+        "maxvalue": "",
+        "defaultvalue": "",
+        "topic": "",
+        "name": "",
+        "showErrors": false,
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "235dbe3.b725042"
+            ]
+        ]
+    },
+    {
+        "id": "235dbe3.b725042",
+        "type": "switch",
+        "z": "39392bb1.ce95f4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "dd8e643a.b1a1a8"
+            ],
+            [
+                "dd8e643a.b1a1a8"
+            ]
+        ]
+    },
+    {
+        "id": "1fc189c8.ba21ce",
+        "type": "s7 out",
+        "z": "39392bb1.ce95f4",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "TurnOn",
+        "name": "TurnOn",
+        "x": 830,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8f1b88d.0d98d78",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "TurnOn",
+        "diff": true,
+        "name": "TurnOn",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "546e171b.568cb"
+            ]
+        ]
+    },
+    {
+        "id": "dd8e643a.b1a1a8",
+        "type": "s7 out",
+        "z": "39392bb1.ce95f4",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "TurnOff",
+        "name": "",
+        "x": 800,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7e3a79ad.11c128",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "EmergencyShutdown",
+        "diff": true,
+        "name": "EmergencyShutdown",
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "c12fab11.296f6"
+            ]
+        ]
+    },
+    {
+        "id": "d8c433d9.af4d8",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "TurnOff",
+        "diff": true,
+        "name": "Shutdown",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "d31c37a1.701df8"
+            ]
+        ]
+    },
+    {
+        "id": "d7e327a0.02c938",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "39392bb1.ce95f4",
+        "injectType": "read",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "startDelay": "20",
+        "name": "Poll Emergency Shutdown",
+        "addressSpaceItems": [
+            {
+                "name": "EmergencyShutdown",
+                "nodeId": "ns=5;s=EmergencyShutdown",
+                "datatypeName": "Boolean"
+            }
+        ],
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "86bd413d.d7b7c"
+            ]
+        ]
+    },
+    {
+        "id": "86bd413d.d7b7c",
+        "type": "OPCUA-IIoT-Read",
+        "z": "39392bb1.ce95f4",
+        "attributeId": 0,
+        "maxAge": 1,
+        "depth": 1,
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": true,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "parseStrings": true,
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "9abfa423.a621e8"
+            ]
+        ]
+    },
+    {
+        "id": "9abfa423.a621e8",
+        "type": "OPCUA-IIoT-Result-Filter",
+        "z": "39392bb1.ce95f4",
+        "nodeId": "ns=5;s=EmergencyShutdown",
+        "datatype": "Boolean",
+        "fixedValue": false,
+        "fixPoint": 2,
+        "withPrecision": false,
+        "precision": 2,
+        "entry": 1,
+        "justValue": true,
+        "withValueCheck": false,
+        "minvalue": "",
+        "maxvalue": "",
+        "defaultvalue": "",
+        "topic": "",
+        "name": "",
+        "showErrors": false,
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "94eefaf9.5bf298"
+            ]
+        ]
+    },
+    {
+        "id": "94eefaf9.5bf298",
+        "type": "switch",
+        "z": "39392bb1.ce95f4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 540,
+        "wires": [
+            [
+                "9567b340.e48bb",
+                "eb35d8bd.fc1b48"
+            ],
+            [
+                "eb35d8bd.fc1b48"
+            ]
+        ]
+    },
+    {
+        "id": "9567b340.e48bb",
+        "type": "function",
+        "z": "39392bb1.ce95f4",
+        "name": "set to false",
+        "func": "\nreturn {payload: false};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 480,
+        "wires": [
+            [
+                "1d3ff43d.23a0ac"
+            ]
+        ]
+    },
+    {
+        "id": "1d3ff43d.23a0ac",
+        "type": "OPCUA-IIoT-Node",
+        "z": "39392bb1.ce95f4",
+        "injectType": "write",
+        "nodeId": "ns=5;s=EmergencyShutdown",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write EmergencyShutdown",
+        "topic": "",
+        "showErrors": true,
+        "x": 1180,
+        "y": 480,
+        "wires": [
+            [
+                "cea7d74b.f477d"
+            ]
+        ]
+    },
+    {
+        "id": "eb35d8bd.fc1b48",
+        "type": "s7 out",
+        "z": "39392bb1.ce95f4",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "EmergencyShutdown",
+        "name": "",
+        "x": 980,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "205aa7d7.171138",
+        "type": "OPCUA-IIoT-Inject",
+        "z": "39392bb1.ce95f4",
+        "injectType": "read",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "startDelay": "20",
+        "name": "Poll Station 2 ready",
+        "addressSpaceItems": [
+            {
+                "name": "Station2Ready",
+                "nodeId": "ns=5;s=Station2Ready",
+                "datatypeName": "Boolean"
+            }
+        ],
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "e1d86758.38d2d8"
+            ]
+        ]
+    },
+    {
+        "id": "e1d86758.38d2d8",
+        "type": "OPCUA-IIoT-Read",
+        "z": "39392bb1.ce95f4",
+        "attributeId": 0,
+        "maxAge": 1,
+        "depth": 1,
+        "connector": "a54cfabe.21d07",
+        "name": "",
+        "justValue": true,
+        "showStatusActivities": false,
+        "showErrors": true,
+        "parseStrings": true,
+        "x": 350,
+        "y": 740,
+        "wires": [
+            [
+                "d41d2149.101ea"
+            ]
+        ]
+    },
+    {
+        "id": "d41d2149.101ea",
+        "type": "OPCUA-IIoT-Result-Filter",
+        "z": "39392bb1.ce95f4",
+        "nodeId": "ns=5;s=Station2Ready",
+        "datatype": "Boolean",
+        "fixedValue": false,
+        "fixPoint": 2,
+        "withPrecision": false,
+        "precision": 2,
+        "entry": 1,
+        "justValue": true,
+        "withValueCheck": false,
+        "minvalue": "",
+        "maxvalue": "",
+        "defaultvalue": "",
+        "topic": "",
+        "name": "",
+        "showErrors": false,
+        "x": 540,
+        "y": 740,
+        "wires": [
+            [
+                "684e769e.95e878"
+            ]
+        ]
+    },
+    {
+        "id": "684e769e.95e878",
+        "type": "switch",
+        "z": "39392bb1.ce95f4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "e99218b7.9374e8",
+                "da387bfc.c645a8"
+            ],
+            [
+                "da387bfc.c645a8"
+            ]
+        ]
+    },
+    {
+        "id": "e99218b7.9374e8",
+        "type": "function",
+        "z": "39392bb1.ce95f4",
+        "name": "set to false",
+        "func": "\nreturn {payload: false};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 680,
+        "wires": [
+            [
+                "bf758580.627ce8"
+            ]
+        ]
+    },
+    {
+        "id": "bf758580.627ce8",
+        "type": "OPCUA-IIoT-Node",
+        "z": "39392bb1.ce95f4",
+        "injectType": "write",
+        "nodeId": "ns=5;s=Station2Ready",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write Station2Ready",
+        "topic": "",
+        "showErrors": true,
+        "x": 1160,
+        "y": 680,
+        "wires": [
+            [
+                "cea7d74b.f477d"
+            ]
+        ]
+    },
+    {
+        "id": "da387bfc.c645a8",
+        "type": "s7 out",
+        "z": "39392bb1.ce95f4",
+        "endpoint": "1ab5d0b5.6a8def",
+        "variable": "Station2_ready",
+        "name": "",
+        "x": 960,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "9baeccda.77976",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Material_Ramp",
+        "diff": true,
+        "name": "MaterialRamp",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "d6254fe8.e781"
+            ]
+        ]
+    },
+    {
+        "id": "1999a3d9.20687c",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Station1_done",
+        "diff": true,
+        "name": "DoneHandover",
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "6bc31aa2.5b8a24"
+            ]
+        ]
+    },
+    {
+        "id": "147ab4fa.799773",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "Station1_ready",
+        "diff": true,
+        "name": "ReadyHandover",
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "465fd3a3.73f1c4"
+            ]
+        ]
+    },
+    {
+        "id": "1251da86.b14c6d",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=Station2Ready",
+        "browsename": "Station2Ready",
+        "displayname": "Station2Ready",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=HandoverProtocol",
+        "referencetype": "Organizes",
+        "name": "Station2Ready",
+        "x": 280,
+        "y": 760,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "bc624af0.0afb48",
+        "type": "s7 in",
+        "z": "a1b248ce.5ff2e",
+        "endpoint": "1ab5d0b5.6a8def",
+        "mode": "single",
+        "variable": "On_Off",
+        "diff": true,
+        "name": "OnOff",
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "7fc7b36b.8b638c",
+                "f1f3e92c.0eebf"
+            ]
+        ]
+    },
+    {
+        "id": "7fc7b36b.8b638c",
+        "type": "function",
+        "z": "a1b248ce.5ff2e",
+        "name": "invert",
+        "func": "if (msg.payload===true) {\n    msg.payload = false;\n} else {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "b6db4975.65617",
+                "a7e934f7.4fa508"
+            ]
+        ]
+    },
+    {
+        "id": "b6db4975.65617",
+        "type": "OPCUA-IIoT-Node",
+        "z": "a1b248ce.5ff2e",
+        "injectType": "write",
+        "nodeId": "ns=5;s=OnOff",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Write OnOff",
+        "topic": "",
+        "showErrors": true,
+        "x": 710,
+        "y": 380,
+        "wires": [
+            [
+                "a4f94a78.bcb8e"
+            ]
+        ]
+    },
+    {
+        "id": "5088f6a7.710798",
+        "type": "OPCUA-IIoT-Server-ASO",
+        "z": "a1b248ce.5ff2e",
+        "nodeId": "ns=5;s=OnOff",
+        "browsename": "OnOff",
+        "displayname": "OnOff",
+        "objecttype": "BaseDataVariableType",
+        "datatype": "Boolean",
+        "value": "",
+        "referenceNodeId": "ns=5;s=Control",
+        "referencetype": "Organizes",
+        "name": "OnOff",
+        "x": 250,
+        "y": 1060,
+        "wires": [
+            [
+                "942fd4d9.fbc638"
+            ]
+        ]
+    },
+    {
+        "id": "f1f3e92c.0eebf",
+        "type": "debug",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 420,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a7e934f7.4fa508",
+        "type": "debug",
+        "z": "a1b248ce.5ff2e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    }
+]
